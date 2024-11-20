@@ -1,0 +1,15 @@
+{
+  "name": "bece4175-d35c-40af-a43c-9c257bba414f",
+  "displayName": "Not Coaching Eligible",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "if $intent.params.Name = \"Coaching\"\n  It sounds like you might want help from a coach. Unfortunately you are not eligible at this time. If you would like to try a self-guided \n  program you can click below. You can also ask to start a challenge, connect a fitness device, read an article, or track your health habits.\n\n  https:/member.onlifehealth.com/GuidedProgram \nelse\n  You can start a self-guided program by clicking the link below.\n  \n  https:/member.onlifehealth.com/GuidedProgram " ]
+      },
+      "languageCode": "en"
+    } ]
+  }
+}

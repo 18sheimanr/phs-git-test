@@ -1,0 +1,11 @@
+{
+  "name": "4259f3da-18c1-43e0-89c4-ea0d0c51a9c5",
+  "displayName": "rewards.home",
+  "parameters": [ {
+    "id": "currency-name",
+    "entityType": "@sys.currency-name"
+  } ],
+  "priority": 500000,
+  "description": "This is triggered when the user asks anything regarding earning, redeeming, or completed rewards points or activities. This will later be split into multiple intents.",
+  "numTrainingPhrases": 45
+}

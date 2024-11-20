@@ -1,0 +1,8 @@
+{
+  "name": "5022144a-dd79-40b3-9de0-21abc7b27c6e",
+  "displayName": "care.get-urgent-bh",
+  "priority": 500000,
+  "description": "Fresh upload of training data from 11/11/2024 files\n\nPrevious History:\nSplit from intent \"care.get-urgent\": https://dialogflow.cloud.google.com/cx/projects/develop-251413/locations/us-central1/agents/c527bdd2-6892-4b0b-b6e7-63f05d582de5/intents?id=9b3e588b-8a88-4cb3-a279-f3dfb35309d3",
+  "skipAutoAnnotation": true,
+  "numTrainingPhrases": 86
+}

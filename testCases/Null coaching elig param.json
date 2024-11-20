@@ -1,0 +1,125 @@
+{
+  "name": "b5b3132d-2578-4cd7-ae78-1ea14daac2f2",
+  "displayName": "Null coaching elig param",
+  "notes": "Should act like false coaching eligibility and trigger SGP",
+  "testCaseConversationTurns": [ {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "hi"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "differences": [ {
+        "type": "PAGE",
+        "description": "Page mismatch:\nExpected: \nActual:   Start Page",
+        "assertionType": "EQUAL",
+        "expectedValue": "",
+        "actualValue": "Start Page"
+      }, {
+        "type": "INTENT",
+        "description": "Intent mismatch:\nExpected: \nActual:   default.welcome",
+        "assertionType": "EQUAL",
+        "expectedValue": "",
+        "actualValue": "default.welcome"
+      }, {
+        "type": "UTTERANCE",
+        "description": "Agent response mismatch",
+        "warning": true,
+        "assertionType": "EQUAL",
+        "expectedValue": "",
+        "actualValue": "Hello $session.params.member.firstName, we’re so glad you’re here! I'm Spark, your AI care companion from $session.params.tenant.programName, I’m here to listen and support you along your wellness journey.Is there anything specific you'd like to focus on today? If not, feel free to check out some options below"
+      } ],
+      "triggeredIntent": {
+        "name": "default.welcome"
+      },
+      "currentPage": {
+        "name": "Start Page",
+        "flow": "Intent Flow"
+      },
+      "textResponses": [ {
+        "text": [ "Hello $session.params.member.firstName, we’re so glad you’re here! I'm Spark, your AI care companion from $session.params.tenant.programName, I’m here to listen and support you along your wellness journey." ]
+      }, {
+        "text": [ "Is there anything specific you'd like to focus on today? If not, feel free to check out some options below" ]
+      } ],
+      "currentFlow": {
+        "name": "Intent Flow"
+      },
+      "actions": [ {
+        "userUtterance": {
+          "text": "hi"
+        }
+      }, {
+        "agentUtterance": {
+          "text": "Hello $session.params.member.firstName, we’re so glad you’re here! I'm Spark, your AI care companion from $session.params.tenant.programName, I’m here to listen and support you along your wellness journey.\nIs there anything specific you'd like to focus on today? If not, feel free to check out some options below"
+        }
+      } ]
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "stress management"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "differences": [ {
+        "type": "PAGE",
+        "description": "Page mismatch:\nExpected: \nActual:   Start Page",
+        "assertionType": "EQUAL",
+        "expectedValue": "",
+        "actualValue": "Start Page"
+      }, {
+        "type": "INTENT",
+        "description": "Intent mismatch:\nExpected: \nActual:   issue-request.general",
+        "assertionType": "EQUAL",
+        "expectedValue": "",
+        "actualValue": "issue-request.general"
+      }, {
+        "type": "UTTERANCE",
+        "description": "Agent response mismatch",
+        "warning": true,
+        "assertionType": "EQUAL",
+        "expectedValue": "",
+        "actualValue": "You have access to a wide variety of self-guided programs. You can start or continue a program at the link below.\n\nhttps://member.onlifehealth.com/GuidedProgram"
+      } ],
+      "triggeredIntent": {
+        "name": "issue-request.general"
+      },
+      "currentPage": {
+        "name": "Start Page",
+        "flow": "Intent Flow"
+      },
+      "textResponses": [ {
+        "text": [ "You have access to a wide variety of self-guided programs. You can start or continue a program at the link below.\n\nhttps://member.onlifehealth.com/GuidedProgram" ]
+      } ],
+      "currentFlow": {
+        "name": "Intent Flow"
+      },
+      "actions": [ {
+        "userUtterance": {
+          "text": "stress management"
+        }
+      }, {
+        "agentUtterance": {
+          "text": "You have access to a wide variety of self-guided programs. You can start or continue a program at the link below.\n\nhttps://member.onlifehealth.com/GuidedProgram"
+        }
+      } ]
+    }
+  } ],
+  "creationTime": {
+    "seconds": 1724765138,
+    "nanos": 529804000
+  },
+  "testConfig": {
+    "flow": "Default Start Flow",
+    "page": "Start Page"
+  },
+  "languageCode": "en"
+}

@@ -1,0 +1,14 @@
+{
+  "name": "46cf9158-f9c7-417c-b603-5c4ed19a2368",
+  "displayName": "coaching.home",
+  "parameters": [ {
+    "id": "number",
+    "entityType": "@sys.number"
+  }, {
+    "id": "person",
+    "entityType": "@sys.person"
+  } ],
+  "priority": 500000,
+  "description": "Intent for when a member specifically asks to work with a (human) health coach.",
+  "numTrainingPhrases": 52
+}

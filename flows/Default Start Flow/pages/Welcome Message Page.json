@@ -1,0 +1,72 @@
+{
+  "name": "9776ef58-978f-428c-87e1-ecb0bdee26f2",
+  "displayName": "Welcome Message Page",
+  "form": {
+  
+  },
+  "transitionRoutes": [ {
+    "condition": "$session.params.state.session.timeSinceLastSession \u003c= 1464",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Welcome back. It's wonderful to connect with you again. How can I be of service today? Please don't hesitate to share any concerns or questions you may have." ]
+        },
+        "languageCode": "en"
+      }, {
+        "payload": {
+          "richContent": [ [ {
+            "options": [ {
+              "text": "Take a health assessment"
+            }, {
+              "text": "Connect a device"
+            }, {
+              "text": "Track my steps"
+            } ],
+            "type": "chips"
+          } ] ]
+        },
+        "languageCode": "en"
+      } ],
+      "nextActionOverride": {
+      
+      }
+    },
+    "targetFlow": "Intent Flow",
+    "name": "04b9cca7-87e2-43ba-ba01-7e788b296178"
+  }, {
+    "condition": "$session.params.state.session.timeSinceLastSession \u003e 1464 OR $session.params.state.session.timeSinceLastSession = null OR $session.params.state.session.timeSinceLastSession = \"\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Welcome $session.params.member.firstName! Your experience here is important, and I'm here to make it easier for you. Whether you're looking for specific information or resources, or guidance, I can help point you in the right direction. " ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "How can I assist you today? Feel free to ask about your concerns, services, or site features, and I'll provide you with the support you need." ]
+        },
+        "languageCode": "en"
+      }, {
+        "payload": {
+          "richContent": [ [ {
+            "options": [ {
+              "text": "Take a health assessment"
+            }, {
+              "text": "Connect a device"
+            }, {
+              "text": "Track my steps"
+            } ],
+            "type": "chips"
+          } ] ]
+        },
+        "languageCode": "en"
+      } ],
+      "nextActionOverride": {
+      
+      }
+    },
+    "targetFlow": "Intent Flow",
+    "name": "68839004-c4ac-4214-870a-92a81bc3bd72"
+  } ],
+  "description": "Handles the onlifePortalStart event"
+}

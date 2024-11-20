@@ -1,0 +1,7 @@
+{
+  "name": "49de4ea4-b3a1-4c9a-8264-9cbfa1a68afb",
+  "displayName": "test.livehuman",
+  "priority": 500000,
+  "description": "indicate you would like to speak with a human",
+  "numTrainingPhrases": 274
+}

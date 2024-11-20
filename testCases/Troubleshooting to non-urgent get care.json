@@ -1,0 +1,91 @@
+{
+  "name": "a83dedfa-9fe4-4b2f-aecc-8fa0a3730977",
+  "displayName": "Troubleshooting to non-urgent get care",
+  "testCaseConversationTurns": [ {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "hi"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "default.welcome"
+      },
+      "currentPage": {
+        "name": "Start Page",
+        "flow": "Intent Flow"
+      },
+      "textResponses": [ {
+        "text": [ "Hello $session.params.member.firstName, we’re so glad you’re here! I'm Spark, your AI care companion from $session.params.tenant.programName, I’m here to listen and support you along your wellness journey." ]
+      }, {
+        "text": [ "Is there anything specific you'd like to focus on today? If not, feel free to check out some options below" ]
+      } ],
+      "currentFlow": {
+        "name": "Intent Flow"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "need help with app"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "troubleshooting"
+      },
+      "currentPage": {
+        "name": "Start Page",
+        "flow": "Troubleshooting"
+      },
+      "textResponses": [ {
+        "text": [ "I can help with that!\nCan you describe the issue?" ]
+      } ],
+      "currentFlow": {
+        "name": "Troubleshooting"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "I have a stomach ache"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "care.get"
+      },
+      "currentPage": {
+        "name": "Start Page",
+        "flow": "Troubleshooting"
+      },
+      "textResponses": [ {
+        "text": [ "If you're experiencing a medical emergency, please call 911 immediately. For non-urgent health matters, we're here to help. Let's work together to find the care you need. You can find a provider here: " ]
+      } ],
+      "currentFlow": {
+        "name": "Troubleshooting"
+      }
+    }
+  } ],
+  "creationTime": {
+    "seconds": 1728069421,
+    "nanos": 742193000
+  },
+  "testConfig": {
+    "flow": "Default Start Flow",
+    "page": "Start Page"
+  },
+  "languageCode": "en"
+}

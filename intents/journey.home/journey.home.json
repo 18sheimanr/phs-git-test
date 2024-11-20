@@ -1,0 +1,11 @@
+{
+  "name": "1c1fce04-d8c6-451f-9130-6816d4880243",
+  "displayName": "journey.home",
+  "parameters": [ {
+    "id": "ordinal",
+    "entityType": "@sys.ordinal"
+  } ],
+  "priority": 500000,
+  "description": "This intent is for when the member wants to understand the next recommended step in their wellness program. It current contains training phrases for both the next step in the journey and the journey overall, but we will eventually split this.",
+  "numTrainingPhrases": 15
+}

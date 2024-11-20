@@ -1,0 +1,13 @@
+{
+  "name": "a4789a58-ff7c-4154-bdac-1fc9f188af8e",
+  "displayName": "Example",
+  "modelParameter": {
+    "temperature": 0.5,
+    "maxDecodeSteps": 128,
+    "topP": 0.94999999,
+    "topK": 40
+  },
+  "llmModelSettings": {
+    "model": "gemini-1.5-flash"
+  }
+}

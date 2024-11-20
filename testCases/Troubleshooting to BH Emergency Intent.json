@@ -1,0 +1,91 @@
+{
+  "name": "817bd871-1c4d-4b7a-a05b-66f6d4968635",
+  "displayName": "Troubleshooting to BH Emergency Intent",
+  "testCaseConversationTurns": [ {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "hi"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "default.welcome"
+      },
+      "currentPage": {
+        "name": "Start Page",
+        "flow": "Intent Flow"
+      },
+      "textResponses": [ {
+        "text": [ "Hello $session.params.member.firstName, we’re so glad you’re here! I'm Spark, your AI care companion from $session.params.tenant.programName, I’m here to listen and support you along your wellness journey." ]
+      }, {
+        "text": [ "Is there anything specific you'd like to focus on today? If not, feel free to check out some options below" ]
+      } ],
+      "currentFlow": {
+        "name": "Intent Flow"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "troubleshooting"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "troubleshooting"
+      },
+      "currentPage": {
+        "name": "Start Page",
+        "flow": "Troubleshooting"
+      },
+      "textResponses": [ {
+        "text": [ "I can help with that!\nCan you describe the issue?" ]
+      } ],
+      "currentFlow": {
+        "name": "Troubleshooting"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "I am thinking of hurting myself"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "care.get-urgent-bh"
+      },
+      "currentPage": {
+        "name": "Start Page",
+        "flow": "Troubleshooting"
+      },
+      "textResponses": [ {
+        "text": [ "This could be an emergency. If you are having thoughts of suicide please call 988. If this is another type of emergency please dial 911." ]
+      } ],
+      "currentFlow": {
+        "name": "Troubleshooting"
+      }
+    }
+  } ],
+  "creationTime": {
+    "seconds": 1728047862,
+    "nanos": 581695000
+  },
+  "testConfig": {
+    "flow": "Default Start Flow",
+    "page": "Start Page"
+  },
+  "languageCode": "en"
+}

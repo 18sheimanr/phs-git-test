@@ -1,0 +1,31 @@
+{
+  "entities": [ {
+    "value": "Fitbit",
+    "synonyms": [ "Fitbit" ],
+    "languageCode": "en"
+  }, {
+    "value": "Garmin",
+    "synonyms": [ "Garmin", "Vivofit" ],
+    "languageCode": "en"
+  }, {
+    "value": "Apple Watch",
+    "synonyms": [ "Apple Watch" ],
+    "languageCode": "en"
+  }, {
+    "value": "Apple Health",
+    "synonyms": [ "Apple Health" ],
+    "languageCode": "en"
+  }, {
+    "value": "Samsung Health",
+    "synonyms": [ "Samsung Health" ],
+    "languageCode": "en"
+  }, {
+    "value": "Whoop",
+    "synonyms": [ "Whoop" ],
+    "languageCode": "en"
+  }, {
+    "value": "Google Fit",
+    "synonyms": [ "Google Fit" ],
+    "languageCode": "en"
+  } ]
+}

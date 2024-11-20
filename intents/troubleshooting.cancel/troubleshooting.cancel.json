@@ -1,0 +1,7 @@
+{
+  "name": "b1178969-86fe-4afa-9706-b963fab72ded",
+  "displayName": "troubleshooting.cancel",
+  "priority": 500000,
+  "description": "This intent is matched if a member is trying to exit the FAQ problem description flow.",
+  "numTrainingPhrases": 7
+}

@@ -1,0 +1,341 @@
+{
+  "trainingPhrases": [ {
+    "parts": [ {
+      "text": "I need to connect the app to my phone",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Use my ",
+      "auto": true
+    }, {
+      "text": "fitbit",
+      "parameterId": "device-type",
+      "auto": true
+    }, {
+      "text": " device",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "How can I connect a device to this program?",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "what devices can I use with this app?",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I want to see where my steps have been tracked",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "How do I remove a device? Should I do it in my plan app or in the actual app?",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I'm not earning points from my device anymore, how do I make sure it is syncing correctly?",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "How do I remove a device? It is better to do well on target in the bcbst app or in the actual app itself?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I want to connect a device",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "where do I count my steps",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Use "
+    }, {
+      "text": "apple health",
+      "parameterId": "device-type"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "want to sync my device",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Get ",
+      "auto": true
+    }, {
+      "text": "dollars",
+      "parameterId": "currency-name",
+      "auto": true
+    }, {
+      "text": " for steps",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "How do I see my steps?",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "How do I connect "
+    }, {
+      "text": "apple health",
+      "parameterId": "device-type"
+    }, {
+      "text": "?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Google fit",
+      "parameterId": "device-type"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I want to use my "
+    }, {
+      "text": "Garmin",
+      "parameterId": "device-type"
+    }, {
+      "text": " to track my steps to earn points"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "earn points with "
+    }, {
+      "text": "apple watch",
+      "parameterId": "device-type"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "get points for my steps",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Where can I find information on connecting my Android smart watch?",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Steps to earn rewards with smart watch",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Set up "
+    }, {
+      "text": "fitbit",
+      "parameterId": "device-type"
+    }, {
+      "text": " watch"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Please help me with my new device",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Please help me with my "
+    }, {
+      "text": "garmin",
+      "parameterId": "device-type"
+    }, {
+      "text": " watch, I want to track my progress"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Need help to set up wellness app "
+    }, {
+      "text": "fitbit",
+      "parameterId": "device-type"
+    }, {
+      "text": " rewards"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Login with "
+    }, {
+      "text": "whoop",
+      "parameterId": "device-type"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Is there a section that explains how to earn rewards with my "
+    }, {
+      "text": "apple watch",
+      "parameterId": "device-type"
+    }, {
+      "text": "?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I want to earn rewards with "
+    }, {
+      "text": "fitbit",
+      "parameterId": "device-type"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "How to use "
+    }, {
+      "text": "apple watch",
+      "parameterId": "device-type"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "How to earn rewards with android watch",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "How do I use my "
+    }, {
+      "text": "garmin",
+      "parameterId": "device-type"
+    }, {
+      "text": " watch?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "How do I use a new device for the rewards program",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "How do I link my "
+    }, {
+      "text": "fitbit",
+      "parameterId": "device-type"
+    }, {
+      "text": "?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "How can I link my "
+    }, {
+      "text": "apple watch",
+      "parameterId": "device-type"
+    }, {
+      "text": " to the app? I want to earn points."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "How can I connect my new Withings watch to earn rewards ",
+      "auto": true
+    }, {
+      "text": "dollars",
+      "parameterId": "currency-name",
+      "auto": true
+    }, {
+      "text": "?",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Hello, let's connect to my new smart watch for syncing",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Connect "
+    }, {
+      "text": "apple watch",
+      "parameterId": "device-type"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Can you help me setup my "
+    }, {
+      "text": "fitbit",
+      "parameterId": "device-type"
+    }, {
+      "text": " to earn wellness rewards?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  } ]
+}

@@ -1,0 +1,51 @@
+{
+  "name": "1aac914b-b74c-4c72-bd01-f20e449a0d8b",
+  "displayName": "Recent login not coaching eligible",
+  "testCaseConversationTurns": [ {
+    "userInput": {
+      "injectedParameters": {
+        "$session.params.member.firstName": "Susan",
+        "$session.params.programComponents.coaching.eligible": false,
+        "$session.params.state.session.timeSinceLastSession": 100,
+        "$session.params.tenant.programName": "Well onTarget"
+      },
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "hi"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "sessionParameters": {
+        "$session.params.member.firstName": "Susan",
+        "$session.params.programComponents.coaching.eligible": false,
+        "$session.params.state.session.timeSinceLastSession": 100,
+        "$session.params.tenant.programName": "Well onTarget"
+      },
+      "triggeredIntent": {
+        "name": "default.welcome"
+      },
+      "currentPage": {
+        "name": "Start Page",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "Welcome back Susan.\n\nWhat can I help you with today?" ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  } ],
+  "creationTime": {
+    "seconds": 1722276152,
+    "nanos": 110376000
+  },
+  "testConfig": {
+    "flow": "Default Start Flow",
+    "page": "Start Page"
+  },
+  "languageCode": "en"
+}

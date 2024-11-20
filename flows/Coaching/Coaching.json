@@ -1,0 +1,115 @@
+{
+  "name": "88a6501e-d891-45ac-866f-0194c63b2622",
+  "displayName": "Coaching",
+  "transitionRoutes": [ {
+    "condition": "$session.params.programComponents.coaching.eligible = false OR $session.params.programComponents.coaching.eligible = null",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Although your plan does not have 1-on-1 coaching available to you, your plan offers several self-guided programs that can be just as useful to your goals. Check them out below:" ]
+        },
+        "languageCode": "en"
+      }, {
+        "payload": {
+          "richContent": [ [ {
+            "anchor": {
+              "href": "https://member.onlifehealth.com/GuidedProgram"
+            },
+            "text": "Self-Guided Programs",
+            "type": "button"
+          } ] ]
+        },
+        "languageCode": "en"
+      } ],
+      "nextActionOverride": {
+      
+      }
+    },
+    "targetPage": "End Flow",
+    "name": "cdec814b-c1e1-4011-a18a-4438545931e4",
+    "description": "Route for members not eligible for coaching.\n\nIf intent was specific to coaching, address that in response and redirect to SGP.\n\nIt not (general issue request) just direct to SGP."
+  }, {
+    "condition": "$session.params.programComponents.coaching.eligible = true",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I can help with that." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "It looks like your plan offers 1-on-1 live coaching. Check out your options below:" ]
+        },
+        "languageCode": "en"
+      }, {
+        "payload": {
+          "richContent": [ [ {
+            "anchor": {
+              "href": "https://member.onlifehealth.com/Goal/LearnMore"
+            },
+            "text": "Get Started",
+            "type": "button"
+          } ] ]
+        },
+        "languageCode": "en"
+      } ],
+      "nextActionOverride": {
+      
+      }
+    },
+    "targetPage": "End Flow",
+    "name": "7e1a8edc-ce38-4f69-b124-335b8f1f0e54",
+    "description": "Confirm intent to work with a coach and route to coaching if available"
+  }, {
+    "condition": "true",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "End Flow",
+    "name": "a4a0760a-399e-4e8c-8682-d71f699518a9"
+  } ],
+  "eventHandlers": [ {
+    "event": "sys.no-match-default",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I didn't get that. Can you say it again?", "I missed what you said. What was that?", "Sorry, could you say that again?", "Sorry, can you say that again?", "Can you say that again?", "Sorry, I didn't get that. Can you rephrase?", "Sorry, what was that?", "One more time?", "What was that?", "Say that one more time?", "I didn't get that. Can you repeat?", "I missed that, say that again?" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "583d7319-276b-4aee-aae8-b17c43cc9d7e"
+  }, {
+    "event": "sys.no-input-default",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I didn't get that. Can you say it again?", "I missed what you said. What was that?", "Sorry, could you say that again?", "Sorry, can you say that again?", "Can you say that again?", "Sorry, I didn't get that. Can you rephrase?", "Sorry, what was that?", "One more time?", "What was that?", "Say that one more time?", "I didn't get that. Can you repeat?", "I missed that, say that again?" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "da6a7f5f-44d4-4f55-a309-13a98abde157"
+  } ],
+  "nluSettings": {
+    "modelType": "MODEL_TYPE_ADVANCED",
+    "classificationThreshold": 0.30000001,
+    "modelTrainingMode": "MODEL_TRAINING_MODE_MANUAL",
+    "multiIntentSettings": {
+    
+    }
+  },
+  "advancedSettings": {
+    "enabled": true
+  },
+  "nluSettingsList": [ {
+    "modelType": "MODEL_TYPE_ADVANCED",
+    "classificationThreshold": 0.30000001,
+    "modelTrainingMode": "MODEL_TRAINING_MODE_MANUAL",
+    "customConfigKey": "268f94ce-e1cb-4a41-b484-55725fa63489",
+    "multiIntentSettings": {
+    
+    },
+    "languageCode": "en"
+  } ]
+}

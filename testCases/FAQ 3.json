@@ -1,0 +1,273 @@
+{
+  "name": "367f1128-9747-43ae-b57e-ebc1e4bd7ec7",
+  "displayName": "FAQ 3",
+  "notes": "Direct to FAQ test + verify \"trouble with\" has not overfit to troubleshooting intent and still has clinical intent matching",
+  "testCaseConversationTurns": [ {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "hi"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "differences": [ {
+        "type": "PAGE",
+        "description": "Page mismatch:\nExpected: \nActual:   Start Page",
+        "assertionType": "EQUAL",
+        "expectedValue": "",
+        "actualValue": "Start Page"
+      }, {
+        "type": "INTENT",
+        "description": "Intent mismatch:\nExpected: \nActual:   default.welcome",
+        "assertionType": "EQUAL",
+        "expectedValue": "",
+        "actualValue": "default.welcome"
+      }, {
+        "type": "UTTERANCE",
+        "description": "Agent response mismatch",
+        "warning": true,
+        "assertionType": "EQUAL",
+        "expectedValue": "",
+        "actualValue": "Hello $session.params.member.firstName, we’re so glad you’re here! I'm Spark, your AI care companion from $session.params.tenant.programName, I’m here to listen and support you along your wellness journey.Is there anything specific you'd like to focus on today? If not, feel free to check out some options below"
+      } ],
+      "triggeredIntent": {
+        "name": "default.welcome"
+      },
+      "currentPage": {
+        "name": "Start Page",
+        "flow": "Intent Flow"
+      },
+      "textResponses": [ {
+        "text": [ "Hello $session.params.member.firstName, we’re so glad you’re here! I'm Spark, your AI care companion from $session.params.tenant.programName, I’m here to listen and support you along your wellness journey." ]
+      }, {
+        "text": [ "Is there anything specific you'd like to focus on today? If not, feel free to check out some options below" ]
+      } ],
+      "currentFlow": {
+        "name": "Intent Flow"
+      },
+      "actions": [ {
+        "userUtterance": {
+          "text": "hi"
+        }
+      }, {
+        "agentUtterance": {
+          "text": "Hello $session.params.member.firstName, we’re so glad you’re here! I'm Spark, your AI care companion from $session.params.tenant.programName, I’m here to listen and support you along your wellness journey.\nIs there anything specific you'd like to focus on today? If not, feel free to check out some options below"
+        }
+      } ]
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "i need my certificate of completion"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "differences": [ {
+        "type": "PAGE",
+        "description": "Page mismatch:\nExpected: \nActual:   Start Page",
+        "assertionType": "EQUAL",
+        "expectedValue": "",
+        "actualValue": "Start Page"
+      }, {
+        "type": "UTTERANCE",
+        "description": "Agent response mismatch",
+        "warning": true,
+        "assertionType": "EQUAL",
+        "expectedValue": "",
+        "actualValue": "Thank you for reaching out to us. To locate your certificate of completion, please log into your wellness platform name. Scroll to the very bottom of the page. On the bottom right, you will see Certificates. It's the second one in the list. Click on Certificates. You can view or email your certificate from this page."
+      } ],
+      "currentPage": {
+        "name": "Start Page",
+        "flow": "Intent Flow"
+      },
+      "textResponses": [ {
+        "text": [ "Thank you for reaching out to us. To locate your certificate of completion, please log into your wellness platform name. Scroll to the very bottom of the page. On the bottom right, you will see Certificates. It's the second one in the list. Click on Certificates. You can view or email your certificate from this page." ],
+        "containDataStoreFaqContent": true,
+        "containAttemptedDataStoreInteractions": true
+      } ],
+      "currentFlow": {
+        "name": "Intent Flow"
+      },
+      "actions": [ {
+        "userUtterance": {
+          "text": "i need my certificate of completion"
+        }
+      }, {
+        "agentUtterance": {
+          "text": "Thank you for reaching out to us. To locate your certificate of completion, please log into your wellness platform name. Scroll to the very bottom of the page. On the bottom right, you will see Certificates. It's the second one in the list. Click on Certificates. You can view or email your certificate from this page."
+        }
+      } ]
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "I am having trouble with my health assessment"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "differences": [ {
+        "type": "PAGE",
+        "description": "Page mismatch:\nExpected: \nActual:   Start Page",
+        "assertionType": "EQUAL",
+        "expectedValue": "",
+        "actualValue": "Start Page"
+      }, {
+        "type": "UTTERANCE",
+        "description": "Agent response mismatch",
+        "warning": true,
+        "assertionType": "EQUAL",
+        "expectedValue": "",
+        "actualValue": "Thank you for reaching out to us. I apologize for the issues you are experiencing with the program. It is recommended you use the Google Chrome web browser. Please clear the cache and cookies, by clicking the three dots in the upper right corner of the browser. Then click Settings; under Privacy and Security, click Delete Browsing Data. Make sure All Time is selected in the Time Range box; only check the Browsing History, Cookies and Other Site Data, and Cached Images and Files boxes. Once the browsing data has cleared, please close and re-open your browser and try again to complete the Health Assessment. If this does not solve the problem, you may also complete the Health Assessment using the AlwaysOn app. Tap the clipboard icon to access the Health Assessment on the app. Please let me know if you are unsuccessful so that we can further troubleshoot. "
+      } ],
+      "currentPage": {
+        "name": "Start Page",
+        "flow": "Intent Flow"
+      },
+      "textResponses": [ {
+        "text": [ "Thank you for reaching out to us. I apologize for the issues you are experiencing with the program. It is recommended you use the Google Chrome web browser. Please clear the cache and cookies, by clicking the three dots in the upper right corner of the browser. Then click Settings; under Privacy and Security, click Delete Browsing Data. Make sure All Time is selected in the Time Range box; only check the Browsing History, Cookies and Other Site Data, and Cached Images and Files boxes. Once the browsing data has cleared, please close and re-open your browser and try again to complete the Health Assessment. If this does not solve the problem, you may also complete the Health Assessment using the AlwaysOn app. Tap the clipboard icon to access the Health Assessment on the app. Please let me know if you are unsuccessful so that we can further troubleshoot. " ],
+        "containDataStoreFaqContent": true,
+        "containAttemptedDataStoreInteractions": true
+      } ],
+      "currentFlow": {
+        "name": "Intent Flow"
+      },
+      "actions": [ {
+        "userUtterance": {
+          "text": "I am having trouble with my health assessment"
+        }
+      }, {
+        "agentUtterance": {
+          "text": "Thank you for reaching out to us. I apologize for the issues you are experiencing with the program. It is recommended you use the Google Chrome web browser. Please clear the cache and cookies, by clicking the three dots in the upper right corner of the browser. Then click Settings; under Privacy and Security, click Delete Browsing Data. Make sure All Time is selected in the Time Range box; only check the Browsing History, Cookies and Other Site Data, and Cached Images and Files boxes. Once the browsing data has cleared, please close and re-open your browser and try again to complete the Health Assessment. If this does not solve the problem, you may also complete the Health Assessment using the AlwaysOn app. Tap the clipboard icon to access the Health Assessment on the app. Please let me know if you are unsuccessful so that we can further troubleshoot. "
+        }
+      } ]
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "I am having trouble with back pain"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "differences": [ {
+        "type": "PAGE",
+        "description": "Page mismatch:\nExpected: \nActual:   Start Page",
+        "assertionType": "EQUAL",
+        "expectedValue": "",
+        "actualValue": "Start Page"
+      }, {
+        "type": "INTENT",
+        "description": "Intent mismatch:\nExpected: \nActual:   care.get",
+        "assertionType": "EQUAL",
+        "expectedValue": "",
+        "actualValue": "care.get"
+      }, {
+        "type": "UTTERANCE",
+        "description": "Agent response mismatch",
+        "warning": true,
+        "assertionType": "EQUAL",
+        "expectedValue": "",
+        "actualValue": "If you're experiencing a medical emergency, please call 911 immediately. For non-urgent health matters, we're here to help. Let's work together to find the care you need. You can find a provider here: "
+      } ],
+      "triggeredIntent": {
+        "name": "care.get"
+      },
+      "currentPage": {
+        "name": "Start Page",
+        "flow": "Intent Flow"
+      },
+      "textResponses": [ {
+        "text": [ "If you're experiencing a medical emergency, please call 911 immediately. For non-urgent health matters, we're here to help. Let's work together to find the care you need. You can find a provider here: " ]
+      } ],
+      "currentFlow": {
+        "name": "Intent Flow"
+      },
+      "actions": [ {
+        "userUtterance": {
+          "text": "I am having trouble with back pain"
+        }
+      }, {
+        "agentUtterance": {
+          "text": "If you're experiencing a medical emergency, please call 911 immediately. For non-urgent health matters, we're here to help. Let's work together to find the care you need. You can find a provider here: "
+        }
+      } ]
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "trouble with anxiety"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "differences": [ {
+        "type": "PAGE",
+        "description": "Page mismatch:\nExpected: \nActual:   Start Page",
+        "assertionType": "EQUAL",
+        "expectedValue": "",
+        "actualValue": "Start Page"
+      }, {
+        "type": "INTENT",
+        "description": "Intent mismatch:\nExpected: \nActual:   care.get-urgent-bh",
+        "assertionType": "EQUAL",
+        "expectedValue": "",
+        "actualValue": "care.get-urgent-bh"
+      }, {
+        "type": "UTTERANCE",
+        "description": "Agent response mismatch",
+        "warning": true,
+        "assertionType": "EQUAL",
+        "expectedValue": "",
+        "actualValue": "This could be an emergency. If you are having thoughts of suicide please call 988. If this is another type of emergency please dial 911."
+      } ],
+      "triggeredIntent": {
+        "name": "care.get-urgent-bh"
+      },
+      "currentPage": {
+        "name": "Start Page",
+        "flow": "Intent Flow"
+      },
+      "textResponses": [ {
+        "text": [ "This could be an emergency. If you are having thoughts of suicide please call 988. If this is another type of emergency please dial 911." ]
+      } ],
+      "currentFlow": {
+        "name": "Intent Flow"
+      },
+      "actions": [ {
+        "userUtterance": {
+          "text": "trouble with anxiety"
+        }
+      }, {
+        "agentUtterance": {
+          "text": "This could be an emergency. If you are having thoughts of suicide please call 988. If this is another type of emergency please dial 911."
+        }
+      } ]
+    }
+  } ],
+  "creationTime": {
+    "seconds": 1725635471,
+    "nanos": 892752000
+  },
+  "testConfig": {
+    "flow": "Default Start Flow",
+    "page": "Start Page"
+  },
+  "languageCode": "en"
+}

@@ -1,0 +1,7 @@
+{
+  "name": "6fff3f62-927c-49d8-8173-cd28588ed17b",
+  "displayName": "chat.end",
+  "priority": 500000,
+  "skipAutoAnnotation": true,
+  "numTrainingPhrases": 15
+}

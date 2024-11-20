@@ -1,0 +1,139 @@
+{
+  "entities": [ {
+    "value": "Asthma",
+    "synonyms": [ "Asthma" ],
+    "languageCode": "en"
+  }, {
+    "value": "Grief",
+    "synonyms": [ "Bereavement", "Death", "Grief", "Loss" ],
+    "languageCode": "en"
+  }, {
+    "value": "Blood Pressure",
+    "synonyms": [ "Blood Pressure", "BP" ],
+    "languageCode": "en"
+  }, {
+    "value": "Bone  Health",
+    "synonyms": [ "Bone", "Bone  Health", "Joint Health", "Osteopenia", "Osteoperosis" ],
+    "languageCode": "en"
+  }, {
+    "value": "Cholesterol",
+    "synonyms": [ "Cholesterol" ],
+    "languageCode": "en"
+  }, {
+    "value": "Chronic pain",
+    "synonyms": [ "Chronic pain", "Pain" ],
+    "languageCode": "en"
+  }, {
+    "value": "COPD",
+    "synonyms": [ "Chronic Obstructive Pulmonary Disease", "COPD" ],
+    "languageCode": "en"
+  }, {
+    "value": "Depression",
+    "synonyms": [ "Depressed", "Depression" ],
+    "languageCode": "en"
+  }, {
+    "value": "Diabetes",
+    "synonyms": [ "Blood sugar", "Diabetes" ],
+    "languageCode": "en"
+  }, {
+    "value": "Fall Prevention",
+    "synonyms": [ "Fall Prevention", "Falling", "Falls" ],
+    "languageCode": "en"
+  }, {
+    "value": "GERD",
+    "synonyms": [ "gastroesophageal reflux disease", "GERD" ],
+    "languageCode": "en"
+  }, {
+    "value": "Heart Disease",
+    "synonyms": [ "heart attack", "Heart Disease" ],
+    "languageCode": "en"
+  }, {
+    "value": "Heart Failure",
+    "synonyms": [ "heart attack", "Heart Failure" ],
+    "languageCode": "en"
+  }, {
+    "value": "Low Back Pain",
+    "synonyms": [ "Back Pain", "Low Back Pain" ],
+    "languageCode": "en"
+  }, {
+    "value": "Memory",
+    "synonyms": [ "Memory", "Dementia" ],
+    "languageCode": "en"
+  }, {
+    "value": "Menopause",
+    "synonyms": [ "Menopause", "Perimenopause" ],
+    "languageCode": "en"
+  }, {
+    "value": "Metabolic syndrome",
+    "synonyms": [ "Met syndrome", "Metabolic syndrome" ],
+    "languageCode": "en"
+  }, {
+    "value": "Migraine",
+    "synonyms": [ "Headache", "Migraine" ],
+    "languageCode": "en"
+  }, {
+    "value": "Nutrition",
+    "synonyms": [ "Diet", "Eat Better", "Eating", "Less sugar", "Nutrition" ],
+    "languageCode": "en"
+  }, {
+    "value": "Oncology",
+    "synonyms": [ "Cancer", "Oncology" ],
+    "languageCode": "en"
+  }, {
+    "value": "Oral Health",
+    "synonyms": [ "brushing", "brushing teeth", "cavity", "Dental", "flossing", "Oral", "Oral Health" ],
+    "languageCode": "en"
+  }, {
+    "value": "Physical Activity",
+    "synonyms": [ "Activity", "Exercise", "Movement", "Physical Activity", "Workout" ],
+    "languageCode": "en"
+  }, {
+    "value": "Post-pregnancy",
+    "synonyms": [ "Post partum", "Post-pregnancy", "Postpartum" ],
+    "languageCode": "en"
+  }, {
+    "value": "Pregnancy",
+    "synonyms": [ "Pregnancy", "Pregnant" ],
+    "languageCode": "en"
+  }, {
+    "value": "Prescription medications",
+    "synonyms": [ " Medication adherence", "Medication", "prescription drugs", "Prescription medications", "prescriptions" ],
+    "languageCode": "en"
+  }, {
+    "value": "Financial health",
+    "synonyms": [ "Finances", "Financial", "Financial health" ],
+    "languageCode": "en"
+  }, {
+    "value": "Sedentery",
+    "synonyms": [ "move more", "Sedentery" ],
+    "languageCode": "en"
+  }, {
+    "value": "Sleep",
+    "synonyms": [ "Sleep", "Sleepless", "Tired" ],
+    "languageCode": "en"
+  }, {
+    "value": "Social Isolation",
+    "synonyms": [ "Lonely", "Lonliness", "Social Isolation" ],
+    "languageCode": "en"
+  }, {
+    "value": "Stress",
+    "synonyms": [ "Stress" ],
+    "languageCode": "en"
+  }, {
+    "value": "Tobacco",
+    "synonyms": [ "chew", "cigars", "dip", "e-cig", "e-cigarette", "pipe", "smoke", "smoking", "Tobacco", "vape", "vape pen", "vaping" ],
+    "languageCode": "en"
+  }, {
+    "value": "Water Intake",
+    "synonyms": [ "Drink more water", "Hydration", "Water Intake" ],
+    "languageCode": "en"
+  }, {
+    "value": "Maintain Weight",
+    "synonyms": [ "Maintain healthy weight", "Maintain Weight" ],
+    "languageCode": "en"
+  }, {
+    "value": "Weight Management",
+    "synonyms": [ "BMI", "lose weight", "obese", "overweight", "Weight Management" ],
+    "languageCode": "en"
+  } ]
+}

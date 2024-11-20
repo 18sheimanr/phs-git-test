@@ -1,0 +1,44 @@
+{
+  "name": "d5850e79-f304-4146-9eac-7f9062a5d0f7",
+  "displayName": "Get Care All",
+  "transitionRoutes": [ {
+    "intent": "care.get-urgent",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "$flow.troubleshooting-state",
+        "value": "emergency-triggered"
+      } ],
+      "nextActionOverride": {
+      
+      }
+    },
+    "targetFlow": "Get Care Urgent",
+    "name": "1599b243-633f-4ecd-8398-1155c49a8664"
+  }, {
+    "intent": "care.get",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "$flow.troubleshooting-state",
+        "value": "emergency-triggered"
+      } ],
+      "nextActionOverride": {
+      
+      }
+    },
+    "targetFlow": "Get Care",
+    "name": "64ab16fb-16dc-4990-afeb-3bd1d02d8b12"
+  }, {
+    "intent": "care.get-urgent-bh",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "$flow.troubleshooting-state",
+        "value": "emergency-triggered"
+      } ],
+      "nextActionOverride": {
+      
+      }
+    },
+    "targetFlow": "Get Care Urgent BH",
+    "name": "748309b9-9e0f-4806-b1a7-3e9ee9bbe759"
+  } ]
+}

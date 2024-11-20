@@ -1,0 +1,7 @@
+{
+  "name": "08389151-c232-432f-9158-c8543eec65d8",
+  "displayName": "challenges.home",
+  "priority": 500000,
+  "description": "This intent will initially be triggered for both personal and corporate challenge requests.",
+  "numTrainingPhrases": 35
+}

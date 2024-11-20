@@ -1,0 +1,127 @@
+{
+  "name": "9a4ceb1e-865e-4004-9ada-a0ca12fff81c",
+  "displayName": "How Can You Help?",
+  "transitionRoutes": [ {
+    "condition": "$sys.func.RAND() \u003c 0.3333333",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I can help you find what you want on the portal. Here are a few suggestions!" ]
+        },
+        "languageCode": "en"
+      }, {
+        "payload": {
+          "richContent": [ [ {
+            "options": [ {
+              "text": "Self-guided programs"
+            }, {
+              "text": "Health content library"
+            }, {
+              "text": "Challenges"
+            } ],
+            "type": "chips"
+          } ] ]
+        },
+        "languageCode": "en"
+      } ],
+      "nextActionOverride": {
+      
+      }
+    },
+    "targetPage": "End Flow",
+    "name": "29c7a4a5-7692-483c-87de-8116b219c961"
+  }, {
+    "condition": "$sys.func.RAND() \u003c 0.55555555",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I am always learning new skills - right now I can provide links for lots of features, and also direct you to your plans site." ]
+        },
+        "languageCode": "en"
+      }, {
+        "payload": {
+          "richContent": [ [ {
+            "options": [ {
+              "text": "Question about my plan"
+            }, {
+              "text": "Connect a device"
+            }, {
+              "text": "Manual trackers"
+            } ],
+            "type": "chips"
+          } ] ]
+        },
+        "languageCode": "en"
+      } ],
+      "nextActionOverride": {
+      
+      }
+    },
+    "targetPage": "End Flow",
+    "name": "2cb90033-4842-412d-8007-82ebae256b89"
+  }, {
+    "condition": "true",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I am always learning, but right now I can direct you to most of the wellness services provided here. A few are suggested below!" ]
+        },
+        "languageCode": "en"
+      }, {
+        "payload": {
+          "richContent": [ [ {
+            "options": [ {
+              "text": "Health assessment"
+            }, {
+              "text": "Get dollars for steps"
+            }, {
+              "text": "In progress items"
+            } ],
+            "type": "chips"
+          } ] ]
+        },
+        "languageCode": "en"
+      } ],
+      "nextActionOverride": {
+      
+      }
+    },
+    "targetPage": "End Flow",
+    "name": "d0fb0e65-a502-4fce-a716-57dfc17a4a41"
+  } ],
+  "eventHandlers": [ {
+    "event": "sys.no-match-default",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I didn't get that. Can you say it again?", "I missed what you said. What was that?", "Sorry, could you say that again?", "Sorry, can you say that again?", "Can you say that again?", "Sorry, I didn't get that. Can you rephrase?", "Sorry, what was that?", "One more time?", "What was that?", "Say that one more time?", "I didn't get that. Can you repeat?", "I missed that, say that again?" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "19953c62-0a2b-4915-928a-ca968db62d8a"
+  }, {
+    "event": "sys.no-input-default",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I didn't get that. Can you say it again?", "I missed what you said. What was that?", "Sorry, could you say that again?", "Sorry, can you say that again?", "Can you say that again?", "Sorry, I didn't get that. Can you rephrase?", "Sorry, what was that?", "One more time?", "What was that?", "Say that one more time?", "I didn't get that. Can you repeat?", "I missed that, say that again?" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "52cf3d23-c430-4a14-b824-4aaa39c003ec"
+  } ],
+  "nluSettings": {
+    "modelType": "MODEL_TYPE_ADVANCED",
+    "classificationThreshold": 0.30000001,
+    "modelTrainingMode": "MODEL_TRAINING_MODE_MANUAL"
+  },
+  "nluSettingsList": [ {
+    "modelType": "MODEL_TYPE_ADVANCED",
+    "classificationThreshold": 0.30000001,
+    "modelTrainingMode": "MODEL_TRAINING_MODE_MANUAL",
+    "customConfigKey": "60f58207-8e29-4e8b-9644-806042dce5d8",
+    "languageCode": "en"
+  } ]
+}

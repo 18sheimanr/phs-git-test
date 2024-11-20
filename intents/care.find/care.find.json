@@ -1,0 +1,17 @@
+{
+  "name": "73c8dccf-7531-47c7-a693-5b7e6d0e5de8",
+  "displayName": "care.find",
+  "parameters": [ {
+    "id": "person",
+    "entityType": "@sys.person"
+  }, {
+    "id": "wellness-issue",
+    "entityType": "@wellness-issue"
+  }, {
+    "id": "wellness-issue1",
+    "entityType": "@wellness-issue"
+  } ],
+  "priority": 500000,
+  "description": "This will be triggered when the member is trying to locate a provider, schedule an appointment, or otherwise find care.",
+  "numTrainingPhrases": 43
+}

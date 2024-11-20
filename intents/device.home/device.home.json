@@ -1,0 +1,16 @@
+{
+  "name": "f3e1be94-fd6d-4952-ba13-e215c97a55c5",
+  "displayName": "device.home",
+  "parameters": [ {
+    "id": "person",
+    "entityType": "@sys.person"
+  }, {
+    "id": "currency-name",
+    "entityType": "@sys.currency-name"
+  }, {
+    "id": "device-type",
+    "entityType": "@device-type"
+  } ],
+  "priority": 500000,
+  "numTrainingPhrases": 38
+}

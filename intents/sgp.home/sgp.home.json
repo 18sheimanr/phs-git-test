@@ -1,0 +1,11 @@
+{
+  "name": "26b9d4af-1fbf-481d-bfce-369b2748551b",
+  "displayName": "sgp.home",
+  "parameters": [ {
+    "id": "wellness-issue",
+    "entityType": "@wellness-issue"
+  } ],
+  "priority": 500000,
+  "description": "This intent is triggered when a member makes a statement that indicates they would like help with a wellness issue that does not involve a human coach.",
+  "numTrainingPhrases": 34
+}

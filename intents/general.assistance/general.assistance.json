@@ -1,0 +1,7 @@
+{
+  "name": "1178de58-5532-418c-afd3-fd1c6efce28e",
+  "displayName": "general.assistance",
+  "priority": 500000,
+  "description": "This intent is triggered when a member asks the bot what it can help with or how it can help.",
+  "numTrainingPhrases": 20
+}

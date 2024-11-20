@@ -1,0 +1,8 @@
+{
+  "name": "38570066-3e5b-4cb1-b283-b8cd006fa312",
+  "displayName": "care.get",
+  "priority": 500000,
+  "description": "Get care that is less likely to be urgent in nature or does not have red flag symptoms.\n\nFresh upload 11/11/2024 (should not have changed phrases, only possible annotation or ordering, quoting)",
+  "skipAutoAnnotation": true,
+  "numTrainingPhrases": 57
+}

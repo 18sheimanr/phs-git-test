@@ -1,0 +1,26 @@
+{
+  "name": "55bdd0c0-74b8-4a43-b554-1ec1bb07f17e",
+  "displayName": "issue-request.general",
+  "parameters": [ {
+    "id": "number",
+    "entityType": "@sys.number"
+  }, {
+    "id": "date-time",
+    "entityType": "@sys.date-time"
+  }, {
+    "id": "date-period",
+    "entityType": "@sys.date-period"
+  }, {
+    "id": "wellness-issue",
+    "entityType": "@wellness-issue"
+  }, {
+    "id": "wellness-issue1",
+    "entityType": "@wellness-issue"
+  }, {
+    "id": "wellness-issue2",
+    "entityType": "@wellness-issue"
+  } ],
+  "priority": 500000,
+  "description": "This is when a member mentions or requests help with a wellness issue, but it is not clear if the member is requesting coaching or a self-guided experience. We will route to coaching if available, and if not then send to SGP home page.",
+  "numTrainingPhrases": 90
+}

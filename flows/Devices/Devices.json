@@ -1,0 +1,86 @@
+{
+  "name": "9d8a67fb-b600-4174-bd36-da104e520590",
+  "displayName": "Devices",
+  "transitionRoutes": [ {
+    "condition": "true",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Your wearable devices can be powerful tools for understanding your health. Let's work together to make the most of them. We're here to guide you every step of the way." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "You can find out how to connect your devices here:" ]
+        },
+        "languageCode": "en"
+      }, {
+        "payload": {
+          "richContent": [ [ {
+            "anchor": {
+              "href": "https://member.onlifehealth.com/BioDevices/Introduction"
+            },
+            "text": "Device Management",
+            "type": "button"
+          }, {
+            "event": {
+              "event": "Troubleshooting"
+            },
+            "text": "Device Troubleshooting",
+            "type": "button"
+          } ] ]
+        },
+        "languageCode": "en"
+      } ],
+      "nextActionOverride": {
+      
+      }
+    },
+    "targetPage": "End Flow",
+    "name": "e5d08a78-de1c-40b0-adef-0415ce47be83"
+  } ],
+  "eventHandlers": [ {
+    "event": "sys.no-match-default",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I didn't get that. Can you say it again?", "I missed what you said. What was that?", "Sorry, could you say that again?", "Sorry, can you say that again?", "Can you say that again?", "Sorry, I didn't get that. Can you rephrase?", "Sorry, what was that?", "One more time?", "What was that?", "Say that one more time?", "I didn't get that. Can you repeat?", "I missed that, say that again?" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "e1126db2-7105-4d10-b293-8ac1d4edeae8"
+  }, {
+    "event": "sys.no-input-default",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I didn't get that. Can you say it again?", "I missed what you said. What was that?", "Sorry, could you say that again?", "Sorry, can you say that again?", "Can you say that again?", "Sorry, I didn't get that. Can you rephrase?", "Sorry, what was that?", "One more time?", "What was that?", "Say that one more time?", "I didn't get that. Can you repeat?", "I missed that, say that again?" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "b3b9df7b-e7ce-455f-bb45-06f4b6e2b588"
+  } ],
+  "nluSettings": {
+    "modelType": "MODEL_TYPE_ADVANCED",
+    "classificationThreshold": 0.30000001,
+    "modelTrainingMode": "MODEL_TRAINING_MODE_MANUAL",
+    "multiIntentSettings": {
+    
+    }
+  },
+  "advancedSettings": {
+    "enabled": true
+  },
+  "nluSettingsList": [ {
+    "modelType": "MODEL_TYPE_ADVANCED",
+    "classificationThreshold": 0.30000001,
+    "modelTrainingMode": "MODEL_TRAINING_MODE_MANUAL",
+    "customConfigKey": "3e6c8436-d941-4f08-81a3-03c8eeeb0afe",
+    "multiIntentSettings": {
+    
+    },
+    "languageCode": "en"
+  } ]
+}

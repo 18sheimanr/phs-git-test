@@ -1,0 +1,156 @@
+{
+  "name": "49f45e5c-f1c9-4f9c-9fb7-7ca93901224e",
+  "displayName": "How can you help \u0026 you're welcome",
+  "notes": "Test how can you help me and you're welcome intent two ways",
+  "testCaseConversationTurns": [ {
+    "userInput": {
+      "injectedParameters": {
+        "$session.params.member.firstName": "Susan",
+        "$session.params.planContactNumber": "1-800-555-PLAN",
+        "$session.params.programComponents.coaching.eligible": false,
+        "$session.params.state.session.timeSinceLastSession": 100,
+        "$session.params.tenant.planUrl": "www.myhealthplan.com",
+        "$session.params.tenant.wellnessContactNumber": "800-555-WELL"
+      },
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "hey"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "sessionParameters": {
+        "$session.params.member.firstName": "Susan",
+        "$session.params.planContactNumber": "1-800-555-PLAN",
+        "$session.params.programComponents.coaching.eligible": false,
+        "$session.params.state.session.timeSinceLastSession": 100,
+        "$session.params.tenant.planUrl": "www.myhealthplan.com",
+        "$session.params.tenant.wellnessContactNumber": "800-555-WELL"
+      },
+      "triggeredIntent": {
+        "name": "default.welcome"
+      },
+      "currentPage": {
+        "name": "Start Page",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "Welcome back, Susan! It's great to hear from you again. What can I help you with today to get you feeling your best?" ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "what can you do?"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "general.assistance"
+      },
+      "currentPage": {
+        "name": "Start Page",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "I am always learning, but right now I can direct you to most of the wellness services provided here. A few are suggested below!" ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "what else?"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "general.assistance"
+      },
+      "currentPage": {
+        "name": "Start Page",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "I can help you find what you want on the portal. Here are a few suggestions!" ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "thank you!"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "thank-you"
+      },
+      "currentPage": {
+        "name": "Start Page",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "You're welcome! Let me know if there is anything else I can help you with today." ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "that's all thanks"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "thank-you"
+      },
+      "currentPage": {
+        "name": "Start Page",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "You're welcome! Let me know if there is anything else I can help you with today." ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  } ],
+  "creationTime": {
+    "seconds": 1724700365,
+    "nanos": 613516000
+  },
+  "testConfig": {
+    "flow": "Default Start Flow",
+    "page": "Start Page"
+  },
+  "languageCode": "en"
+}

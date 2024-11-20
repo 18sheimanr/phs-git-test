@@ -1,0 +1,48 @@
+{
+  "defaultLanguageCode": "en",
+  "timeZone": "America/New_York",
+  "enableLogging": true,
+  "projectNumber": 170713538326,
+  "speechToTextSettings": {
+  
+  },
+  "startFlow": "Default Start Flow",
+  "enableStackdriverLogging": true,
+  "enableSpellCorrection": true,
+  "advancedSettings": {
+    "audioExportGcsDestination": {
+    
+    },
+    "speechSettings": {
+      "endpointerSensitivity": 90,
+      "noSpeechTimeout": {
+        "seconds": 5
+      }
+    },
+    "playbackInterruptionSettings": {
+    
+    },
+    "loggingSettings": {
+      "enableStackdriverLogging": true,
+      "enableInteractionLogging": true
+    }
+  },
+  "speakerIdSettings": {
+  
+  },
+  "textToSpeechSettings": {
+  
+  },
+  "genAppBuilderSettings": {
+    "engine": "projects/170713538326/locations/us/collections/default_collection/engines/a2518f06-1fae-4a3d-84f2-f712a7caa6ff-engine-1731697920"
+  },
+  "duplexSettings": {
+  
+  },
+  "answerFeedbackSettings": {
+  
+  },
+  "webClientSettings": {
+    "boxBorderRadius": "0"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "name": "7bdd529b-1e67-47cd-986f-fe6d4b667550",
+  "displayName": "thank-you",
+  "priority": 500000,
+  "description": "Triggered when a member thanks the bot",
+  "numTrainingPhrases": 16
+}

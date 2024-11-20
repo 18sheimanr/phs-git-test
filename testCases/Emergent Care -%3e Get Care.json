@@ -1,0 +1,451 @@
+{
+  "name": "31d8bcb4-4202-458e-bd04-8fb7a08c45ca",
+  "displayName": "Emergent Care -\u003e Get Care",
+  "testCaseConversationTurns": [ {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "hello"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "differences": [ {
+        "type": "PAGE",
+        "description": "Page mismatch:\nExpected: \nActual:   Start Page",
+        "assertionType": "EQUAL",
+        "expectedValue": "",
+        "actualValue": "Start Page"
+      }, {
+        "type": "INTENT",
+        "description": "Intent mismatch:\nExpected: \nActual:   default.welcome",
+        "assertionType": "EQUAL",
+        "expectedValue": "",
+        "actualValue": "default.welcome"
+      }, {
+        "type": "UTTERANCE",
+        "description": "Agent response mismatch",
+        "warning": true,
+        "assertionType": "EQUAL",
+        "expectedValue": "",
+        "actualValue": "Hello $session.params.member.firstName, we’re so glad you’re here! I'm Spark, your AI care companion from $session.params.tenant.programName, I’m here to listen and support you along your wellness journey.Is there anything specific you'd like to focus on today? If not, feel free to check out some options below"
+      } ],
+      "triggeredIntent": {
+        "name": "default.welcome"
+      },
+      "currentPage": {
+        "name": "Start Page",
+        "flow": "Intent Flow"
+      },
+      "textResponses": [ {
+        "text": [ "Hello $session.params.member.firstName, we’re so glad you’re here! I'm Spark, your AI care companion from $session.params.tenant.programName, I’m here to listen and support you along your wellness journey." ]
+      }, {
+        "text": [ "Is there anything specific you'd like to focus on today? If not, feel free to check out some options below" ]
+      } ],
+      "currentFlow": {
+        "name": "Intent Flow"
+      },
+      "actions": [ {
+        "userUtterance": {
+          "text": "hello"
+        }
+      }, {
+        "agentUtterance": {
+          "text": "Hello $session.params.member.firstName, we’re so glad you’re here! I'm Spark, your AI care companion from $session.params.tenant.programName, I’m here to listen and support you along your wellness journey.\nIs there anything specific you'd like to focus on today? If not, feel free to check out some options below"
+        }
+      } ]
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "I might hurt myself"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "differences": [ {
+        "type": "PAGE",
+        "description": "Page mismatch:\nExpected: \nActual:   Start Page",
+        "assertionType": "EQUAL",
+        "expectedValue": "",
+        "actualValue": "Start Page"
+      }, {
+        "type": "INTENT",
+        "description": "Intent mismatch:\nExpected: \nActual:   care.get-urgent-bh",
+        "assertionType": "EQUAL",
+        "expectedValue": "",
+        "actualValue": "care.get-urgent-bh"
+      }, {
+        "type": "UTTERANCE",
+        "description": "Agent response mismatch",
+        "warning": true,
+        "assertionType": "EQUAL",
+        "expectedValue": "",
+        "actualValue": "This could be an emergency. If you are having thoughts of suicide please call 988. If this is another type of emergency please dial 911."
+      } ],
+      "triggeredIntent": {
+        "name": "care.get-urgent-bh"
+      },
+      "currentPage": {
+        "name": "Start Page",
+        "flow": "Intent Flow"
+      },
+      "textResponses": [ {
+        "text": [ "This could be an emergency. If you are having thoughts of suicide please call 988. If this is another type of emergency please dial 911." ]
+      } ],
+      "currentFlow": {
+        "name": "Intent Flow"
+      },
+      "actions": [ {
+        "userUtterance": {
+          "text": "I might hurt myself"
+        }
+      }, {
+        "agentUtterance": {
+          "text": "This could be an emergency. If you are having thoughts of suicide please call 988. If this is another type of emergency please dial 911."
+        }
+      } ]
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "going to kill myself"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "differences": [ {
+        "type": "PAGE",
+        "description": "Page mismatch:\nExpected: \nActual:   Start Page",
+        "assertionType": "EQUAL",
+        "expectedValue": "",
+        "actualValue": "Start Page"
+      }, {
+        "type": "INTENT",
+        "description": "Intent mismatch:\nExpected: \nActual:   care.get-urgent-bh",
+        "assertionType": "EQUAL",
+        "expectedValue": "",
+        "actualValue": "care.get-urgent-bh"
+      }, {
+        "type": "UTTERANCE",
+        "description": "Agent response mismatch",
+        "warning": true,
+        "assertionType": "EQUAL",
+        "expectedValue": "",
+        "actualValue": "This could be an emergency. If you are having thoughts of suicide please call 988. If this is another type of emergency please dial 911."
+      } ],
+      "triggeredIntent": {
+        "name": "care.get-urgent-bh"
+      },
+      "currentPage": {
+        "name": "Start Page",
+        "flow": "Intent Flow"
+      },
+      "textResponses": [ {
+        "text": [ "This could be an emergency. If you are having thoughts of suicide please call 988. If this is another type of emergency please dial 911." ]
+      } ],
+      "currentFlow": {
+        "name": "Intent Flow"
+      },
+      "actions": [ {
+        "userUtterance": {
+          "text": "going to kill myself"
+        }
+      }, {
+        "agentUtterance": {
+          "text": "This could be an emergency. If you are having thoughts of suicide please call 988. If this is another type of emergency please dial 911."
+        }
+      } ]
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "I have a plan to kill myself"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "differences": [ {
+        "type": "PAGE",
+        "description": "Page mismatch:\nExpected: \nActual:   Start Page",
+        "assertionType": "EQUAL",
+        "expectedValue": "",
+        "actualValue": "Start Page"
+      }, {
+        "type": "INTENT",
+        "description": "Intent mismatch:\nExpected: \nActual:   care.get-urgent-bh",
+        "assertionType": "EQUAL",
+        "expectedValue": "",
+        "actualValue": "care.get-urgent-bh"
+      }, {
+        "type": "UTTERANCE",
+        "description": "Agent response mismatch",
+        "warning": true,
+        "assertionType": "EQUAL",
+        "expectedValue": "",
+        "actualValue": "This could be an emergency. If you are having thoughts of suicide please call 988. If this is another type of emergency please dial 911."
+      } ],
+      "triggeredIntent": {
+        "name": "care.get-urgent-bh"
+      },
+      "currentPage": {
+        "name": "Start Page",
+        "flow": "Intent Flow"
+      },
+      "textResponses": [ {
+        "text": [ "This could be an emergency. If you are having thoughts of suicide please call 988. If this is another type of emergency please dial 911." ]
+      } ],
+      "currentFlow": {
+        "name": "Intent Flow"
+      },
+      "actions": [ {
+        "userUtterance": {
+          "text": "I have a plan to kill myself"
+        }
+      }, {
+        "agentUtterance": {
+          "text": "This could be an emergency. If you are having thoughts of suicide please call 988. If this is another type of emergency please dial 911."
+        }
+      } ]
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "I am thinking of self harm"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "differences": [ {
+        "type": "PAGE",
+        "description": "Page mismatch:\nExpected: \nActual:   Start Page",
+        "assertionType": "EQUAL",
+        "expectedValue": "",
+        "actualValue": "Start Page"
+      }, {
+        "type": "INTENT",
+        "description": "Intent mismatch:\nExpected: \nActual:   care.get-urgent-bh",
+        "assertionType": "EQUAL",
+        "expectedValue": "",
+        "actualValue": "care.get-urgent-bh"
+      }, {
+        "type": "UTTERANCE",
+        "description": "Agent response mismatch",
+        "warning": true,
+        "assertionType": "EQUAL",
+        "expectedValue": "",
+        "actualValue": "This could be an emergency. If you are having thoughts of suicide please call 988. If this is another type of emergency please dial 911."
+      } ],
+      "triggeredIntent": {
+        "name": "care.get-urgent-bh"
+      },
+      "currentPage": {
+        "name": "Start Page",
+        "flow": "Intent Flow"
+      },
+      "textResponses": [ {
+        "text": [ "This could be an emergency. If you are having thoughts of suicide please call 988. If this is another type of emergency please dial 911." ]
+      } ],
+      "currentFlow": {
+        "name": "Intent Flow"
+      },
+      "actions": [ {
+        "userUtterance": {
+          "text": "I am thinking of self harm"
+        }
+      }, {
+        "agentUtterance": {
+          "text": "This could be an emergency. If you are having thoughts of suicide please call 988. If this is another type of emergency please dial 911."
+        }
+      } ]
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "this is an emergency"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "differences": [ {
+        "type": "PAGE",
+        "description": "Page mismatch:\nExpected: \nActual:   Start Page",
+        "assertionType": "EQUAL",
+        "expectedValue": "",
+        "actualValue": "Start Page"
+      }, {
+        "type": "INTENT",
+        "description": "Intent mismatch:\nExpected: \nActual:   care.get-urgent",
+        "assertionType": "EQUAL",
+        "expectedValue": "",
+        "actualValue": "care.get-urgent"
+      }, {
+        "type": "UTTERANCE",
+        "description": "Agent response mismatch",
+        "warning": true,
+        "assertionType": "EQUAL",
+        "expectedValue": "",
+        "actualValue": "This could be an emergency situation - please call 911 if you need immediate help."
+      } ],
+      "triggeredIntent": {
+        "name": "care.get-urgent"
+      },
+      "currentPage": {
+        "name": "Start Page",
+        "flow": "Intent Flow"
+      },
+      "textResponses": [ {
+        "text": [ "This could be an emergency situation - please call 911 if you need immediate help." ]
+      } ],
+      "currentFlow": {
+        "name": "Intent Flow"
+      },
+      "actions": [ {
+        "userUtterance": {
+          "text": "this is an emergency"
+        }
+      }, {
+        "agentUtterance": {
+          "text": "This could be an emergency situation - please call 911 if you need immediate help."
+        }
+      } ]
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "medical emergency"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "differences": [ {
+        "type": "PAGE",
+        "description": "Page mismatch:\nExpected: \nActual:   Start Page",
+        "assertionType": "EQUAL",
+        "expectedValue": "",
+        "actualValue": "Start Page"
+      }, {
+        "type": "INTENT",
+        "description": "Intent mismatch:\nExpected: \nActual:   care.get-urgent",
+        "assertionType": "EQUAL",
+        "expectedValue": "",
+        "actualValue": "care.get-urgent"
+      }, {
+        "type": "UTTERANCE",
+        "description": "Agent response mismatch",
+        "warning": true,
+        "assertionType": "EQUAL",
+        "expectedValue": "",
+        "actualValue": "This could be an emergency situation - please call 911 if you need immediate help."
+      } ],
+      "triggeredIntent": {
+        "name": "care.get-urgent"
+      },
+      "currentPage": {
+        "name": "Start Page",
+        "flow": "Intent Flow"
+      },
+      "textResponses": [ {
+        "text": [ "This could be an emergency situation - please call 911 if you need immediate help." ]
+      } ],
+      "currentFlow": {
+        "name": "Intent Flow"
+      },
+      "actions": [ {
+        "userUtterance": {
+          "text": "medical emergency"
+        }
+      }, {
+        "agentUtterance": {
+          "text": "This could be an emergency situation - please call 911 if you need immediate help."
+        }
+      } ]
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "I think I'm having a heart attack"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "sessionParameters": {
+        "wellness-issue": "Heart Failure"
+      },
+      "differences": [ {
+        "type": "PAGE",
+        "description": "Page mismatch:\nExpected: \nActual:   Start Page",
+        "assertionType": "EQUAL",
+        "expectedValue": "",
+        "actualValue": "Start Page"
+      }, {
+        "type": "INTENT",
+        "description": "Intent mismatch:\nExpected: \nActual:   care.get-urgent",
+        "assertionType": "EQUAL",
+        "expectedValue": "",
+        "actualValue": "care.get-urgent"
+      }, {
+        "type": "UTTERANCE",
+        "description": "Agent response mismatch",
+        "warning": true,
+        "assertionType": "EQUAL",
+        "expectedValue": "",
+        "actualValue": "This could be an emergency situation - please call 911 if you need immediate help."
+      } ],
+      "triggeredIntent": {
+        "name": "care.get-urgent"
+      },
+      "currentPage": {
+        "name": "Start Page",
+        "flow": "Intent Flow"
+      },
+      "textResponses": [ {
+        "text": [ "This could be an emergency situation - please call 911 if you need immediate help." ]
+      } ],
+      "currentFlow": {
+        "name": "Intent Flow"
+      },
+      "actions": [ {
+        "userUtterance": {
+          "text": "I think I'm having a heart attack"
+        }
+      }, {
+        "agentUtterance": {
+          "text": "This could be an emergency situation - please call 911 if you need immediate help."
+        }
+      } ]
+    }
+  } ],
+  "creationTime": {
+    "seconds": 1724765614,
+    "nanos": 192586000
+  },
+  "testConfig": {
+    "flow": "Default Start Flow",
+    "page": "Start Page"
+  },
+  "languageCode": "en"
+}

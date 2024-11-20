@@ -1,0 +1,190 @@
+{
+  "name": "2d1350a5-b6d9-4a9c-8028-6509a56f9b81",
+  "displayName": "Troubleshooting \"other\" \"cancel\" and emergency routing logic",
+  "notes": "Make sure emergency intent match leads back to intent flow / exits troubleshooting. Also make sure \"other\" doesn't initial troubleshooting message.",
+  "testCaseConversationTurns": [ {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "hi"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "default.welcome"
+      },
+      "currentPage": {
+        "name": "Start Page",
+        "flow": "Intent Flow"
+      },
+      "textResponses": [ {
+        "text": [ "Hello $session.params.member.firstName, we’re so glad you’re here! I'm Spark, your AI care companion from $session.params.tenant.programName, I’m here to listen and support you along your wellness journey." ]
+      }, {
+        "text": [ "Is there anything specific you'd like to focus on today? If not, feel free to check out some options below" ]
+      } ],
+      "currentFlow": {
+        "name": "Intent Flow"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "i need help troubleshooting"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "troubleshooting"
+      },
+      "currentPage": {
+        "name": "Start Page",
+        "flow": "Troubleshooting"
+      },
+      "textResponses": [ {
+        "text": [ "I can help with that. Can you describe the issue to me?" ]
+      }, {
+        "text": [ "Here are some common issues:" ]
+      } ],
+      "currentFlow": {
+        "name": "Troubleshooting"
+      }
+    },
+    "expectations": {
+      "expectedSessionParameters": [ {
+        "key": "$flow.troubleshooting-state",
+        "value": "initialized"
+      } ]
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "other"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "troubleshooting.other"
+      },
+      "currentPage": {
+        "name": "Start Page",
+        "flow": "Troubleshooting"
+      },
+      "textResponses": [ {
+        "text": [ "Pleases describe the issue(s) you are experiencing" ]
+      } ],
+      "currentFlow": {
+        "name": "Troubleshooting"
+      }
+    },
+    "expectations": {
+      "expectedSessionParameters": [ {
+        "key": "$flow.troubleshooting-state",
+        "value": "initialized"
+      } ]
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "i am going to hurt myself"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "care.get-urgent-bh"
+      },
+      "currentPage": {
+        "name": "Start Page",
+        "flow": "Intent Flow"
+      },
+      "textResponses": [ {
+        "text": [ "This could be an emergency. If you are having thoughts of suicide please call 988. If this is another type of emergency please dial 911." ]
+      } ],
+      "currentFlow": {
+        "name": "Intent Flow"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "troubleshooting"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "troubleshooting"
+      },
+      "currentPage": {
+        "name": "Start Page",
+        "flow": "Troubleshooting"
+      },
+      "textResponses": [ {
+        "text": [ "I can help with that. Can you describe the issue to me?" ]
+      }, {
+        "text": [ "Here are some common issues:" ]
+      } ],
+      "currentFlow": {
+        "name": "Troubleshooting"
+      }
+    },
+    "expectations": {
+      "expectedSessionParameters": [ {
+        "key": "$flow.troubleshooting-state",
+        "value": "initialized"
+      } ]
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "cancel"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "troubleshooting.cancel"
+      },
+      "currentPage": {
+        "name": "Start Page",
+        "flow": "Intent Flow"
+      },
+      "textResponses": [ {
+        "text": [ "Okay, if you need to describe a problem just say \"troubleshooting\". Is there anything else I can help you with?" ]
+      } ],
+      "currentFlow": {
+        "name": "Intent Flow"
+      }
+    }
+  } ],
+  "creationTime": {
+    "seconds": 1728590206,
+    "nanos": 890738000
+  },
+  "testConfig": {
+    "trackingParameters": [ "$flow.troubleshooting-state" ],
+    "flow": "Default Start Flow",
+    "page": "Start Page"
+  },
+  "languageCode": "en"
+}

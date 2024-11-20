@@ -1,0 +1,179 @@
+{
+  "name": "2ce3a77b-b696-4e67-ad17-1c9009b2d942",
+  "displayName": "Coaching Eligible - SGP and Coaching intents",
+  "notes": "Tests that general issue request is routed to coaching in addition to specific coaching request. Request directly for self-guided program is tested as well as other routes in between to test reset/continuation",
+  "testCaseConversationTurns": [ {
+    "userInput": {
+      "injectedParameters": {
+        "$session.params.member.firstName": "Susan",
+        "$session.params.programComponents.coaching.eligible": true,
+        "$session.params.state.session.timeSinceLastSession": 100,
+        "$session.params.tenant.programName": "Well onTarget"
+      },
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "hi"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "sessionParameters": {
+        "$session.params.member.firstName": "Susan",
+        "$session.params.programComponents.coaching.eligible": true,
+        "$session.params.state.session.timeSinceLastSession": 100,
+        "$session.params.tenant.programName": "Well onTarget"
+      },
+      "triggeredIntent": {
+        "name": "default.welcome"
+      },
+      "currentPage": {
+        "name": "Start Page",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "Welcome back Susan.\n\nWhat can I help you with today?" ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "health coaching"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "coaching.home"
+      },
+      "currentPage": {
+        "name": "Start Page",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "If you'd like to work with a coach to improve your wellness you can click the link below to get started, or continue working towards a goal you've already set.\n\nhttps:/member.onlifehealth.com/Goal/LearnMore" ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "do a challenge"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "challenges.home"
+      },
+      "currentPage": {
+        "name": "Start Page",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "If you would like to complete a health or wellness challenge, click the link below.\n\nhttps://member.onlifehealth.com/challenge" ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "weight loss help"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "issue-request.general"
+      },
+      "currentPage": {
+        "name": "Start Page",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "If you'd like to work with a coach to improve your wellness you can click the link below to get started, or continue working towards a goal you've already set.\n\nhttps:/member.onlifehealth.com/Goal/LearnMore" ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "work on a self guided weight loss program"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "sgp.home"
+      },
+      "currentPage": {
+        "name": "Start Page",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "You have access to a wide variety of self-guided programs. You can start or continue a program at the link below.\n\nhttps:/member.onlifehealth.com/GuidedProgram" ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "take my HA"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "health-assessment"
+      },
+      "currentPage": {
+        "name": "Start Page",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "If you would like to take your health assessment, click below to navigate there. \n\n\nhttps://member.onlifehealth.com/HealthAssessment" ],
+        "containAiGeneratedContent": true,
+        "containGeneratorsContent": true
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  } ],
+  "creationTime": {
+    "seconds": 1722544837,
+    "nanos": 946641000
+  },
+  "testConfig": {
+    "flow": "Default Start Flow",
+    "page": "Start Page"
+  },
+  "languageCode": "en"
+}

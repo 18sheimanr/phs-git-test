@@ -1,0 +1,8 @@
+{
+  "name": "b4e32219-b8b0-47a5-a53a-d596116562d6",
+  "displayName": "Welcome Message Completed Page",
+  "form": {
+  
+  },
+  "description": "Display welcome message for a member that has never logged in or has not logged in in the past (3?) months."
+}

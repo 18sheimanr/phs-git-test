@@ -1,0 +1,606 @@
+{
+  "name": "75568e3a-1790-4fa7-b325-94c43c07ed75",
+  "displayName": "FAQ + Troubleshooting Intent",
+  "notes": "Test some direct to FAQ, and via troubleshooting intent plus troubleshooting cancellation",
+  "testCaseConversationTurns": [ {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "hello there"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "default.welcome"
+      },
+      "currentPage": {
+        "name": "Start Page",
+        "flow": "Intent Flow"
+      },
+      "textResponses": [ {
+        "text": [ "Hello $session.params.member.firstName, we’re so glad you’re here! I'm Spark, your AI care companion from $session.params.tenant.programName, I’m here to listen and support you along your wellness journey." ]
+      }, {
+        "text": [ "Is there anything specific you'd like to focus on today? If not, feel free to check out some options below" ]
+      }, {
+        "text": [ "Hello, how can I assist you today?" ]
+      } ],
+      "currentFlow": {
+        "name": "Intent Flow"
+      },
+      "actions": [ {
+        "userUtterance": {
+          "text": "hello there"
+        }
+      }, {
+        "agentUtterance": {
+          "text": "Hello $session.params.member.firstName, we’re so glad you’re here! I'm Spark, your AI care companion from $session.params.tenant.programName, I’m here to listen and support you along your wellness journey.\nIs there anything specific you'd like to focus on today? If not, feel free to check out some options below\nHello, how can I assist you today?"
+        }
+      } ]
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "I need help"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "care.get-urgent"
+      },
+      "currentPage": {
+        "name": "Start Page",
+        "flow": "Intent Flow"
+      },
+      "textResponses": [ {
+        "text": [ "This could be an emergency situation - please call 911 if you need immediate help." ]
+      } ],
+      "currentFlow": {
+        "name": "Intent Flow"
+      },
+      "actions": [ {
+        "userUtterance": {
+          "text": "I need help"
+        }
+      }, {
+        "agentUtterance": {
+          "text": "This could be an emergency situation - please call 911 if you need immediate help."
+        }
+      } ]
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "I need help with the app"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "sessionParameters": {
+        "$flow.troubleshooting-state": "initialized"
+      },
+      "triggeredIntent": {
+        "name": "troubleshooting"
+      },
+      "currentPage": {
+        "name": "Start Page",
+        "flow": "Troubleshooting"
+      },
+      "textResponses": [ {
+        "text": [ "I can help with that. Can you describe the issue to me?" ]
+      }, {
+        "text": [ "Here are some common issues:" ]
+      } ],
+      "currentFlow": {
+        "name": "Troubleshooting"
+      },
+      "actions": [ {
+        "userUtterance": {
+          "text": "I need help with the app"
+        }
+      }, {
+        "agentUtterance": {
+          "text": "I can help with that. Can you describe the issue to me?\nHere are some common issues:"
+        }
+      } ]
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "nevermind"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "troubleshooting.cancel"
+      },
+      "currentPage": {
+        "name": "Start Page",
+        "flow": "Intent Flow"
+      },
+      "textResponses": [ {
+        "text": [ "Okay, if you need to describe a problem just say \"troubleshooting\". Is there anything else I can help you with?" ]
+      } ],
+      "currentFlow": {
+        "name": "Intent Flow"
+      },
+      "actions": [ {
+        "userUtterance": {
+          "text": "nevermind"
+        }
+      }, {
+        "agentUtterance": {
+          "text": "Okay, if you need to describe a problem just say \"troubleshooting\". Is there anything else I can help you with?"
+        }
+      } ]
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "I need help connecting my fitbit"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "sessionParameters": {
+        "device-type": "Fitbit"
+      },
+      "triggeredIntent": {
+        "name": "device.home"
+      },
+      "currentPage": {
+        "name": "Start Page",
+        "flow": "Intent Flow"
+      },
+      "textResponses": [ {
+        "text": [ "Your wearable devices can be powerful tools for understanding your health. Let's work together to make the most of them. We're here to guide you every step of the way." ]
+      }, {
+        "text": [ "You can find out how to connect your devices here:" ]
+      } ],
+      "currentFlow": {
+        "name": "Intent Flow"
+      },
+      "actions": [ {
+        "userUtterance": {
+          "text": "I need help connecting my fitbit"
+        }
+      }, {
+        "agentUtterance": {
+          "text": "Your wearable devices can be powerful tools for understanding your health. Let's work together to make the most of them. We're here to guide you every step of the way.\nYou can find out how to connect your devices here:"
+        }
+      } ]
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "but that isn't working"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "sessionParameters": {
+        "$flow.troubleshooting-state": "initialized",
+        "device-type": "Fitbit"
+      },
+      "triggeredIntent": {
+        "name": "troubleshooting"
+      },
+      "currentPage": {
+        "name": "Start Page",
+        "flow": "Troubleshooting"
+      },
+      "textResponses": [ {
+        "text": [ "I can help with that. Can you describe the issue to me?" ]
+      }, {
+        "text": [ "Here are some common issues:" ]
+      } ],
+      "currentFlow": {
+        "name": "Troubleshooting"
+      },
+      "actions": [ {
+        "userUtterance": {
+          "text": "but that isn't working"
+        }
+      }, {
+        "agentUtterance": {
+          "text": "I can help with that. Can you describe the issue to me?\nHere are some common issues:"
+        }
+      } ]
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "my apple watch has stopped showing steps on the app"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "sessionParameters": {
+        "device-type": "Fitbit"
+      },
+      "currentPage": {
+        "name": "Start Page",
+        "flow": "Intent Flow"
+      },
+      "textResponses": [ {
+        "text": [ "I am sorry to hear your device is not tracking your activity. I can walk you through a resyncing procedure. First make sure your phone is operating on the most up to date IOS software. Then delete and reinstall the Always On app. When prompted to sync your basic information with Apple Health, click Yes. Follow the prompts to connect Apple Health. When prompted, turn on all categories, otherwise your device will not properly connect. \n \nOnce connected, click More, located at the bottom right of your screen, then click FAQs, then General. Scroll to the bottom of the page, then click \"Can I load my historical data from Apple Health into my Always On app?\" Click Sync Now. This will backlog six months of data. Please allow 24-48 hours for the data to show on your account. If your steps are not showing after 48 hours, please let me know. Keep in mind, Apple Health connects directly with Always On so you will need to open the app at least once a week to show you are active. Please let me know if you have further questions. " ],
+        "containDataStoreFaqContent": true,
+        "containAttemptedDataStoreInteractions": true
+      } ],
+      "currentFlow": {
+        "name": "Intent Flow"
+      },
+      "actions": [ {
+        "userUtterance": {
+          "text": "my apple watch has stopped showing steps on the app"
+        }
+      }, {
+        "agentUtterance": {
+          "text": "I am sorry to hear your device is not tracking your activity. I can walk you through a resyncing procedure. First make sure your phone is operating on the most up to date IOS software. Then delete and reinstall the Always On app. When prompted to sync your basic information with Apple Health, click Yes. Follow the prompts to connect Apple Health. When prompted, turn on all categories, otherwise your device will not properly connect. \n \nOnce connected, click More, located at the bottom right of your screen, then click FAQs, then General. Scroll to the bottom of the page, then click \"Can I load my historical data from Apple Health into my Always On app?\" Click Sync Now. This will backlog six months of data. Please allow 24-48 hours for the data to show on your account. If your steps are not showing after 48 hours, please let me know. Keep in mind, Apple Health connects directly with Always On so you will need to open the app at least once a week to show you are active. Please let me know if you have further questions. "
+        }
+      } ]
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "how do I connect my samsung health app?"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "sessionParameters": {
+        "device-type": "Fitbit"
+      },
+      "currentPage": {
+        "name": "Start Page",
+        "flow": "Intent Flow"
+      },
+      "textResponses": [ {
+        "text": [ "Thank you for reaching out. You need to add our mobile app to your phone to add your Samsung Health. Please follow these steps:   \nStep 1: Download our mobile app through the app store.                                                           \nStep 2: Click \"New User Registration\"                                                                                              \nStep 3: Enter your first name, last name, date of birth, and zip code. Click the \"Verify' button.                                                                                                                                            \nStep 4: Enter the Subscriber ID (without alpha prefix) and Group Number. Click the \"Verify\" button. If the Group number is less than 6 characters long, enter zeros proceeding the Group Number. (Example: Group Number is 4321, enter it as: 004321) You will receive a prompt to call if you cannot be identified with your Subscriber ID and Group Number. \nStep 5: Create a Username and password. Enter your mobile number and email address. Check \"Yes, I accept the terms and conditions.\" Click \"Register.\" \nStep 6: Create and confirm the PIN number. \nAfter you have signed in, it will ask if you would like to add your Samsung Health. When prompted, allow all permissions; otherwise, the device will not connect properly. To show activity with the app, be sure to log in at least once a week." ],
+        "containDataStoreFaqContent": true,
+        "containAttemptedDataStoreInteractions": true
+      } ],
+      "currentFlow": {
+        "name": "Intent Flow"
+      },
+      "actions": [ {
+        "userUtterance": {
+          "text": "how do I connect my samsung health app?"
+        }
+      }, {
+        "agentUtterance": {
+          "text": "Thank you for reaching out. You need to add our mobile app to your phone to add your Samsung Health. Please follow these steps:   \nStep 1: Download our mobile app through the app store.                                                           \nStep 2: Click \"New User Registration\"                                                                                              \nStep 3: Enter your first name, last name, date of birth, and zip code. Click the \"Verify' button.                                                                                                                                            \nStep 4: Enter the Subscriber ID (without alpha prefix) and Group Number. Click the \"Verify\" button. If the Group number is less than 6 characters long, enter zeros proceeding the Group Number. (Example: Group Number is 4321, enter it as: 004321) You will receive a prompt to call if you cannot be identified with your Subscriber ID and Group Number. \nStep 5: Create a Username and password. Enter your mobile number and email address. Check \"Yes, I accept the terms and conditions.\" Click \"Register.\" \nStep 6: Create and confirm the PIN number. \nAfter you have signed in, it will ask if you would like to add your Samsung Health. When prompted, allow all permissions; otherwise, the device will not connect properly. To show activity with the app, be sure to log in at least once a week."
+        }
+      } ]
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "My fitbit is connected but data is not showing up"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "sessionParameters": {
+        "device-type": "Fitbit"
+      },
+      "currentPage": {
+        "name": "Start Page",
+        "flow": "Intent Flow"
+      },
+      "textResponses": [ {
+        "text": [ "Thank you for reaching out.  I apologize you are having issues with your Fitbit. To reconnect your Fitbit, please try the following steps: \nLogin to our website or mobile app.\nDisconnect the Fitbit under Device Management in the app or the Add/Remove link on our website. \nGo to your Fitbit app and logout of that app.\nLog back into the Fitbit app.\nReconnect your Fitbit to our site using the same username and password used on the Fitbit app. \nAfter following these steps, you should start seeing data within 48 hours, and the missing points should be updated after that. " ],
+        "containDataStoreFaqContent": true,
+        "containAttemptedDataStoreInteractions": true
+      } ],
+      "currentFlow": {
+        "name": "Intent Flow"
+      },
+      "actions": [ {
+        "userUtterance": {
+          "text": "My fitbit is connected but data is not showing up"
+        }
+      }, {
+        "agentUtterance": {
+          "text": "Thank you for reaching out.  I apologize you are having issues with your Fitbit. To reconnect your Fitbit, please try the following steps: \nLogin to our website or mobile app.\nDisconnect the Fitbit under Device Management in the app or the Add/Remove link on our website. \nGo to your Fitbit app and logout of that app.\nLog back into the Fitbit app.\nReconnect your Fitbit to our site using the same username and password used on the Fitbit app. \nAfter following these steps, you should start seeing data within 48 hours, and the missing points should be updated after that. "
+        }
+      } ]
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "I can't get a page to load"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "sessionParameters": {
+        "$flow.troubleshooting-state": "initialized",
+        "device-type": "Fitbit"
+      },
+      "triggeredIntent": {
+        "name": "troubleshooting"
+      },
+      "currentPage": {
+        "name": "Start Page",
+        "flow": "Troubleshooting"
+      },
+      "textResponses": [ {
+        "text": [ "I can help with that. Can you describe the issue to me?" ]
+      }, {
+        "text": [ "Here are some common issues:" ]
+      } ],
+      "currentFlow": {
+        "name": "Troubleshooting"
+      },
+      "actions": [ {
+        "userUtterance": {
+          "text": "I can't get a page to load"
+        }
+      }, {
+        "agentUtterance": {
+          "text": "I can help with that. Can you describe the issue to me?\nHere are some common issues:"
+        }
+      } ]
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "the page won't load"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "sessionParameters": {
+        "device-type": "Fitbit"
+      },
+      "currentPage": {
+        "name": "Start Page",
+        "flow": "Intent Flow"
+      },
+      "textResponses": [ {
+        "text": [ "Thank you for reaching out to us. I apologize for the issues you are experiencing with the program. It is recommended you use the Google Chrome web browser. Please clear the cache and cookies, by clicking the dots in the upper right corner of the browser. Then click Settings; under Privacy and Security, click Delete Browsing Data. Make sure All Time is selected in the Time Range box; only check the Browsing History, Cookies and Other Site Data, and Cached Images and Files boxes. \nOnce the browsing data has cleared, please close and re-open your browser and try again to load your page. I hope this helps you. Please let me know if you are unsuccessful so that we can further troubleshoot." ],
+        "containDataStoreFaqContent": true,
+        "containAttemptedDataStoreInteractions": true
+      } ],
+      "currentFlow": {
+        "name": "Intent Flow"
+      },
+      "actions": [ {
+        "userUtterance": {
+          "text": "the page won't load"
+        }
+      }, {
+        "agentUtterance": {
+          "text": "Thank you for reaching out to us. I apologize for the issues you are experiencing with the program. It is recommended you use the Google Chrome web browser. Please clear the cache and cookies, by clicking the dots in the upper right corner of the browser. Then click Settings; under Privacy and Security, click Delete Browsing Data. Make sure All Time is selected in the Time Range box; only check the Browsing History, Cookies and Other Site Data, and Cached Images and Files boxes. \nOnce the browsing data has cleared, please close and re-open your browser and try again to load your page. I hope this helps you. Please let me know if you are unsuccessful so that we can further troubleshoot."
+        }
+      } ]
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "I can't access the HA"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "sessionParameters": {
+        "device-type": "Fitbit"
+      },
+      "currentPage": {
+        "name": "Start Page",
+        "flow": "Intent Flow"
+      },
+      "textResponses": [ {
+        "text": [ "Thank you for reaching out to us. I apologize for the issues you are experiencing with the program. It is recommended you use the Google Chrome web browser. Please clear the cache and cookies, by clicking the three dots in the upper right corner of the browser. Then click Settings; under Privacy and Security, click Delete Browsing Data. Make sure All Time is selected in the Time Range box; only check the Browsing History, Cookies and Other Site Data, and Cached Images and Files boxes. Once the browsing data has cleared, please close and re-open your browser and try again to complete the Health Assessment. If this does not solve the problem, you may also complete the Health Assessment using the AlwaysOn app. Tap the clipboard icon to access the Health Assessment on the app. Please let me know if you are unsuccessful so that we can further troubleshoot. " ],
+        "containDataStoreFaqContent": true,
+        "containAttemptedDataStoreInteractions": true
+      } ],
+      "currentFlow": {
+        "name": "Intent Flow"
+      },
+      "actions": [ {
+        "userUtterance": {
+          "text": "I can't access the HA"
+        }
+      }, {
+        "agentUtterance": {
+          "text": "Thank you for reaching out to us. I apologize for the issues you are experiencing with the program. It is recommended you use the Google Chrome web browser. Please clear the cache and cookies, by clicking the three dots in the upper right corner of the browser. Then click Settings; under Privacy and Security, click Delete Browsing Data. Make sure All Time is selected in the Time Range box; only check the Browsing History, Cookies and Other Site Data, and Cached Images and Files boxes. Once the browsing data has cleared, please close and re-open your browser and try again to complete the Health Assessment. If this does not solve the problem, you may also complete the Health Assessment using the AlwaysOn app. Tap the clipboard icon to access the Health Assessment on the app. Please let me know if you are unsuccessful so that we can further troubleshoot. "
+        }
+      } ]
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "How do I update my email preferences?"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "sessionParameters": {
+        "device-type": "Fitbit"
+      },
+      "currentPage": {
+        "name": "Start Page",
+        "flow": "Intent Flow"
+      },
+      "textResponses": [ {
+        "text": [ "Thank you for reaching out to us. To update your email preferences, log into your wellness platform. Locate the circle with the silhouette inside on the top right-hand side of the screen. Click on the arrow down beside the circle. Click on Profile/Settings. Click on the circle with the pencil inside it on the right-hand side of the screen, across from My Information. This section will allow you to update your email address as well as select your time zone and the best time to reach out to you." ],
+        "containDataStoreFaqContent": true,
+        "containAttemptedDataStoreInteractions": true
+      } ],
+      "currentFlow": {
+        "name": "Intent Flow"
+      },
+      "actions": [ {
+        "userUtterance": {
+          "text": "How do I update my email preferences?"
+        }
+      }, {
+        "agentUtterance": {
+          "text": "Thank you for reaching out to us. To update your email preferences, log into your wellness platform. Locate the circle with the silhouette inside on the top right-hand side of the screen. Click on the arrow down beside the circle. Click on Profile/Settings. Click on the circle with the pencil inside it on the right-hand side of the screen, across from My Information. This section will allow you to update your email address as well as select your time zone and the best time to reach out to you."
+        }
+      } ]
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "Where is my HA certificate of completion?"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "sessionParameters": {
+        "device-type": "Fitbit"
+      },
+      "currentPage": {
+        "name": "Start Page",
+        "flow": "Intent Flow"
+      },
+      "textResponses": [ {
+        "text": [ "Thank you for reaching out to us. To locate your certificate of completion, please log into your wellness platform name. Scroll to the very bottom of the page. On the bottom right, you will see Certificates. It's the second one in the list. Click on Certificates. You can view or email your certificate from this page." ],
+        "containDataStoreFaqContent": true,
+        "containAttemptedDataStoreInteractions": true
+      } ],
+      "currentFlow": {
+        "name": "Intent Flow"
+      },
+      "actions": [ {
+        "userUtterance": {
+          "text": "Where is my HA certificate of completion?"
+        }
+      }, {
+        "agentUtterance": {
+          "text": "Thank you for reaching out to us. To locate your certificate of completion, please log into your wellness platform name. Scroll to the very bottom of the page. On the bottom right, you will see Certificates. It's the second one in the list. Click on Certificates. You can view or email your certificate from this page."
+        }
+      } ]
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "I am trying to connect my samsung health app"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "sessionParameters": {
+        "device-type": "Samsung Health"
+      },
+      "triggeredIntent": {
+        "name": "device.home"
+      },
+      "currentPage": {
+        "name": "Start Page",
+        "flow": "Intent Flow"
+      },
+      "textResponses": [ {
+        "text": [ "Your wearable devices can be powerful tools for understanding your health. Let's work together to make the most of them. We're here to guide you every step of the way." ]
+      }, {
+        "text": [ "You can find out how to connect your devices here:" ]
+      } ],
+      "currentFlow": {
+        "name": "Intent Flow"
+      },
+      "actions": [ {
+        "userUtterance": {
+          "text": "I am trying to connect my samsung health app"
+        }
+      }, {
+        "agentUtterance": {
+          "text": "Your wearable devices can be powerful tools for understanding your health. Let's work together to make the most of them. We're here to guide you every step of the way.\nYou can find out how to connect your devices here:"
+        }
+      } ]
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "my samsung health app won't connect"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "sessionParameters": {
+        "device-type": "Samsung Health"
+      },
+      "currentPage": {
+        "name": "Start Page",
+        "flow": "Intent Flow"
+      },
+      "textResponses": [ {
+        "text": [ "Thank you for reaching out. You need to add our mobile app to your phone to add your Samsung Health. Please follow these steps:   \nStep 1: Download our mobile app through the app store.                                                           \nStep 2: Click \"New User Registration\"                                                                                              \nStep 3: Enter your first name, last name, date of birth, and zip code. Click the \"Verify' button.                                                                                                                                            \nStep 4: Enter the Subscriber ID (without alpha prefix) and Group Number. Click the \"Verify\" button. If the Group number is less than 6 characters long, enter zeros proceeding the Group Number. (Example: Group Number is 4321, enter it as: 004321) You will receive a prompt to call if you cannot be identified with your Subscriber ID and Group Number. \nStep 5: Create a Username and password. Enter your mobile number and email address. Check \"Yes, I accept the terms and conditions.\" Click \"Register.\" \nStep 6: Create and confirm the PIN number. \nAfter you have signed in, it will ask if you would like to add your Samsung Health. When prompted, allow all permissions; otherwise, the device will not connect properly. To show activity with the app, be sure to log in at least once a week." ],
+        "containDataStoreFaqContent": true,
+        "containAttemptedDataStoreInteractions": true
+      } ],
+      "currentFlow": {
+        "name": "Intent Flow"
+      },
+      "actions": [ {
+        "userUtterance": {
+          "text": "my samsung health app won't connect"
+        }
+      }, {
+        "agentUtterance": {
+          "text": "Thank you for reaching out. You need to add our mobile app to your phone to add your Samsung Health. Please follow these steps:   \nStep 1: Download our mobile app through the app store.                                                           \nStep 2: Click \"New User Registration\"                                                                                              \nStep 3: Enter your first name, last name, date of birth, and zip code. Click the \"Verify' button.                                                                                                                                            \nStep 4: Enter the Subscriber ID (without alpha prefix) and Group Number. Click the \"Verify\" button. If the Group number is less than 6 characters long, enter zeros proceeding the Group Number. (Example: Group Number is 4321, enter it as: 004321) You will receive a prompt to call if you cannot be identified with your Subscriber ID and Group Number. \nStep 5: Create a Username and password. Enter your mobile number and email address. Check \"Yes, I accept the terms and conditions.\" Click \"Register.\" \nStep 6: Create and confirm the PIN number. \nAfter you have signed in, it will ask if you would like to add your Samsung Health. When prompted, allow all permissions; otherwise, the device will not connect properly. To show activity with the app, be sure to log in at least once a week."
+        }
+      } ]
+    }
+  } ],
+  "creationTime": {
+    "seconds": 1725634689,
+    "nanos": 270418000
+  },
+  "testConfig": {
+    "flow": "Default Start Flow",
+    "page": "Start Page"
+  },
+  "languageCode": "en"
+}

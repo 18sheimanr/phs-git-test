@@ -1,0 +1,129 @@
+{
+  "trainingPhrases": [ {
+    "parts": [ {
+      "text": "\"I was in a violent domestic abuse assault over the weekend.  My fiancé of 6 years who I've known for 17 years got very intoxicated and violent and strangled and suffocated me.  I was lucky to get away but I cannot deal.\""
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "\"I don't feel safe\""
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "\"My mom said I can't have any food until I behave.\""
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "\"He doesn't allow me to talk to anyone else\""
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "\"I don't like where I am at\""
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "\"I'm scared to say no when they ask me to do bad things\""
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "\"They make me do bad things\""
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "\"I'm scared to go home\""
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "\"I'm afraid\""
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "\"She's forcing me to do things.\""
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "\"She told me I have to do things for her even though I don't want to.\""
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "\"She won't let me eat\""
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "\"They are preventing me from eating.\""
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "\"I'm not allowed to have any friends\""
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "\"Please help me\""
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "\"How can they get away with this\""
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "\"They make me keep secrets\""
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "\"They won't take me to the doctor\""
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "\"They're always yelling\""
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "\"I'm not allowed to talk about what happens at home\""
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "\"When nobody's looking, my mom abuses me.\""
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  } ]
+}

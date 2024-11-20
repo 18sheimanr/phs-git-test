@@ -1,0 +1,11 @@
+{
+  "name": "00000000-0000-0000-0000-000000000001",
+  "displayName": "default.negative",
+  "parameters": [ {
+    "id": "device-type",
+    "entityType": "@device-type"
+  } ],
+  "priority": 500000,
+  "isFallback": true,
+  "numTrainingPhrases": 22
+}

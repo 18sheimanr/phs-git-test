@@ -1,0 +1,117 @@
+{
+  "name": "00000000-0000-0000-0000-000000000000",
+  "displayName": "Default Start Flow",
+  "description": "A start flow created along with the agent",
+  "transitionRoutes": [ {
+    "intent": "default.welcome",
+    "condition": "$session.params.state.session.timeSinceLastSession \u003c= 1464",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Welcome back. It's wonderful to connect with you again. How can I be of service today? Please don't hesitate to share any concerns or questions you may have." ]
+        },
+        "languageCode": "en"
+      }, {
+        "payload": {
+          "richContent": [ [ {
+            "options": [ {
+              "text": "Take a health assessment"
+            }, {
+              "text": "Connect a device"
+            }, {
+              "text": "Track my steps"
+            } ],
+            "type": "chips"
+          } ] ]
+        },
+        "languageCode": "en"
+      } ],
+      "nextActionOverride": {
+      
+      }
+    },
+    "targetFlow": "Intent Flow",
+    "name": "33480725-f14f-4393-acaa-217a7d7489cf",
+    "description": "Welcome a member who has recently visited the platform"
+  }, {
+    "intent": "default.welcome",
+    "condition": "$session.params.state.session.timeSinceLastSession \u003e 1464 OR $session.params.state.session.timeSinceLastSession = null OR $session.params.state.session.timeSinceLastSession = \"\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Welcome $session.params.member.firstName! Your experience here is important, and I'm here to make it easier for you. Whether you're looking for specific information or resources, or guidance, I can help point you in the right direction. " ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "How can I assist you today? Feel free to ask about your concerns, services, or site features, and I'll provide you with the support you need." ]
+        },
+        "languageCode": "en"
+      }, {
+        "payload": {
+          "richContent": [ [ {
+            "options": [ {
+              "text": "Take a health assessment"
+            }, {
+              "text": "Connect a device"
+            }, {
+              "text": "Track my steps"
+            } ],
+            "type": "chips"
+          } ] ]
+        },
+        "languageCode": "en"
+      } ],
+      "nextActionOverride": {
+      
+      }
+    },
+    "targetFlow": "Intent Flow",
+    "name": "c7078983-19ff-4c7c-9d3c-f1b692122555",
+    "description": "Welcome a member who has NOT visited the platform recently."
+  } ],
+  "eventHandlers": [ {
+    "event": "sys.no-match-default",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I didn't get that. Can you say it again?", "I missed what you said. What was that?", "Sorry, could you say that again?", "Sorry, can you say that again?", "Can you say that again?", "Sorry, I didn't get that. Can you rephrase?", "Sorry, what was that?", "One more time?", "What was that?", "Say that one more time?", "I didn't get that. Can you repeat?", "I missed that, say that again?" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "ca81d41b-3d41-4c4f-9e17-d6d8698bf23a"
+  }, {
+    "event": "sys.no-input-default",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I didn't get that. Can you say it again?", "I missed what you said. What was that?", "Sorry, could you say that again?", "Sorry, can you say that again?", "Can you say that again?", "Sorry, I didn't get that. Can you rephrase?", "Sorry, what was that?", "One more time?", "What was that?", "Say that one more time?", "I didn't get that. Can you repeat?", "I missed that, say that again?" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "1cdf793a-6f07-4a3b-9860-0361bfa82b79"
+  }, {
+    "targetPage": "Welcome Message Page",
+    "event": "OnlifePortalStart",
+    "triggerFulfillment": {
+      "nextActionOverride": {
+      
+      }
+    },
+    "name": "1040dd5b-e950-4fc8-98b5-7df64cdd6778"
+  } ],
+  "nluSettings": {
+    "modelType": "MODEL_TYPE_ADVANCED",
+    "classificationThreshold": 0.30000001,
+    "modelTrainingMode": "MODEL_TRAINING_MODE_MANUAL"
+  },
+  "nluSettingsList": [ {
+    "modelType": "MODEL_TYPE_ADVANCED",
+    "classificationThreshold": 0.30000001,
+    "modelTrainingMode": "MODEL_TRAINING_MODE_MANUAL",
+    "customConfigKey": "f1441933-89a5-45b9-b7d4-95d52854715b",
+    "languageCode": "en"
+  } ]
+}

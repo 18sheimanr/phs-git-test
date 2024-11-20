@@ -1,0 +1,866 @@
+{
+  "name": "c5c4d96f-0ea9-40b5-86c1-80caab9a65ce",
+  "displayName": "All Route - Single Test",
+  "notes": "Visits all routes. No recent logon",
+  "testCaseConversationTurns": [ {
+    "userInput": {
+      "injectedParameters": {
+        "$session.params.member.firstName": "Susan",
+        "$session.params.planContactNumber": "1-800-555-PLAN",
+        "$session.params.programComponents.coaching.eligible": true,
+        "$session.params.state.session.timeSinceLastSession": 10000,
+        "$session.params.tenant.planUrl": "www.myhealthplan.com",
+        "$session.params.tenant.programName": "Well onTarget",
+        "$session.params.tenant.wellnessContactNumber": "800-555-WELL"
+      },
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "hi"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "sessionParameters": {
+        "member.firstName": "Susan",
+        "planContactNumber": "1-800-555-PLAN",
+        "programComponents.coaching.eligible": true,
+        "state.session.timeSinceLastSession": 10000,
+        "tenant.planUrl": "www.myhealthplan.com",
+        "tenant.programName": "Well onTarget",
+        "tenant.wellnessContactNumber": "800-555-WELL"
+      },
+      "differences": [ {
+        "type": "PAGE",
+        "description": "Page mismatch:\nExpected: \nActual:   Start Page",
+        "assertionType": "EQUAL",
+        "expectedValue": "",
+        "actualValue": "Start Page"
+      }, {
+        "type": "INTENT",
+        "description": "Intent mismatch:\nExpected: \nActual:   default.welcome",
+        "assertionType": "EQUAL",
+        "expectedValue": "",
+        "actualValue": "default.welcome"
+      }, {
+        "type": "UTTERANCE",
+        "description": "Agent response mismatch",
+        "warning": true,
+        "assertionType": "EQUAL",
+        "expectedValue": "",
+        "actualValue": "Hello Susan, we’re so glad you’re here! I'm Spark, your AI care companion from Well onTarget, I’m here to listen and support you along your wellness journey.Is there anything specific you'd like to focus on today? If not, feel free to check out some options below"
+      } ],
+      "triggeredIntent": {
+        "name": "default.welcome"
+      },
+      "currentPage": {
+        "name": "Start Page",
+        "flow": "Intent Flow"
+      },
+      "textResponses": [ {
+        "text": [ "Hello Susan, we’re so glad you’re here! I'm Spark, your AI care companion from Well onTarget, I’m here to listen and support you along your wellness journey." ]
+      }, {
+        "text": [ "Is there anything specific you'd like to focus on today? If not, feel free to check out some options below" ]
+      } ],
+      "currentFlow": {
+        "name": "Intent Flow"
+      },
+      "actions": [ {
+        "userUtterance": {
+          "text": "hi"
+        }
+      }, {
+        "agentUtterance": {
+          "text": "Hello Susan, we’re so glad you’re here! I'm Spark, your AI care companion from Well onTarget, I’m here to listen and support you along your wellness journey.\nIs there anything specific you'd like to focus on today? If not, feel free to check out some options below"
+        }
+      } ]
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "I need care now"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "sessionParameters": {
+        "member.firstName": "Susan",
+        "planContactNumber": "1-800-555-PLAN",
+        "programComponents.coaching.eligible": true,
+        "state.session.timeSinceLastSession": 10000,
+        "tenant.planUrl": "www.myhealthplan.com",
+        "tenant.programName": "Well onTarget",
+        "tenant.wellnessContactNumber": "800-555-WELL"
+      },
+      "differences": [ {
+        "type": "PAGE",
+        "description": "Page mismatch:\nExpected: \nActual:   Start Page",
+        "assertionType": "EQUAL",
+        "expectedValue": "",
+        "actualValue": "Start Page"
+      }, {
+        "type": "INTENT",
+        "description": "Intent mismatch:\nExpected: \nActual:   care.get",
+        "assertionType": "EQUAL",
+        "expectedValue": "",
+        "actualValue": "care.get"
+      }, {
+        "type": "UTTERANCE",
+        "description": "Agent response mismatch",
+        "warning": true,
+        "assertionType": "EQUAL",
+        "expectedValue": "",
+        "actualValue": "Thanks for reaching out. If you need immediate care, please call 911. For non-emergencies, we can help you find a doctor who's a good fit for you.For help locating a doctor, let’s start here: www.myhealthplan.com"
+      } ],
+      "triggeredIntent": {
+        "name": "care.get"
+      },
+      "currentPage": {
+        "name": "Start Page",
+        "flow": "Intent Flow"
+      },
+      "textResponses": [ {
+        "text": [ "Thanks for reaching out. If you need immediate care, please call 911. For non-emergencies, we can help you find a doctor who's a good fit for you." ]
+      }, {
+        "text": [ "For help locating a doctor, let’s start here: www.myhealthplan.com" ]
+      } ],
+      "currentFlow": {
+        "name": "Intent Flow"
+      },
+      "actions": [ {
+        "userUtterance": {
+          "text": "I need care now"
+        }
+      }, {
+        "agentUtterance": {
+          "text": "Thanks for reaching out. If you need immediate care, please call 911. For non-emergencies, we can help you find a doctor who's a good fit for you.\nFor help locating a doctor, let’s start here: www.myhealthplan.com"
+        }
+      } ]
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "take my ha"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "sessionParameters": {
+        "member.firstName": "Susan",
+        "planContactNumber": "1-800-555-PLAN",
+        "programComponents.coaching.eligible": true,
+        "state.session.timeSinceLastSession": 10000,
+        "tenant.planUrl": "www.myhealthplan.com",
+        "tenant.programName": "Well onTarget",
+        "tenant.wellnessContactNumber": "800-555-WELL"
+      },
+      "differences": [ {
+        "type": "PAGE",
+        "description": "Page mismatch:\nExpected: \nActual:   Start Page",
+        "assertionType": "EQUAL",
+        "expectedValue": "",
+        "actualValue": "Start Page"
+      }, {
+        "type": "INTENT",
+        "description": "Intent mismatch:\nExpected: \nActual:   health-assessment",
+        "assertionType": "EQUAL",
+        "expectedValue": "",
+        "actualValue": "health-assessment"
+      }, {
+        "type": "UTTERANCE",
+        "description": "Agent response mismatch",
+        "warning": true,
+        "assertionType": "EQUAL",
+        "expectedValue": "",
+        "actualValue": "Feeling like taking charge? Our quick 7-minute health assessment offers insights \u0026 personalized plans. For your convenience, we also offer it on our app! Ready to start?https://member.onlifehealth.com/HealthAssessment"
+      } ],
+      "triggeredIntent": {
+        "name": "health-assessment"
+      },
+      "currentPage": {
+        "name": "Start Page",
+        "flow": "Intent Flow"
+      },
+      "textResponses": [ {
+        "text": [ "Feeling like taking charge? Our quick 7-minute health assessment offers insights \u0026 personalized plans. For your convenience, we also offer it on our app! Ready to start?" ]
+      }, {
+        "text": [ "https://member.onlifehealth.com/HealthAssessment" ]
+      } ],
+      "currentFlow": {
+        "name": "Intent Flow"
+      },
+      "actions": [ {
+        "userUtterance": {
+          "text": "take my ha"
+        }
+      }, {
+        "agentUtterance": {
+          "text": "Feeling like taking charge? Our quick 7-minute health assessment offers insights \u0026 personalized plans. For your convenience, we also offer it on our app! Ready to start?\nhttps://member.onlifehealth.com/HealthAssessment"
+        }
+      } ]
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "I want to read an article on stress management"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "sessionParameters": {
+        "member.firstName": "Susan",
+        "planContactNumber": "1-800-555-PLAN",
+        "programComponents.coaching.eligible": true,
+        "state.session.timeSinceLastSession": 10000,
+        "tenant.planUrl": "www.myhealthplan.com",
+        "tenant.programName": "Well onTarget",
+        "tenant.wellnessContactNumber": "800-555-WELL"
+      },
+      "differences": [ {
+        "type": "PAGE",
+        "description": "Page mismatch:\nExpected: \nActual:   Start Page",
+        "assertionType": "EQUAL",
+        "expectedValue": "",
+        "actualValue": "Start Page"
+      }, {
+        "type": "INTENT",
+        "description": "Intent mismatch:\nExpected: \nActual:   health-content.home",
+        "assertionType": "EQUAL",
+        "expectedValue": "",
+        "actualValue": "health-content.home"
+      }, {
+        "type": "UTTERANCE",
+        "description": "Agent response mismatch",
+        "warning": true,
+        "assertionType": "EQUAL",
+        "expectedValue": "",
+        "actualValue": "Sometimes a little knowledge can go a long way.  We cover topics like asthma, diabetes, and mental health, all right here:https://member.onlifehealth.com/HealthArticlesFeel free to explore at your own pace and learn something new that might be helpful on your wellness journey."
+      } ],
+      "triggeredIntent": {
+        "name": "health-content.home"
+      },
+      "currentPage": {
+        "name": "Start Page",
+        "flow": "Intent Flow"
+      },
+      "textResponses": [ {
+        "text": [ "Sometimes a little knowledge can go a long way.  We cover topics like asthma, diabetes, and mental health, all right here:" ]
+      }, {
+        "text": [ "https://member.onlifehealth.com/HealthArticles" ]
+      }, {
+        "text": [ "Feel free to explore at your own pace and learn something new that might be helpful on your wellness journey." ]
+      } ],
+      "currentFlow": {
+        "name": "Intent Flow"
+      },
+      "actions": [ {
+        "userUtterance": {
+          "text": "I want to read an article on stress management"
+        }
+      }, {
+        "agentUtterance": {
+          "text": "Sometimes a little knowledge can go a long way.  We cover topics like asthma, diabetes, and mental health, all right here:\nhttps://member.onlifehealth.com/HealthArticles\nFeel free to explore at your own pace and learn something new that might be helpful on your wellness journey."
+        }
+      } ]
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "I want to connect my apple watch"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "sessionParameters": {
+        "device-type": "Apple Watch",
+        "member.firstName": "Susan",
+        "planContactNumber": "1-800-555-PLAN",
+        "programComponents.coaching.eligible": true,
+        "state.session.timeSinceLastSession": 10000,
+        "tenant.planUrl": "www.myhealthplan.com",
+        "tenant.programName": "Well onTarget",
+        "tenant.wellnessContactNumber": "800-555-WELL"
+      },
+      "differences": [ {
+        "type": "PAGE",
+        "description": "Page mismatch:\nExpected: \nActual:   Start Page",
+        "assertionType": "EQUAL",
+        "expectedValue": "",
+        "actualValue": "Start Page"
+      }, {
+        "type": "INTENT",
+        "description": "Intent mismatch:\nExpected: \nActual:   device.home",
+        "assertionType": "EQUAL",
+        "expectedValue": "",
+        "actualValue": "device.home"
+      }, {
+        "type": "UTTERANCE",
+        "description": "Agent response mismatch",
+        "warning": true,
+        "assertionType": "EQUAL",
+        "expectedValue": "",
+        "actualValue": "Keeping track of the data from your wearable devices can be a great way to stay informed about your health. Just follow this link:https://member.onlifehealth.com/BioDevices/IntroductionManaging your health can be empowering, and we're here to make it as easy as we can."
+      } ],
+      "triggeredIntent": {
+        "name": "device.home"
+      },
+      "currentPage": {
+        "name": "Start Page",
+        "flow": "Intent Flow"
+      },
+      "textResponses": [ {
+        "text": [ "Keeping track of the data from your wearable devices can be a great way to stay informed about your health. Just follow this link:" ]
+      }, {
+        "text": [ "https://member.onlifehealth.com/BioDevices/Introduction" ]
+      }, {
+        "text": [ "Managing your health can be empowering, and we're here to make it as easy as we can." ]
+      } ],
+      "currentFlow": {
+        "name": "Intent Flow"
+      },
+      "actions": [ {
+        "userUtterance": {
+          "text": "I want to connect my apple watch"
+        }
+      }, {
+        "agentUtterance": {
+          "text": "Keeping track of the data from your wearable devices can be a great way to stay informed about your health. Just follow this link:\nhttps://member.onlifehealth.com/BioDevices/Introduction\nManaging your health can be empowering, and we're here to make it as easy as we can."
+        }
+      } ]
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "I want to redeem my points"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "sessionParameters": {
+        "device-type": "Apple Watch",
+        "member.firstName": "Susan",
+        "planContactNumber": "1-800-555-PLAN",
+        "programComponents.coaching.eligible": true,
+        "state.session.timeSinceLastSession": 10000,
+        "tenant.planUrl": "www.myhealthplan.com",
+        "tenant.programName": "Well onTarget",
+        "tenant.wellnessContactNumber": "800-555-WELL"
+      },
+      "differences": [ {
+        "type": "PAGE",
+        "description": "Page mismatch:\nExpected: \nActual:   Start Page",
+        "assertionType": "EQUAL",
+        "expectedValue": "",
+        "actualValue": "Start Page"
+      }, {
+        "type": "INTENT",
+        "description": "Intent mismatch:\nExpected: \nActual:   rewards.home",
+        "assertionType": "EQUAL",
+        "expectedValue": "",
+        "actualValue": "rewards.home"
+      }, {
+        "type": "UTTERANCE",
+        "description": "Agent response mismatch",
+        "warning": true,
+        "assertionType": "EQUAL",
+        "expectedValue": "",
+        "actualValue": "It sounds like you want to go to your rewards. Here is a link - once you are there click the tabs for eligible activities or completed rewards.\n\nhttps://member.onlifehealth.com/Incentive/EligibleActivities"
+      } ],
+      "triggeredIntent": {
+        "name": "rewards.home"
+      },
+      "currentPage": {
+        "name": "Start Page",
+        "flow": "Intent Flow"
+      },
+      "textResponses": [ {
+        "text": [ "It sounds like you want to go to your rewards. Here is a link - once you are there click the tabs for eligible activities or completed rewards.\n\nhttps://member.onlifehealth.com/Incentive/EligibleActivities" ]
+      } ],
+      "currentFlow": {
+        "name": "Intent Flow"
+      },
+      "actions": [ {
+        "userUtterance": {
+          "text": "I want to redeem my points"
+        }
+      }, {
+        "agentUtterance": {
+          "text": "It sounds like you want to go to your rewards. Here is a link - once you are there click the tabs for eligible activities or completed rewards.\n\nhttps://member.onlifehealth.com/Incentive/EligibleActivities"
+        }
+      } ]
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "what should I do next?"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "sessionParameters": {
+        "device-type": "Apple Watch",
+        "member.firstName": "Susan",
+        "planContactNumber": "1-800-555-PLAN",
+        "programComponents.coaching.eligible": true,
+        "state.session.timeSinceLastSession": 10000,
+        "tenant.planUrl": "www.myhealthplan.com",
+        "tenant.programName": "Well onTarget",
+        "tenant.wellnessContactNumber": "800-555-WELL"
+      },
+      "differences": [ {
+        "type": "PAGE",
+        "description": "Page mismatch:\nExpected: \nActual:   Start Page",
+        "assertionType": "EQUAL",
+        "expectedValue": "",
+        "actualValue": "Start Page"
+      }, {
+        "type": "INTENT",
+        "description": "Intent mismatch:\nExpected: \nActual:   journey.home",
+        "assertionType": "EQUAL",
+        "expectedValue": "",
+        "actualValue": "journey.home"
+      }, {
+        "type": "UTTERANCE",
+        "description": "Agent response mismatch",
+        "warning": true,
+        "assertionType": "EQUAL",
+        "expectedValue": "",
+        "actualValue": "Click below to go to see your recommended wellness journey.\n\nhttps://member.onlifehealth.com/Journey#health-journey "
+      } ],
+      "triggeredIntent": {
+        "name": "journey.home"
+      },
+      "currentPage": {
+        "name": "Start Page",
+        "flow": "Intent Flow"
+      },
+      "textResponses": [ {
+        "text": [ "Click below to go to see your recommended wellness journey.\n\nhttps://member.onlifehealth.com/Journey#health-journey " ]
+      } ],
+      "currentFlow": {
+        "name": "Intent Flow"
+      },
+      "actions": [ {
+        "userUtterance": {
+          "text": "what should I do next?"
+        }
+      }, {
+        "agentUtterance": {
+          "text": "Click below to go to see your recommended wellness journey.\n\nhttps://member.onlifehealth.com/Journey#health-journey "
+        }
+      } ]
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "do a challenge"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "sessionParameters": {
+        "device-type": "Apple Watch",
+        "member.firstName": "Susan",
+        "planContactNumber": "1-800-555-PLAN",
+        "programComponents.coaching.eligible": true,
+        "state.session.timeSinceLastSession": 10000,
+        "tenant.planUrl": "www.myhealthplan.com",
+        "tenant.programName": "Well onTarget",
+        "tenant.wellnessContactNumber": "800-555-WELL"
+      },
+      "differences": [ {
+        "type": "PAGE",
+        "description": "Page mismatch:\nExpected: \nActual:   Start Page",
+        "assertionType": "EQUAL",
+        "expectedValue": "",
+        "actualValue": "Start Page"
+      }, {
+        "type": "INTENT",
+        "description": "Intent mismatch:\nExpected: \nActual:   challenges.home",
+        "assertionType": "EQUAL",
+        "expectedValue": "",
+        "actualValue": "challenges.home"
+      }, {
+        "type": "UTTERANCE",
+        "description": "Agent response mismatch",
+        "warning": true,
+        "assertionType": "EQUAL",
+        "expectedValue": "",
+        "actualValue": "If you would like to complete a health or wellness challenge, click the link below.\n\nhttps://member.onlifehealth.com/challenge"
+      } ],
+      "triggeredIntent": {
+        "name": "challenges.home"
+      },
+      "currentPage": {
+        "name": "Start Page",
+        "flow": "Intent Flow"
+      },
+      "textResponses": [ {
+        "text": [ "If you would like to complete a health or wellness challenge, click the link below.\n\nhttps://member.onlifehealth.com/challenge" ]
+      } ],
+      "currentFlow": {
+        "name": "Intent Flow"
+      },
+      "actions": [ {
+        "userUtterance": {
+          "text": "do a challenge"
+        }
+      }, {
+        "agentUtterance": {
+          "text": "If you would like to complete a health or wellness challenge, click the link below.\n\nhttps://member.onlifehealth.com/challenge"
+        }
+      } ]
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "what am I working on currently?"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "sessionParameters": {
+        "device-type": "Apple Watch",
+        "member.firstName": "Susan",
+        "planContactNumber": "1-800-555-PLAN",
+        "programComponents.coaching.eligible": true,
+        "state.session.timeSinceLastSession": 10000,
+        "tenant.planUrl": "www.myhealthplan.com",
+        "tenant.programName": "Well onTarget",
+        "tenant.wellnessContactNumber": "800-555-WELL"
+      },
+      "differences": [ {
+        "type": "PAGE",
+        "description": "Page mismatch:\nExpected: \nActual:   Start Page",
+        "assertionType": "EQUAL",
+        "expectedValue": "",
+        "actualValue": "Start Page"
+      }, {
+        "type": "INTENT",
+        "description": "Intent mismatch:\nExpected: \nActual:   items.in-progress",
+        "assertionType": "EQUAL",
+        "expectedValue": "",
+        "actualValue": "items.in-progress"
+      }, {
+        "type": "UTTERANCE",
+        "description": "Agent response mismatch",
+        "warning": true,
+        "assertionType": "EQUAL",
+        "expectedValue": "",
+        "actualValue": "Click the link below to go to your in progress items.\n\nhttps://member.onlifehealth.com/Journey#inprogress-activities "
+      } ],
+      "triggeredIntent": {
+        "name": "items.in-progress"
+      },
+      "currentPage": {
+        "name": "Start Page",
+        "flow": "Intent Flow"
+      },
+      "textResponses": [ {
+        "text": [ "Click the link below to go to your in progress items.\n\nhttps://member.onlifehealth.com/Journey#inprogress-activities " ]
+      } ],
+      "currentFlow": {
+        "name": "Intent Flow"
+      },
+      "actions": [ {
+        "userUtterance": {
+          "text": "what am I working on currently?"
+        }
+      }, {
+        "agentUtterance": {
+          "text": "Click the link below to go to your in progress items.\n\nhttps://member.onlifehealth.com/Journey#inprogress-activities "
+        }
+      } ]
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "manually track my steps"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "sessionParameters": {
+        "device-type": "Apple Watch",
+        "member.firstName": "Susan",
+        "planContactNumber": "1-800-555-PLAN",
+        "programComponents.coaching.eligible": true,
+        "state.session.timeSinceLastSession": 10000,
+        "tenant.planUrl": "www.myhealthplan.com",
+        "tenant.programName": "Well onTarget",
+        "tenant.wellnessContactNumber": "800-555-WELL"
+      },
+      "differences": [ {
+        "type": "PAGE",
+        "description": "Page mismatch:\nExpected: \nActual:   Start Page",
+        "assertionType": "EQUAL",
+        "expectedValue": "",
+        "actualValue": "Start Page"
+      }, {
+        "type": "INTENT",
+        "description": "Intent mismatch:\nExpected: \nActual:   trackers.home",
+        "assertionType": "EQUAL",
+        "expectedValue": "",
+        "actualValue": "trackers.home"
+      }, {
+        "type": "UTTERANCE",
+        "description": "Agent response mismatch",
+        "warning": true,
+        "assertionType": "EQUAL",
+        "expectedValue": "",
+        "actualValue": "If you'd like to track your activities, the link is here.\n\nhttps://member.onlifehealth.com/Tracker "
+      } ],
+      "triggeredIntent": {
+        "name": "trackers.home"
+      },
+      "currentPage": {
+        "name": "Start Page",
+        "flow": "Intent Flow"
+      },
+      "textResponses": [ {
+        "text": [ "If you'd like to track your activities, the link is here.\n\nhttps://member.onlifehealth.com/Tracker " ]
+      } ],
+      "currentFlow": {
+        "name": "Intent Flow"
+      },
+      "actions": [ {
+        "userUtterance": {
+          "text": "manually track my steps"
+        }
+      }, {
+        "agentUtterance": {
+          "text": "If you'd like to track your activities, the link is here.\n\nhttps://member.onlifehealth.com/Tracker "
+        }
+      } ]
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "is my flu shot covered?"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "sessionParameters": {
+        "device-type": "Apple Watch",
+        "member.firstName": "Susan",
+        "planContactNumber": "1-800-555-PLAN",
+        "programComponents.coaching.eligible": true,
+        "state.session.timeSinceLastSession": 10000,
+        "tenant.planUrl": "www.myhealthplan.com",
+        "tenant.programName": "Well onTarget",
+        "tenant.wellnessContactNumber": "800-555-WELL"
+      },
+      "differences": [ {
+        "type": "PAGE",
+        "description": "Page mismatch:\nExpected: \nActual:   Start Page",
+        "assertionType": "EQUAL",
+        "expectedValue": "",
+        "actualValue": "Start Page"
+      }, {
+        "type": "INTENT",
+        "description": "Intent mismatch:\nExpected: \nActual:   plan.information",
+        "assertionType": "EQUAL",
+        "expectedValue": "",
+        "actualValue": "plan.information"
+      }, {
+        "type": "UTTERANCE",
+        "description": "Agent response mismatch",
+        "warning": true,
+        "assertionType": "EQUAL",
+        "expectedValue": "",
+        "actualValue": "It sounds like you might have a question about your plan. You can visit www.myhealthplan.com or contact $session.params.tenant.planContactNumber for questions."
+      } ],
+      "triggeredIntent": {
+        "name": "plan.information"
+      },
+      "currentPage": {
+        "name": "Start Page",
+        "flow": "Intent Flow"
+      },
+      "textResponses": [ {
+        "text": [ "It sounds like you might have a question about your plan. You can visit www.myhealthplan.com or contact $session.params.tenant.planContactNumber for questions." ]
+      } ],
+      "currentFlow": {
+        "name": "Intent Flow"
+      },
+      "actions": [ {
+        "userUtterance": {
+          "text": "is my flu shot covered?"
+        }
+      }, {
+        "agentUtterance": {
+          "text": "It sounds like you might have a question about your plan. You can visit www.myhealthplan.com or contact $session.params.tenant.planContactNumber for questions."
+        }
+      } ]
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "do a weight loss program on my own"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "sessionParameters": {
+        "device-type": "Apple Watch",
+        "member.firstName": "Susan",
+        "planContactNumber": "1-800-555-PLAN",
+        "programComponents.coaching.eligible": true,
+        "state.session.timeSinceLastSession": 10000,
+        "tenant.planUrl": "www.myhealthplan.com",
+        "tenant.programName": "Well onTarget",
+        "tenant.wellnessContactNumber": "800-555-WELL"
+      },
+      "differences": [ {
+        "type": "PAGE",
+        "description": "Page mismatch:\nExpected: \nActual:   Start Page",
+        "assertionType": "EQUAL",
+        "expectedValue": "",
+        "actualValue": "Start Page"
+      }, {
+        "type": "INTENT",
+        "description": "Intent mismatch:\nExpected: \nActual:   sgp.home",
+        "assertionType": "EQUAL",
+        "expectedValue": "",
+        "actualValue": "sgp.home"
+      }, {
+        "type": "UTTERANCE",
+        "description": "Agent response mismatch",
+        "warning": true,
+        "assertionType": "EQUAL",
+        "expectedValue": "",
+        "actualValue": "You have access to a wide variety of self-guided programs. You can start or continue a program at the link below.\n\nhttps://member.onlifehealth.com/GuidedProgram"
+      } ],
+      "triggeredIntent": {
+        "name": "sgp.home"
+      },
+      "currentPage": {
+        "name": "Start Page",
+        "flow": "Intent Flow"
+      },
+      "textResponses": [ {
+        "text": [ "You have access to a wide variety of self-guided programs. You can start or continue a program at the link below.\n\nhttps://member.onlifehealth.com/GuidedProgram" ]
+      } ],
+      "currentFlow": {
+        "name": "Intent Flow"
+      },
+      "actions": [ {
+        "userUtterance": {
+          "text": "do a weight loss program on my own"
+        }
+      }, {
+        "agentUtterance": {
+          "text": "You have access to a wide variety of self-guided programs. You can start or continue a program at the link below.\n\nhttps://member.onlifehealth.com/GuidedProgram"
+        }
+      } ]
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "talk to a health coach"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "sessionParameters": {
+        "device-type": "Apple Watch",
+        "member.firstName": "Susan",
+        "planContactNumber": "1-800-555-PLAN",
+        "programComponents.coaching.eligible": true,
+        "state.session.timeSinceLastSession": 10000,
+        "tenant.planUrl": "www.myhealthplan.com",
+        "tenant.programName": "Well onTarget",
+        "tenant.wellnessContactNumber": "800-555-WELL"
+      },
+      "differences": [ {
+        "type": "PAGE",
+        "description": "Page mismatch:\nExpected: \nActual:   Start Page",
+        "assertionType": "EQUAL",
+        "expectedValue": "",
+        "actualValue": "Start Page"
+      }, {
+        "type": "INTENT",
+        "description": "Intent mismatch:\nExpected: \nActual:   coaching.home",
+        "assertionType": "EQUAL",
+        "expectedValue": "",
+        "actualValue": "coaching.home"
+      }, {
+        "type": "UTTERANCE",
+        "description": "Agent response mismatch",
+        "warning": true,
+        "assertionType": "EQUAL",
+        "expectedValue": "",
+        "actualValue": "If you'd like to work with a coach to improve your wellness you can click the link below to get started, or continue working towards a goal you've already set.\n\nhttps://member.onlifehealth.com/Goal/LearnMore"
+      } ],
+      "triggeredIntent": {
+        "name": "coaching.home"
+      },
+      "currentPage": {
+        "name": "Start Page",
+        "flow": "Intent Flow"
+      },
+      "textResponses": [ {
+        "text": [ "If you'd like to work with a coach to improve your wellness you can click the link below to get started, or continue working towards a goal you've already set.\n\nhttps://member.onlifehealth.com/Goal/LearnMore" ]
+      } ],
+      "currentFlow": {
+        "name": "Intent Flow"
+      },
+      "actions": [ {
+        "userUtterance": {
+          "text": "talk to a health coach"
+        }
+      }, {
+        "agentUtterance": {
+          "text": "If you'd like to work with a coach to improve your wellness you can click the link below to get started, or continue working towards a goal you've already set.\n\nhttps://member.onlifehealth.com/Goal/LearnMore"
+        }
+      } ]
+    }
+  } ],
+  "creationTime": {
+    "seconds": 1722545015,
+    "nanos": 529981000
+  },
+  "testConfig": {
+    "flow": "Default Start Flow",
+    "page": "Start Page"
+  },
+  "languageCode": "en"
+}

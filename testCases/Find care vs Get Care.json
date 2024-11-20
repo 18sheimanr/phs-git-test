@@ -1,0 +1,335 @@
+{
+  "name": "1295527d-d7f1-480d-8943-a3a62579bc25",
+  "displayName": "Find care vs Get Care",
+  "notes": "Test two find care and two get care cases",
+  "testCaseConversationTurns": [ {
+    "userInput": {
+      "injectedParameters": {
+        "$session.params.member.firstName": "Susan",
+        "$session.params.planContactNumber": "1-800-555-PLAN",
+        "$session.params.state.session.timeSinceLastSession": 10000,
+        "$session.params.tenant.planUrl": "www.myhealthplan.com",
+        "$session.params.tenant.programName": "Well onTarget",
+        "$session.params.tenant.wellnessContactNumber": "800-555-WELL"
+      },
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "hi"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "sessionParameters": {
+        "member.firstName": "Susan",
+        "planContactNumber": "1-800-555-PLAN",
+        "state.session.timeSinceLastSession": 10000,
+        "tenant.planUrl": "www.myhealthplan.com",
+        "tenant.programName": "Well onTarget",
+        "tenant.wellnessContactNumber": "800-555-WELL"
+      },
+      "differences": [ {
+        "type": "PAGE",
+        "description": "Page mismatch:\nExpected: \nActual:   Start Page",
+        "assertionType": "EQUAL",
+        "expectedValue": "",
+        "actualValue": "Start Page"
+      }, {
+        "type": "INTENT",
+        "description": "Intent mismatch:\nExpected: \nActual:   default.welcome",
+        "assertionType": "EQUAL",
+        "expectedValue": "",
+        "actualValue": "default.welcome"
+      }, {
+        "type": "UTTERANCE",
+        "description": "Agent response mismatch",
+        "warning": true,
+        "assertionType": "EQUAL",
+        "expectedValue": "",
+        "actualValue": "Hello Susan, we’re so glad you’re here! I'm Spark, your AI care companion from Well onTarget, I’m here to listen and support you along your wellness journey.Is there anything specific you'd like to focus on today? If not, feel free to check out some options below"
+      } ],
+      "triggeredIntent": {
+        "name": "default.welcome"
+      },
+      "currentPage": {
+        "name": "Start Page",
+        "flow": "Intent Flow"
+      },
+      "textResponses": [ {
+        "text": [ "Hello Susan, we’re so glad you’re here! I'm Spark, your AI care companion from Well onTarget, I’m here to listen and support you along your wellness journey." ]
+      }, {
+        "text": [ "Is there anything specific you'd like to focus on today? If not, feel free to check out some options below" ]
+      } ],
+      "currentFlow": {
+        "name": "Intent Flow"
+      },
+      "actions": [ {
+        "userUtterance": {
+          "text": "hi"
+        }
+      }, {
+        "agentUtterance": {
+          "text": "Hello Susan, we’re so glad you’re here! I'm Spark, your AI care companion from Well onTarget, I’m here to listen and support you along your wellness journey.\nIs there anything specific you'd like to focus on today? If not, feel free to check out some options below"
+        }
+      } ]
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "I need to find a provider"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "sessionParameters": {
+        "member.firstName": "Susan",
+        "planContactNumber": "1-800-555-PLAN",
+        "state.session.timeSinceLastSession": 10000,
+        "tenant.planUrl": "www.myhealthplan.com",
+        "tenant.programName": "Well onTarget",
+        "tenant.wellnessContactNumber": "800-555-WELL"
+      },
+      "differences": [ {
+        "type": "PAGE",
+        "description": "Page mismatch:\nExpected: \nActual:   Start Page",
+        "assertionType": "EQUAL",
+        "expectedValue": "",
+        "actualValue": "Start Page"
+      }, {
+        "type": "INTENT",
+        "description": "Intent mismatch:\nExpected: \nActual:   care.find",
+        "assertionType": "EQUAL",
+        "expectedValue": "",
+        "actualValue": "care.find"
+      }, {
+        "type": "UTTERANCE",
+        "description": "Agent response mismatch",
+        "warning": true,
+        "assertionType": "EQUAL",
+        "expectedValue": "",
+        "actualValue": "If this is an emergency call 911. If you are you trying to find a doctor, you can start at your plan website:"
+      } ],
+      "triggeredIntent": {
+        "name": "care.find"
+      },
+      "currentPage": {
+        "name": "Start Page",
+        "flow": "Intent Flow"
+      },
+      "textResponses": [ {
+        "text": [ "If this is an emergency call 911. If you are you trying to find a doctor, you can start at your plan website:" ]
+      } ],
+      "currentFlow": {
+        "name": "Intent Flow"
+      },
+      "actions": [ {
+        "userUtterance": {
+          "text": "I need to find a provider"
+        }
+      }, {
+        "agentUtterance": {
+          "text": "If this is an emergency call 911. If you are you trying to find a doctor, you can start at your plan website:"
+        }
+      } ]
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "I feel sick"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "sessionParameters": {
+        "member.firstName": "Susan",
+        "planContactNumber": "1-800-555-PLAN",
+        "state.session.timeSinceLastSession": 10000,
+        "tenant.planUrl": "www.myhealthplan.com",
+        "tenant.programName": "Well onTarget",
+        "tenant.wellnessContactNumber": "800-555-WELL"
+      },
+      "differences": [ {
+        "type": "PAGE",
+        "description": "Page mismatch:\nExpected: \nActual:   Start Page",
+        "assertionType": "EQUAL",
+        "expectedValue": "",
+        "actualValue": "Start Page"
+      }, {
+        "type": "INTENT",
+        "description": "Intent mismatch:\nExpected: \nActual:   care.get",
+        "assertionType": "EQUAL",
+        "expectedValue": "",
+        "actualValue": "care.get"
+      }, {
+        "type": "UTTERANCE",
+        "description": "Agent response mismatch",
+        "warning": true,
+        "assertionType": "EQUAL",
+        "expectedValue": "",
+        "actualValue": "If you're experiencing a medical emergency, please call 911 immediately. For non-urgent health matters, we're here to help. Let's work together to find the care you need. You can find a provider here: "
+      } ],
+      "triggeredIntent": {
+        "name": "care.get"
+      },
+      "currentPage": {
+        "name": "Start Page",
+        "flow": "Intent Flow"
+      },
+      "textResponses": [ {
+        "text": [ "If you're experiencing a medical emergency, please call 911 immediately. For non-urgent health matters, we're here to help. Let's work together to find the care you need. You can find a provider here: " ]
+      } ],
+      "currentFlow": {
+        "name": "Intent Flow"
+      },
+      "actions": [ {
+        "userUtterance": {
+          "text": "I feel sick"
+        }
+      }, {
+        "agentUtterance": {
+          "text": "If you're experiencing a medical emergency, please call 911 immediately. For non-urgent health matters, we're here to help. Let's work together to find the care you need. You can find a provider here: "
+        }
+      } ]
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "I need to find a new pediatrician for my daughter"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "sessionParameters": {
+        "member.firstName": "Susan",
+        "planContactNumber": "1-800-555-PLAN",
+        "state.session.timeSinceLastSession": 10000,
+        "tenant.planUrl": "www.myhealthplan.com",
+        "tenant.programName": "Well onTarget",
+        "tenant.wellnessContactNumber": "800-555-WELL"
+      },
+      "differences": [ {
+        "type": "PAGE",
+        "description": "Page mismatch:\nExpected: \nActual:   Start Page",
+        "assertionType": "EQUAL",
+        "expectedValue": "",
+        "actualValue": "Start Page"
+      }, {
+        "type": "INTENT",
+        "description": "Intent mismatch:\nExpected: \nActual:   care.find",
+        "assertionType": "EQUAL",
+        "expectedValue": "",
+        "actualValue": "care.find"
+      }, {
+        "type": "UTTERANCE",
+        "description": "Agent response mismatch",
+        "warning": true,
+        "assertionType": "EQUAL",
+        "expectedValue": "",
+        "actualValue": "If this is an emergency call 911. If you are you trying to find a doctor, you can start at your plan website:"
+      } ],
+      "triggeredIntent": {
+        "name": "care.find"
+      },
+      "currentPage": {
+        "name": "Start Page",
+        "flow": "Intent Flow"
+      },
+      "textResponses": [ {
+        "text": [ "If this is an emergency call 911. If you are you trying to find a doctor, you can start at your plan website:" ]
+      } ],
+      "currentFlow": {
+        "name": "Intent Flow"
+      },
+      "actions": [ {
+        "userUtterance": {
+          "text": "I need to find a new pediatrician for my daughter"
+        }
+      }, {
+        "agentUtterance": {
+          "text": "If this is an emergency call 911. If you are you trying to find a doctor, you can start at your plan website:"
+        }
+      } ]
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "I am planning to hurt myself"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "sessionParameters": {
+        "member.firstName": "Susan",
+        "planContactNumber": "1-800-555-PLAN",
+        "state.session.timeSinceLastSession": 10000,
+        "tenant.planUrl": "www.myhealthplan.com",
+        "tenant.programName": "Well onTarget",
+        "tenant.wellnessContactNumber": "800-555-WELL"
+      },
+      "differences": [ {
+        "type": "PAGE",
+        "description": "Page mismatch:\nExpected: \nActual:   Start Page",
+        "assertionType": "EQUAL",
+        "expectedValue": "",
+        "actualValue": "Start Page"
+      }, {
+        "type": "INTENT",
+        "description": "Intent mismatch:\nExpected: \nActual:   care.get-urgent-bh",
+        "assertionType": "EQUAL",
+        "expectedValue": "",
+        "actualValue": "care.get-urgent-bh"
+      }, {
+        "type": "UTTERANCE",
+        "description": "Agent response mismatch",
+        "warning": true,
+        "assertionType": "EQUAL",
+        "expectedValue": "",
+        "actualValue": "This could be an emergency. If you are having thoughts of suicide please call 988. If this is another type of emergency please dial 911."
+      } ],
+      "triggeredIntent": {
+        "name": "care.get-urgent-bh"
+      },
+      "currentPage": {
+        "name": "Start Page",
+        "flow": "Intent Flow"
+      },
+      "textResponses": [ {
+        "text": [ "This could be an emergency. If you are having thoughts of suicide please call 988. If this is another type of emergency please dial 911." ]
+      } ],
+      "currentFlow": {
+        "name": "Intent Flow"
+      },
+      "actions": [ {
+        "userUtterance": {
+          "text": "I am planning to hurt myself"
+        }
+      }, {
+        "agentUtterance": {
+          "text": "This could be an emergency. If you are having thoughts of suicide please call 988. If this is another type of emergency please dial 911."
+        }
+      } ]
+    }
+  } ],
+  "creationTime": {
+    "seconds": 1724343766,
+    "nanos": 583903000
+  },
+  "testConfig": {
+    "flow": "Default Start Flow",
+    "page": "Start Page"
+  },
+  "languageCode": "en"
+}

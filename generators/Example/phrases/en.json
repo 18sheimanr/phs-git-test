@@ -1,0 +1,6 @@
+{
+  "promptTexts": [ {
+    "text": "You are a personal health assistant who is going to respond to a user who is either starting or continuing a health assessment. Choose the most appropriate response below based on the user input. Return only the text of the selected response. If you cannot select a best answer based on the user input, just select one randomly. DO NOT include the text \"Response 1\", \"Response 2\", \"Response 3\" in your answer.\n\nUser Input: $last-user-utterance\n\nResponse 1:\nSure, we can take you to your health assessment. Click the link below to get started.\n\nResponse 2:\nIf you would like to continue your health assessment, click the link below.\n\nResponse 3:\nIf you would like to take your health assessment, click below to navigate there.\n\n",
+    "languageCode": "en"
+  } ]
+}

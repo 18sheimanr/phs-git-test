@@ -1,0 +1,270 @@
+{
+  "name": "31eb503c-7bc3-4f4e-ba0b-3851f0565c11",
+  "displayName": "FAQ Test 2",
+  "notes": "Test three additional FAQs",
+  "testCaseConversationTurns": [ {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "hey there"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "differences": [ {
+        "type": "PAGE",
+        "description": "Page mismatch:\nExpected: \nActual:   Start Page",
+        "assertionType": "EQUAL",
+        "expectedValue": "",
+        "actualValue": "Start Page"
+      }, {
+        "type": "INTENT",
+        "description": "Intent mismatch:\nExpected: \nActual:   default.welcome",
+        "assertionType": "EQUAL",
+        "expectedValue": "",
+        "actualValue": "default.welcome"
+      }, {
+        "type": "UTTERANCE",
+        "description": "Agent response mismatch",
+        "warning": true,
+        "assertionType": "EQUAL",
+        "expectedValue": "",
+        "actualValue": "Hello $session.params.member.firstName, we’re so glad you’re here! I'm Spark, your AI care companion from $session.params.tenant.programName, I’m here to listen and support you along your wellness journey.Is there anything specific you'd like to focus on today? If not, feel free to check out some options below"
+      } ],
+      "triggeredIntent": {
+        "name": "default.welcome"
+      },
+      "currentPage": {
+        "name": "Start Page",
+        "flow": "Intent Flow"
+      },
+      "textResponses": [ {
+        "text": [ "Hello $session.params.member.firstName, we’re so glad you’re here! I'm Spark, your AI care companion from $session.params.tenant.programName, I’m here to listen and support you along your wellness journey." ]
+      }, {
+        "text": [ "Is there anything specific you'd like to focus on today? If not, feel free to check out some options below" ]
+      } ],
+      "currentFlow": {
+        "name": "Intent Flow"
+      },
+      "actions": [ {
+        "userUtterance": {
+          "text": "hey there"
+        }
+      }, {
+        "agentUtterance": {
+          "text": "Hello $session.params.member.firstName, we’re so glad you’re here! I'm Spark, your AI care companion from $session.params.tenant.programName, I’m here to listen and support you along your wellness journey.\nIs there anything specific you'd like to focus on today? If not, feel free to check out some options below"
+        }
+      } ]
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "I need my biometric screening form"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "differences": [ {
+        "type": "PAGE",
+        "description": "Page mismatch:\nExpected: \nActual:   Start Page",
+        "assertionType": "EQUAL",
+        "expectedValue": "",
+        "actualValue": "Start Page"
+      }, {
+        "type": "UTTERANCE",
+        "description": "Agent response mismatch",
+        "warning": true,
+        "assertionType": "EQUAL",
+        "expectedValue": "",
+        "actualValue": "Thank you for reaching out to us. To locate your biometric screening form, click on \"Browse All Activities\", then scroll down to the \"More Features For You\" section. Click on \"My Health - Biometrics\"."
+      } ],
+      "currentPage": {
+        "name": "Start Page",
+        "flow": "Intent Flow"
+      },
+      "textResponses": [ {
+        "text": [ "Thank you for reaching out to us. To locate your biometric screening form, click on \"Browse All Activities\", then scroll down to the \"More Features For You\" section. Click on \"My Health - Biometrics\"." ],
+        "containDataStoreFaqContent": true,
+        "containAttemptedDataStoreInteractions": true
+      } ],
+      "currentFlow": {
+        "name": "Intent Flow"
+      },
+      "actions": [ {
+        "userUtterance": {
+          "text": "I need my biometric screening form"
+        }
+      }, {
+        "agentUtterance": {
+          "text": "Thank you for reaching out to us. To locate your biometric screening form, click on \"Browse All Activities\", then scroll down to the \"More Features For You\" section. Click on \"My Health - Biometrics\"."
+        }
+      } ]
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "I need help connecting my apple watch"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "differences": [ {
+        "type": "PAGE",
+        "description": "Page mismatch:\nExpected: \nActual:   Start Page",
+        "assertionType": "EQUAL",
+        "expectedValue": "",
+        "actualValue": "Start Page"
+      }, {
+        "type": "INTENT",
+        "description": "Intent mismatch:\nExpected: \nActual:   troubleshooting",
+        "assertionType": "EQUAL",
+        "expectedValue": "",
+        "actualValue": "troubleshooting"
+      }, {
+        "type": "UTTERANCE",
+        "description": "Agent response mismatch",
+        "warning": true,
+        "assertionType": "EQUAL",
+        "expectedValue": "",
+        "actualValue": "Sorry you're having trouble, can you describe the issue to me?"
+      } ],
+      "triggeredIntent": {
+        "name": "troubleshooting"
+      },
+      "currentPage": {
+        "name": "Start Page",
+        "flow": "Troubleshooting"
+      },
+      "textResponses": [ {
+        "text": [ "Sorry you're having trouble, can you describe the issue to me?" ]
+      } ],
+      "currentFlow": {
+        "name": "Troubleshooting"
+      },
+      "actions": [ {
+        "userUtterance": {
+          "text": "I need help connecting my apple watch"
+        }
+      }, {
+        "agentUtterance": {
+          "text": "Sorry you're having trouble, can you describe the issue to me?"
+        }
+      } ]
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "I am trying to connect my apple watch but there are no in structions on that page"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "differences": [ {
+        "type": "PAGE",
+        "description": "Page mismatch:\nExpected: \nActual:   Start Page",
+        "assertionType": "EQUAL",
+        "expectedValue": "",
+        "actualValue": "Start Page"
+      }, {
+        "type": "UTTERANCE",
+        "description": "Agent response mismatch",
+        "warning": true,
+        "assertionType": "EQUAL",
+        "expectedValue": "",
+        "actualValue": "I can help with that!Thank you for reaching out. You need to add our mobile app to your phone to add your Apple watch. Please follow these steps:   \nStep 1: Download our mobile app through the app store.                                                               \nStep 2: Click \"New User Registration\"                                                                               \nStep 3: Enter your first name, last name, date of birth, and zip code. Click the \"Verify' button.                                                                                                                                            \nStep 4: Enter the Subscriber ID (without alpha prefix) and Group Number. Click the \"Verify\" button. If the Group number is less than 6 characters long, enter zeros proceeding the Group Number. (Example: Group Number is 4321, enter it as: 004321) You will receive a prompt to call if you cannot be identified with your Subscriber ID and Group Number. \nStep 5: Create a Username and password. Enter your mobile number and email address. Check \"Yes, I accept the terms and conditions.\" Click \"Register.\" \nStep 6: Create and confirm the PIN number. \nAfter you have signed in, it will ask if you would like to add your Apple device. Make sure all categories are turned on."
+      } ],
+      "currentPage": {
+        "name": "Start Page",
+        "flow": "Intent Flow"
+      },
+      "textResponses": [ {
+        "text": [ "I can help with that!" ],
+        "containDataStoreFaqContent": true,
+        "containAttemptedDataStoreInteractions": true
+      }, {
+        "text": [ "Thank you for reaching out. You need to add our mobile app to your phone to add your Apple watch. Please follow these steps:   \nStep 1: Download our mobile app through the app store.                                                               \nStep 2: Click \"New User Registration\"                                                                               \nStep 3: Enter your first name, last name, date of birth, and zip code. Click the \"Verify' button.                                                                                                                                            \nStep 4: Enter the Subscriber ID (without alpha prefix) and Group Number. Click the \"Verify\" button. If the Group number is less than 6 characters long, enter zeros proceeding the Group Number. (Example: Group Number is 4321, enter it as: 004321) You will receive a prompt to call if you cannot be identified with your Subscriber ID and Group Number. \nStep 5: Create a Username and password. Enter your mobile number and email address. Check \"Yes, I accept the terms and conditions.\" Click \"Register.\" \nStep 6: Create and confirm the PIN number. \nAfter you have signed in, it will ask if you would like to add your Apple device. Make sure all categories are turned on." ],
+        "containDataStoreFaqContent": true,
+        "containAttemptedDataStoreInteractions": true
+      } ],
+      "currentFlow": {
+        "name": "Intent Flow"
+      },
+      "actions": [ {
+        "userUtterance": {
+          "text": "I am trying to connect my apple watch but there are no in structions on that page"
+        }
+      }, {
+        "agentUtterance": {
+          "text": "I can help with that!\nThank you for reaching out. You need to add our mobile app to your phone to add your Apple watch. Please follow these steps:   \nStep 1: Download our mobile app through the app store.                                                               \nStep 2: Click \"New User Registration\"                                                                               \nStep 3: Enter your first name, last name, date of birth, and zip code. Click the \"Verify' button.                                                                                                                                            \nStep 4: Enter the Subscriber ID (without alpha prefix) and Group Number. Click the \"Verify\" button. If the Group number is less than 6 characters long, enter zeros proceeding the Group Number. (Example: Group Number is 4321, enter it as: 004321) You will receive a prompt to call if you cannot be identified with your Subscriber ID and Group Number. \nStep 5: Create a Username and password. Enter your mobile number and email address. Check \"Yes, I accept the terms and conditions.\" Click \"Register.\" \nStep 6: Create and confirm the PIN number. \nAfter you have signed in, it will ask if you would like to add your Apple device. Make sure all categories are turned on."
+        }
+      } ]
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "complete my progress check in"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "differences": [ {
+        "type": "PAGE",
+        "description": "Page mismatch:\nExpected: \nActual:   Start Page",
+        "assertionType": "EQUAL",
+        "expectedValue": "",
+        "actualValue": "Start Page"
+      }, {
+        "type": "UTTERANCE",
+        "description": "Agent response mismatch",
+        "warning": true,
+        "assertionType": "EQUAL",
+        "expectedValue": "",
+        "actualValue": "Thank you for reaching out to us. To locate your progress check in, click on \"Browse All Activities\", then scroll down to the \"Progress Check-In\" section. In this section, you can complete the following progress check ins: Weight Management, Preventative Health, Managing Stress, Improving Nutrition, Get Active, Quit Tobacco, and Blood Pressure. "
+      } ],
+      "currentPage": {
+        "name": "Start Page",
+        "flow": "Intent Flow"
+      },
+      "textResponses": [ {
+        "text": [ "Thank you for reaching out to us. To locate your progress check in, click on \"Browse All Activities\", then scroll down to the \"Progress Check-In\" section. In this section, you can complete the following progress check ins: Weight Management, Preventative Health, Managing Stress, Improving Nutrition, Get Active, Quit Tobacco, and Blood Pressure. " ],
+        "containDataStoreFaqContent": true,
+        "containAttemptedDataStoreInteractions": true
+      } ],
+      "currentFlow": {
+        "name": "Intent Flow"
+      },
+      "actions": [ {
+        "userUtterance": {
+          "text": "complete my progress check in"
+        }
+      }, {
+        "agentUtterance": {
+          "text": "Thank you for reaching out to us. To locate your progress check in, click on \"Browse All Activities\", then scroll down to the \"Progress Check-In\" section. In this section, you can complete the following progress check ins: Weight Management, Preventative Health, Managing Stress, Improving Nutrition, Get Active, Quit Tobacco, and Blood Pressure. "
+        }
+      } ]
+    }
+  } ],
+  "creationTime": {
+    "seconds": 1725634217,
+    "nanos": 670662000
+  },
+  "testConfig": {
+    "flow": "Default Start Flow",
+    "page": "Start Page"
+  },
+  "languageCode": "en"
+}

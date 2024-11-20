@@ -1,0 +1,151 @@
+{
+  "name": "7a41ea29-fda5-4564-b3b7-e91ca6513453",
+  "displayName": "Troubleshooting",
+  "transitionRoutes": [ {
+    "intent": "troubleshooting.cancel",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Okay, if you need to describe a problem just say \"troubleshooting\". Is there anything else I can help you with?" ]
+        },
+        "languageCode": "en"
+      } ],
+      "nextActionOverride": {
+      
+      }
+    },
+    "targetPage": "End Flow",
+    "name": "bd202f9d-a314-41ec-b1b1-28c66e21cecb"
+  }, {
+    "intent": "troubleshooting.other",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Pleases describe the issue(s) you are experiencing" ]
+        },
+        "languageCode": "en"
+      } ],
+      "nextActionOverride": {
+      
+      }
+    },
+    "name": "da4c8703-7bdb-47e5-b02e-df2f3b8b10d7",
+    "description": "When a user clicks other, "
+  }, {
+    "condition": "$flow.troubleshooting-state = null",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I can help you with that. Could you please describe the issue(s) you're experiencing?" ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Here are some common issues:" ]
+        },
+        "languageCode": "en"
+      }, {
+        "payload": {
+          "richContent": [ [ {
+            "options": [ {
+              "text": "Health Assessment Help"
+            }, {
+              "text": "Find Certificate of Completion"
+            }, {
+              "text": "Apple Watch Won't Connect"
+            }, {
+              "text": "Quit Self-Guided Program"
+            }, {
+              "text": "Other"
+            } ],
+            "type": "chips"
+          } ] ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "To exit troubleshooting, type CANCEL or EXIT at anytime." ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "$flow.troubleshooting-state",
+        "value": "initialized"
+      } ],
+      "nextActionOverride": {
+      
+      }
+    },
+    "name": "b388bd44-d030-44e9-8aec-33d32f9cfac4"
+  }, {
+    "condition": "$flow.troubleshooting-state = \"emergency-triggered\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "End Flow",
+    "name": "fb271761-bb8f-481d-bbd9-74a315353564"
+  } ],
+  "eventHandlers": [ {
+    "event": "sys.no-match-default",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Sorry you're having trouble, unfortunately I don't have the answer to that in my database yet. You can contact $session.params.tenant.programName member services at $session.params.tenant.wellnessContactNumber.\n\nIf you need help with your health plan you can try $session.params.tenant.planUrl or contact member services at $session.params.planContactNumber.\n\nYou can also try to reword your question, or type \"cancel\" to exit troubleshooting." ]
+        },
+        "languageCode": "en"
+      } ],
+      "nextActionOverride": {
+      
+      }
+    },
+    "name": "49bedfc8-f1b8-4a72-a60f-9d44a072c7e1"
+  }, {
+    "event": "sys.no-input-default",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I didn't get that. Can you say it again?", "I missed what you said. What was that?", "Sorry, could you say that again?", "Sorry, can you say that again?", "Can you say that again?", "Sorry, I didn't get that. Can you rephrase?", "Sorry, what was that?", "One more time?", "What was that?", "Say that one more time?", "I didn't get that. Can you repeat?", "I missed that, say that again?" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "9e7f72bd-4ddf-4c41-bb62-3af5b09d669b"
+  } ],
+  "nluSettings": {
+    "modelType": "MODEL_TYPE_ADVANCED",
+    "classificationThreshold": 0.30000001,
+    "modelTrainingMode": "MODEL_TRAINING_MODE_MANUAL"
+  },
+  "knowledgeConnectorSettings": {
+    "enabled": true,
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "$request.knowledge.answers[0]" ]
+        },
+        "languageCode": "en"
+      } ],
+      "nextActionOverride": {
+      
+      }
+    },
+    "targetPage": "End Flow",
+    "dataStoreConnections": [ {
+      "dataStoreType": "STRUCTURED",
+      "dataStore": "projects/170713538326/locations/us/collections/default_collection/dataStores/phs-faq-all-client_1724960611133",
+      "languageCode": "en",
+      "documentProcessingMode": "DOCUMENTS",
+      "aclConfig": {
+      
+      }
+    } ]
+  },
+  "nluSettingsList": [ {
+    "modelType": "MODEL_TYPE_ADVANCED",
+    "classificationThreshold": 0.30000001,
+    "modelTrainingMode": "MODEL_TRAINING_MODE_MANUAL",
+    "customConfigKey": "308cb7d4-2089-4c5e-8475-795696b237ef",
+    "languageCode": "en"
+  } ],
+  "agentTransitionRouteGroups": [ "Get Care All" ]
+}

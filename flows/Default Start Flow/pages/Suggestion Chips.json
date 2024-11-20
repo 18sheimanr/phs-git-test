@@ -1,0 +1,22 @@
+{
+  "name": "48883aa9-7711-43c6-883b-361a2ab7c3a6",
+  "displayName": "Suggestion Chips",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "payload": {
+        "richContent": [ {
+          "options": [ {
+            "text": "option 1"
+          }, {
+            "text": "option 2"
+          } ],
+          "type": "chips"
+        } ]
+      },
+      "languageCode": "en"
+    } ]
+  }
+}
