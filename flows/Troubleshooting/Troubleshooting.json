@@ -116,30 +116,6 @@
     "classificationThreshold": 0.30000001,
     "modelTrainingMode": "MODEL_TRAINING_MODE_MANUAL"
   },
-  "knowledgeConnectorSettings": {
-    "enabled": true,
-    "triggerFulfillment": {
-      "messages": [ {
-        "text": {
-          "text": [ "$request.knowledge.answers[0]" ]
-        },
-        "languageCode": "en"
-      } ],
-      "nextActionOverride": {
-      
-      }
-    },
-    "targetPage": "End Flow",
-    "dataStoreConnections": [ {
-      "dataStoreType": "STRUCTURED",
-      "dataStore": "projects/170713538326/locations/us/collections/default_collection/dataStores/phs-faq-all-client_1724960611133",
-      "languageCode": "en",
-      "documentProcessingMode": "DOCUMENTS",
-      "aclConfig": {
-      
-      }
-    } ]
-  },
   "nluSettingsList": [ {
     "modelType": "MODEL_TYPE_ADVANCED",
     "classificationThreshold": 0.30000001,
