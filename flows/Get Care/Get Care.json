@@ -6,7 +6,7 @@
     "triggerFulfillment": {
       "messages": [ {
         "text": {
-          "text": [ "suspected abuse intent triggered" ]
+          "text": [ "It's important to address what you're experiencing, even if it may not require emergency care. I can help you find the appropriate care provider through the health plan resources available here:" ]
         },
         "languageCode": "en"
       }, {

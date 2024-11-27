@@ -1,0 +1,17 @@
+{
+  "name": "8e648f25-534b-48ef-8d4d-eb62f9359919",
+  "displayName": "History Reminder",
+  "form": {
+  
+  },
+  "transitionRoutes": [ {
+    "condition": "$session.params.history_prev_action = null",
+    "triggerFulfillment": {
+      "nextActionOverride": {
+      
+      }
+    },
+    "targetPage": "Previous Page",
+    "name": "8f296c04-5365-46e4-b805-2db4c557de5d"
+  } ]
+}
