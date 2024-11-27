@@ -1,0 +1,22 @@
+{
+  "name": "19d2d398-f2f8-4510-be34-101e7e6b072e",
+  "displayName": "history-get",
+  "genericWebService": {
+    "uri": "https://dev-titan.pagerinc.com/api/companion-history?limit=3\u0026memberId=$session.params.member.id",
+    "webhookType": "FLEXIBLE",
+    "httpMethod": "GET",
+    "parameterMapping": [ {
+      "key": "history_prev_action",
+      "value": "$.data[0].action"
+    } ],
+    "oauthConfig": {
+      "clientId": "2r7ofimu57lrikbjsp72o5v224",
+      "clientSecret": "6glj39ft3t23rdrpfqrga84h3a6rupia96peuk62k3es174d0ac",
+      "tokenEndpoint": "https://dev-titan.auth.us-east-2.amazoncognito.com/oauth2/token"
+    },
+    "serviceAgentAuth": "NONE"
+  },
+  "timeout": {
+    "seconds": 5
+  }
+}

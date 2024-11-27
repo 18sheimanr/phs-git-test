@@ -1,0 +1,19 @@
+{
+  "name": "4beae496-1ae8-45ef-8998-bc09e42b040d",
+  "displayName": "history-add",
+  "genericWebService": {
+    "uri": "https://dev-titan.pagerinc.com/api/companion-history",
+    "webhookType": "FLEXIBLE",
+    "httpMethod": "POST",
+    "requestBody": "{\n  \"memberId\": \"$session.params.member.id\",\n  \"action\": \"$session.params.history_cur_action\"\n}",
+    "oauthConfig": {
+      "clientId": "2r7ofimu57lrikbjsp72o5v224",
+      "clientSecret": "6glj39ft3t23rdrpfqrga84h3a6rupia96peuk62k3es174d0ac",
+      "tokenEndpoint": "https://dev-titan.auth.us-east-2.amazoncognito.com/oauth2/token"
+    },
+    "serviceAgentAuth": "NONE"
+  },
+  "timeout": {
+    "seconds": 5
+  }
+}

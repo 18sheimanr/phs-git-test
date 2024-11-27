@@ -2,20 +2,6 @@
   "name": "1ea23777-bce2-471e-bb79-f0fda7d434fb",
   "displayName": "Intent Flow",
   "transitionRoutes": [ {
-    "intent": "care.get-urgent-bh",
-    "triggerFulfillment": {
-    
-    },
-    "targetFlow": "Get Care Urgent BH",
-    "name": "e5ac100f-2348-478a-a837-9b1d38479faf"
-  }, {
-    "intent": "care.get-urgent",
-    "triggerFulfillment": {
-    
-    },
-    "targetFlow": "Get Care Urgent",
-    "name": "021c9f1c-e33c-4b63-b969-e7c2bbabb911"
-  }, {
     "intent": "care.get",
     "triggerFulfillment": {
     
@@ -32,7 +18,15 @@
   }, {
     "intent": "coaching.home",
     "triggerFulfillment": {
-    
+      "webhook": "history-add",
+      "tag": "unused",
+      "setParameterActions": [ {
+        "parameter": "history_cur_action",
+        "value": "coaching"
+      } ],
+      "nextActionOverride": {
+      
+      }
     },
     "targetFlow": "Coaching",
     "name": "edfb9762-c205-44fb-bf8b-82700a1c34cd"
@@ -57,21 +51,49 @@
   }, {
     "intent": "challenges.home",
     "triggerFulfillment": {
-    
+      "webhook": "history-add",
+      "tag": "unused",
+      "setParameterActions": [ {
+        "parameter": "history_cur_action",
+        "value": "challenges"
+      } ],
+      "generators": [ {
+        "generator": "projects/develop-251413/locations/us-central1/agents/c527bdd2-6892-4b0b-b6e7-63f05d582de5/generators/dca2055e-3282-4332-9183-9eaf5aac30ab",
+        "outputParameter": "$request.generative.output"
+      } ],
+      "nextActionOverride": {
+      
+      }
     },
     "targetFlow": "Challenges",
     "name": "f446c3ab-fe87-4353-bfcd-e7391523d765"
   }, {
     "intent": "device.home",
     "triggerFulfillment": {
-    
+      "webhook": "history-add",
+      "tag": "unused",
+      "setParameterActions": [ {
+        "parameter": "history_cur_action",
+        "value": "devices"
+      } ],
+      "nextActionOverride": {
+      
+      }
     },
     "targetFlow": "Devices",
     "name": "9a722d1e-2d3c-42c1-9b28-b87b9b5f5094"
   }, {
     "intent": "health-assessment",
     "triggerFulfillment": {
-    
+      "webhook": "history-add",
+      "tag": "unused",
+      "setParameterActions": [ {
+        "parameter": "history_cur_action",
+        "value": "health_assessment"
+      } ],
+      "nextActionOverride": {
+      
+      }
     },
     "targetFlow": "Health Assessment",
     "name": "c43e91fa-06e6-4d1e-b68a-d75cea11581a"
@@ -99,21 +121,45 @@
   }, {
     "intent": "rewards.home",
     "triggerFulfillment": {
-    
+      "webhook": "history-add",
+      "tag": "unused",
+      "setParameterActions": [ {
+        "parameter": "history_cur_action",
+        "value": "rewards"
+      } ],
+      "nextActionOverride": {
+      
+      }
     },
     "targetFlow": "Rewards",
     "name": "a353907a-f51b-471d-bc5b-ca97978148ae"
   }, {
     "intent": "sgp.home",
     "triggerFulfillment": {
-    
+      "webhook": "history-add",
+      "tag": "unused",
+      "setParameterActions": [ {
+        "parameter": "history_cur_action",
+        "value": "self_guided_programs"
+      } ],
+      "nextActionOverride": {
+      
+      }
     },
     "targetFlow": "Self-Guided Programs",
     "name": "ea0cc47d-02c6-4c46-b383-a49395d38a2b"
   }, {
     "intent": "trackers.home",
     "triggerFulfillment": {
-    
+      "webhook": "history-add",
+      "tag": "unused",
+      "setParameterActions": [ {
+        "parameter": "history_cur_action",
+        "value": "trackers"
+      } ],
+      "nextActionOverride": {
+      
+      }
     },
     "targetFlow": "Trackers",
     "name": "d78b6f9c-6c6b-402e-a9f3-0ba555b77daf"
@@ -171,21 +217,9 @@
     },
     "targetFlow": "Plan Information",
     "name": "8248b780-5126-4292-82ee-9b97de590a3b"
-  }, {
-    "intent": "test.livehuman",
-    "triggerFulfillment": {
-    
-    },
-    "name": "aab620d2-f159-47c6-808b-9805c67870b9"
-  }, {
-    "intent": "care.get-ugent-suspected-abuse",
-    "triggerFulfillment": {
-    
-    },
-    "targetFlow": "Get Care Abuse",
-    "name": "e426f30f-b0b9-47cc-8714-f47f9220a76e"
   } ],
   "eventHandlers": [ {
+    "targetPage": "no-match",
     "event": "sys.no-match-default",
     "triggerFulfillment": {
       "messages": [ {
@@ -195,7 +229,7 @@
         "languageCode": "en"
       }, {
         "text": {
-          "text": [ "Here are some topics I can help with" ]
+          "text": [ "Here are some topics I can help with:" ]
         },
         "languageCode": "en"
       }, {
@@ -234,13 +268,12 @@
     },
     "name": "da6550d3-1d61-4258-a5b7-cb7529db7dd1"
   }, {
+    "targetPage": "no-match",
     "event": "sys.no-match-1",
     "triggerFulfillment": {
-      "messages": [ {
-        "text": {
-          "text": [ "I didn't get that. Can you say it again?", "Sorry, could you say that again?", "Sorry, I didn't get that. Can you rephrase?" ]
-        },
-        "languageCode": "en"
+      "generators": [ {
+        "generator": "projects/develop-251413/locations/us-central1/agents/c527bdd2-6892-4b0b-b6e7-63f05d582de5/generators/dca2055e-3282-4332-9183-9eaf5aac30ab",
+        "outputParameter": "$request.generative.output"
       } ],
       "nextActionOverride": {
       
@@ -334,7 +367,7 @@
   "nluSettings": {
     "modelType": "MODEL_TYPE_ADVANCED",
     "classificationThreshold": 0.30000001,
-    "modelTrainingMode": "MODEL_TRAINING_MODE_AUTOMATIC"
+    "modelTrainingMode": "MODEL_TRAINING_MODE_MANUAL"
   },
   "knowledgeConnectorSettings": {
     "enabled": true,
@@ -359,7 +392,7 @@
   "nluSettingsList": [ {
     "modelType": "MODEL_TYPE_ADVANCED",
     "classificationThreshold": 0.30000001,
-    "modelTrainingMode": "MODEL_TRAINING_MODE_AUTOMATIC",
+    "modelTrainingMode": "MODEL_TRAINING_MODE_MANUAL",
     "customConfigKey": "2b423472-af68-41d7-8023-77f15d41d0e8",
     "languageCode": "en"
   } ]

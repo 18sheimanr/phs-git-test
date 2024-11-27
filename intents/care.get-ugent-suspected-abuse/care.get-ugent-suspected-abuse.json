@@ -1,7 +1,0 @@
-{
-  "name": "034b4fb1-b745-4f4f-bab4-79437090b594",
-  "displayName": "care.get-ugent-suspected-abuse",
-  "priority": 500000,
-  "skipAutoAnnotation": true,
-  "numTrainingPhrases": 21
-}
