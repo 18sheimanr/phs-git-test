@@ -85,6 +85,13 @@
     "targetFlow": "Challenges",
     "name": "f446c3ab-fe87-4353-bfcd-e7391523d765"
   }, {
+    "intent": "coaching.home",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "Coaching",
+    "name": "edfb9762-c205-44fb-bf8b-82700a1c34cd"
+  }, {
     "intent": "device.home",
     "triggerFulfillment": {
       "webhook": "history-add",
@@ -210,6 +217,13 @@
     "targetFlow": "Trackers",
     "name": "d78b6f9c-6c6b-402e-a9f3-0ba555b77daf"
   }, {
+    "intent": "thank-you",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "Thank You",
+    "name": "53efb821-d12a-48f5-97af-b3bf11fbff6a"
+  }, {
     "intent": "troubleshooting",
     "triggerFulfillment": {
       "generators": [ {
@@ -232,6 +246,31 @@
     },
     "targetFlow": "How Can You Help?",
     "name": "db5ffed8-e575-4c04-87bb-94b7009f5e90"
+  }, {
+    "intent": "issue-request.general",
+    "condition": "$session.params.programComponents.coaching.eligible = true",
+    "triggerFulfillment": {
+      "nextActionOverride": {
+      
+      }
+    },
+    "targetFlow": "Coaching",
+    "name": "957075cf-c271-4ce3-af4b-f8be5295b36d"
+  }, {
+    "intent": "issue-request.general",
+    "condition": "$session.params.programComponents.coaching.eligible = false OR $session.params.programComponents.coaching.eligible = null",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "Self-Guided Programs",
+    "name": "d049e8b4-b1eb-4927-9b30-02de2057a6b9"
+  }, {
+    "intent": "plan.information",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "Plan Information",
+    "name": "8248b780-5126-4292-82ee-9b97de590a3b"
   }, {
     "intent": "default.welcome",
     "triggerFulfillment": {
@@ -458,5 +497,6 @@
     "modelTrainingMode": "MODEL_TRAINING_MODE_MANUAL",
     "customConfigKey": "2b423472-af68-41d7-8023-77f15d41d0e8",
     "languageCode": "en"
-  } ]
+  } ],
+  "agentTransitionRouteGroups": [ "Get Care All" ]
 }

@@ -29,6 +29,9 @@
             "anchor": {
               "href": "https://member.onlifehealth.com/challenge"
             },
+            "icon": {
+              "type": "open_in_new"
+            },
             "text": "Challenges",
             "type": "button"
           } ] ]

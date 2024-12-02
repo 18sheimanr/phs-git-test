@@ -62,7 +62,7 @@
     "triggerFulfillment": {
       "messages": [ {
         "text": {
-          "text": [ "I can help you with that. Could you please describe the issue(s) you're experiencing?" ]
+          "text": [ "I can help with that. Can you describe the issue to me?" ]
         },
         "languageCode": "en"
       }, {
@@ -74,23 +74,18 @@
         "payload": {
           "richContent": [ [ {
             "options": [ {
-              "text": "Health Assessment Help"
+              "text": "My Apple Watch has stopped linking my steps to the app?"
             }, {
-              "text": "Find Certificate of Completion"
+              "text": "How do I update my email preferences?"
             }, {
-              "text": "Apple Watch Won't Connect"
-            }, {
-              "text": "Quit Self-Guided Program"
+              "text": "My Fitbit is connected, but it is not showing any data?"
             }, {
               "text": "Other"
+            }, {
+              "text": "Cancel"
             } ],
             "type": "chips"
           } ] ]
-        },
-        "languageCode": "en"
-      }, {
-        "text": {
-          "text": [ "To exit troubleshooting, type CANCEL or EXIT at anytime." ]
         },
         "languageCode": "en"
       } ],
