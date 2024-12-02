@@ -4,14 +4,20 @@
   "transitionRoutes": [ {
     "intent": "care.get",
     "triggerFulfillment": {
-    
+      "generators": [ {
+        "generator": "projects/develop-251413/locations/us-central1/agents/c527bdd2-6892-4b0b-b6e7-63f05d582de5/generators/dca2055e-3282-4332-9183-9eaf5aac30ab",
+        "outputParameter": "$request.generative.output"
+      } ]
     },
     "targetFlow": "Get Care",
     "name": "9a74bdb9-f65b-48c2-924c-fe57e5f20ea4"
   }, {
     "intent": "care.find",
     "triggerFulfillment": {
-    
+      "generators": [ {
+        "generator": "projects/develop-251413/locations/us-central1/agents/c527bdd2-6892-4b0b-b6e7-63f05d582de5/generators/dca2055e-3282-4332-9183-9eaf5aac30ab",
+        "outputParameter": "$request.generative.output"
+      } ]
     },
     "targetFlow": "Find Care",
     "name": "8868c45b-313f-48d2-a8a2-bf51b339a2ba"
@@ -24,6 +30,10 @@
         "parameter": "history_cur_action",
         "value": "coaching"
       } ],
+      "generators": [ {
+        "generator": "projects/develop-251413/locations/us-central1/agents/c527bdd2-6892-4b0b-b6e7-63f05d582de5/generators/dca2055e-3282-4332-9183-9eaf5aac30ab",
+        "outputParameter": "$request.generative.output"
+      } ],
       "nextActionOverride": {
       
       }
@@ -34,7 +44,10 @@
     "intent": "issue-request.general",
     "condition": "$session.params.programComponents.coaching.eligible = false OR $session.params.programComponents.coaching.eligible = null",
     "triggerFulfillment": {
-    
+      "generators": [ {
+        "generator": "projects/develop-251413/locations/us-central1/agents/c527bdd2-6892-4b0b-b6e7-63f05d582de5/generators/dca2055e-3282-4332-9183-9eaf5aac30ab",
+        "outputParameter": "$request.generative.output"
+      } ]
     },
     "targetFlow": "Self-Guided Programs",
     "name": "d049e8b4-b1eb-4927-9b30-02de2057a6b9"
@@ -42,6 +55,10 @@
     "intent": "issue-request.general",
     "condition": "$session.params.programComponents.coaching.eligible = true",
     "triggerFulfillment": {
+      "generators": [ {
+        "generator": "projects/develop-251413/locations/us-central1/agents/c527bdd2-6892-4b0b-b6e7-63f05d582de5/generators/dca2055e-3282-4332-9183-9eaf5aac30ab",
+        "outputParameter": "$request.generative.output"
+      } ],
       "nextActionOverride": {
       
       }
@@ -76,6 +93,10 @@
         "parameter": "history_cur_action",
         "value": "devices"
       } ],
+      "generators": [ {
+        "generator": "projects/develop-251413/locations/us-central1/agents/c527bdd2-6892-4b0b-b6e7-63f05d582de5/generators/dca2055e-3282-4332-9183-9eaf5aac30ab",
+        "outputParameter": "$request.generative.output"
+      } ],
       "nextActionOverride": {
       
       }
@@ -91,6 +112,10 @@
         "parameter": "history_cur_action",
         "value": "health_assessment"
       } ],
+      "generators": [ {
+        "generator": "projects/develop-251413/locations/us-central1/agents/c527bdd2-6892-4b0b-b6e7-63f05d582de5/generators/dca2055e-3282-4332-9183-9eaf5aac30ab",
+        "outputParameter": "$request.generative.output"
+      } ],
       "nextActionOverride": {
       
       }
@@ -100,21 +125,30 @@
   }, {
     "intent": "health-content.home",
     "triggerFulfillment": {
-    
+      "generators": [ {
+        "generator": "projects/develop-251413/locations/us-central1/agents/c527bdd2-6892-4b0b-b6e7-63f05d582de5/generators/dca2055e-3282-4332-9183-9eaf5aac30ab",
+        "outputParameter": "$request.generative.output"
+      } ]
     },
     "targetFlow": "Health Content",
     "name": "8202c9d3-a080-4678-adb7-8c48e900c069"
   }, {
     "intent": "items.in-progress",
     "triggerFulfillment": {
-    
+      "generators": [ {
+        "generator": "projects/develop-251413/locations/us-central1/agents/c527bdd2-6892-4b0b-b6e7-63f05d582de5/generators/dca2055e-3282-4332-9183-9eaf5aac30ab",
+        "outputParameter": "$request.generative.output"
+      } ]
     },
     "targetFlow": "In Progress Items",
     "name": "ce73bb86-381c-4607-b04e-bcf2aa322384"
   }, {
     "intent": "journey.home",
     "triggerFulfillment": {
-    
+      "generators": [ {
+        "generator": "projects/develop-251413/locations/us-central1/agents/c527bdd2-6892-4b0b-b6e7-63f05d582de5/generators/dca2055e-3282-4332-9183-9eaf5aac30ab",
+        "outputParameter": "$request.generative.output"
+      } ]
     },
     "targetFlow": "Journey Activities",
     "name": "2b6d0979-b09a-4c02-8453-e683754836ce"
@@ -126,6 +160,10 @@
       "setParameterActions": [ {
         "parameter": "history_cur_action",
         "value": "rewards"
+      } ],
+      "generators": [ {
+        "generator": "projects/develop-251413/locations/us-central1/agents/c527bdd2-6892-4b0b-b6e7-63f05d582de5/generators/dca2055e-3282-4332-9183-9eaf5aac30ab",
+        "outputParameter": "$request.generative.output"
       } ],
       "nextActionOverride": {
       
@@ -142,6 +180,10 @@
         "parameter": "history_cur_action",
         "value": "self_guided_programs"
       } ],
+      "generators": [ {
+        "generator": "projects/develop-251413/locations/us-central1/agents/c527bdd2-6892-4b0b-b6e7-63f05d582de5/generators/dca2055e-3282-4332-9183-9eaf5aac30ab",
+        "outputParameter": "$request.generative.output"
+      } ],
       "nextActionOverride": {
       
       }
@@ -157,6 +199,10 @@
         "parameter": "history_cur_action",
         "value": "trackers"
       } ],
+      "generators": [ {
+        "generator": "projects/develop-251413/locations/us-central1/agents/c527bdd2-6892-4b0b-b6e7-63f05d582de5/generators/dca2055e-3282-4332-9183-9eaf5aac30ab",
+        "outputParameter": "$request.generative.output"
+      } ],
       "nextActionOverride": {
       
       }
@@ -166,6 +212,10 @@
   }, {
     "intent": "troubleshooting",
     "triggerFulfillment": {
+      "generators": [ {
+        "generator": "projects/develop-251413/locations/us-central1/agents/c527bdd2-6892-4b0b-b6e7-63f05d582de5/generators/dca2055e-3282-4332-9183-9eaf5aac30ab",
+        "outputParameter": "$request.generative.output"
+      } ],
       "nextActionOverride": {
       
       }
@@ -175,13 +225,20 @@
   }, {
     "intent": "general.assistance",
     "triggerFulfillment": {
-    
+      "generators": [ {
+        "generator": "projects/develop-251413/locations/us-central1/agents/c527bdd2-6892-4b0b-b6e7-63f05d582de5/generators/dca2055e-3282-4332-9183-9eaf5aac30ab",
+        "outputParameter": "$request.generative.output"
+      } ]
     },
     "targetFlow": "How Can You Help?",
     "name": "db5ffed8-e575-4c04-87bb-94b7009f5e90"
   }, {
     "intent": "default.welcome",
     "triggerFulfillment": {
+      "generators": [ {
+        "generator": "projects/develop-251413/locations/us-central1/agents/c527bdd2-6892-4b0b-b6e7-63f05d582de5/generators/dca2055e-3282-4332-9183-9eaf5aac30ab",
+        "outputParameter": "$request.generative.output"
+      } ],
       "nextActionOverride": {
       
       }
@@ -191,7 +248,10 @@
   }, {
     "intent": "thank-you",
     "triggerFulfillment": {
-    
+      "generators": [ {
+        "generator": "projects/develop-251413/locations/us-central1/agents/c527bdd2-6892-4b0b-b6e7-63f05d582de5/generators/dca2055e-3282-4332-9183-9eaf5aac30ab",
+        "outputParameter": "$request.generative.output"
+      } ]
     },
     "targetFlow": "Thank You",
     "name": "53efb821-d12a-48f5-97af-b3bf11fbff6a"
@@ -213,7 +273,10 @@
   }, {
     "intent": "plan.information",
     "triggerFulfillment": {
-    
+      "generators": [ {
+        "generator": "projects/develop-251413/locations/us-central1/agents/c527bdd2-6892-4b0b-b6e7-63f05d582de5/generators/dca2055e-3282-4332-9183-9eaf5aac30ab",
+        "outputParameter": "$request.generative.output"
+      } ]
     },
     "targetFlow": "Plan Information",
     "name": "8248b780-5126-4292-82ee-9b97de590a3b"
