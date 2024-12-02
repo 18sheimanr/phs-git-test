@@ -1,0 +1,45 @@
+{
+  "name": "316c91b0-4370-42f0-8b08-730ce368f600",
+  "displayName": "no-match",
+  "form": {
+  
+  },
+  "transitionRoutes": [ {
+    "condition": "$request.generative.output = \"care\\.get-urgent-bh\\n\" OR $request.generative.output = \"care\\.get-bh\\n\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "Get Care Urgent BH",
+    "name": "a99f6e24-ddf5-42f3-b8d4-79336fef50bb"
+  }, {
+    "condition": "$request.generative.output = \"care\\.get-urgent\\n\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "Get Care Urgent",
+    "name": "0e45d8aa-5c97-421c-a3ae-69a1226c6c3a"
+  }, {
+    "condition": "true",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Sorry you're having trouble, unfortunately I don't have the answer to that in my database yet. You can contact $session.params.tenant.programName member services at $session.params.tenant.wellnessContactNumber.\n\nIf you need help with your health plan you can try $session.params.tenant.planUrl or contact member services at $session.params.planContactNumber.\n\nYou can also try to reword your question, or type \"cancel\" to exit troubleshooting." ]
+        },
+        "languageCode": "en"
+      } ],
+      "nextActionOverride": {
+      
+      }
+    },
+    "targetFlow": "Troubleshooting",
+    "name": "f40cd682-02d0-4845-b3b1-415f4804cdf2"
+  } ],
+  "eventHandlers": [ {
+    "targetPage": "End Flow",
+    "event": "flow.cancelled",
+    "triggerFulfillment": {
+    
+    },
+    "name": "51ff7699-ff73-4cf6-99f1-6fecc8ea72ca"
+  } ]
+}
