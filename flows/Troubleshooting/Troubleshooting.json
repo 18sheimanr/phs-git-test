@@ -32,6 +32,20 @@
     "name": "da4c8703-7bdb-47e5-b02e-df2f3b8b10d7",
     "description": "When a user clicks other, "
   }, {
+    "condition": "$request.generative.output = \"care\\.get-urgent-bh\\n\" OR $request.generative.output = \"care\\.get-bh\\n\"",
+    "triggerFulfillment": {
+
+    },
+    "targetFlow": "Get Care Urgent BH",
+    "name": "c5bbf7a7-11a3-400d-952d-9ea40f45025b"
+  }, {
+    "condition": "$request.generative.output = \"care\\.get-urgent\\n\"",
+    "triggerFulfillment": {
+
+    },
+    "targetFlow": "Get Care Urgent",
+    "name": "75715c19-4dad-4bca-985d-143786b82625"
+  }, {
     "condition": "$flow.troubleshooting-state = null",
     "triggerFulfillment": {
       "messages": [ {
