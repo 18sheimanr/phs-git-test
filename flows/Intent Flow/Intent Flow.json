@@ -2,16 +2,85 @@
   "name": "1ea23777-bce2-471e-bb79-f0fda7d434fb",
   "displayName": "Intent Flow",
   "transitionRoutes": [ {
+    "intent": "care.get",
+    "triggerFulfillment": {
+      "generators": [ {
+        "generator": "projects/develop-251413/locations/us-central1/agents/cebac205-da5f-48d0-a62d-bb6bedc71479/generators/dca2055e-3282-4332-9183-9eaf5aac30ab",
+        "outputParameter": "$request.generative.output"
+      } ]
+    },
+    "targetFlow": "Get Care",
+    "name": "9a74bdb9-f65b-48c2-924c-fe57e5f20ea4"
+  }, {
     "intent": "care.find",
     "triggerFulfillment": {
-    
+      "generators": [ {
+        "generator": "projects/develop-251413/locations/us-central1/agents/cebac205-da5f-48d0-a62d-bb6bedc71479/generators/dca2055e-3282-4332-9183-9eaf5aac30ab",
+        "outputParameter": "$request.generative.output"
+      } ]
     },
     "targetFlow": "Find Care",
     "name": "8868c45b-313f-48d2-a8a2-bf51b339a2ba"
   }, {
+    "intent": "coaching.home",
+    "triggerFulfillment": {
+      "webhook": "history-add",
+      "tag": "unused",
+      "setParameterActions": [ {
+        "parameter": "history_cur_action",
+        "value": "coaching"
+      } ],
+      "generators": [ {
+        "generator": "projects/develop-251413/locations/us-central1/agents/cebac205-da5f-48d0-a62d-bb6bedc71479/generators/dca2055e-3282-4332-9183-9eaf5aac30ab",
+        "outputParameter": "$request.generative.output"
+      } ],
+      "nextActionOverride": {
+      
+      }
+    },
+    "targetFlow": "Coaching",
+    "name": "edfb9762-c205-44fb-bf8b-82700a1c34cd"
+  }, {
+    "intent": "issue-request.general",
+    "condition": "$session.params.programComponents.coaching.eligible = false OR $session.params.programComponents.coaching.eligible = null",
+    "triggerFulfillment": {
+      "generators": [ {
+        "generator": "projects/develop-251413/locations/us-central1/agents/cebac205-da5f-48d0-a62d-bb6bedc71479/generators/dca2055e-3282-4332-9183-9eaf5aac30ab",
+        "outputParameter": "$request.generative.output"
+      } ]
+    },
+    "targetFlow": "Self-Guided Programs",
+    "name": "d049e8b4-b1eb-4927-9b30-02de2057a6b9"
+  }, {
+    "intent": "issue-request.general",
+    "condition": "$session.params.programComponents.coaching.eligible = true",
+    "triggerFulfillment": {
+      "generators": [ {
+        "generator": "projects/develop-251413/locations/us-central1/agents/cebac205-da5f-48d0-a62d-bb6bedc71479/generators/dca2055e-3282-4332-9183-9eaf5aac30ab",
+        "outputParameter": "$request.generative.output"
+      } ],
+      "nextActionOverride": {
+      
+      }
+    },
+    "targetFlow": "Coaching",
+    "name": "957075cf-c271-4ce3-af4b-f8be5295b36d"
+  }, {
     "intent": "challenges.home",
     "triggerFulfillment": {
-    
+      "webhook": "history-add",
+      "tag": "unused",
+      "setParameterActions": [ {
+        "parameter": "history_cur_action",
+        "value": "challenges"
+      } ],
+      "generators": [ {
+        "generator": "projects/develop-251413/locations/us-central1/agents/cebac205-da5f-48d0-a62d-bb6bedc71479/generators/dca2055e-3282-4332-9183-9eaf5aac30ab",
+        "outputParameter": "$request.generative.output"
+      } ],
+      "nextActionOverride": {
+      
+      }
     },
     "targetFlow": "Challenges",
     "name": "f446c3ab-fe87-4353-bfcd-e7391523d765"
@@ -25,56 +94,125 @@
   }, {
     "intent": "device.home",
     "triggerFulfillment": {
-    
+      "webhook": "history-add",
+      "tag": "unused",
+      "setParameterActions": [ {
+        "parameter": "history_cur_action",
+        "value": "devices"
+      } ],
+      "generators": [ {
+        "generator": "projects/develop-251413/locations/us-central1/agents/cebac205-da5f-48d0-a62d-bb6bedc71479/generators/dca2055e-3282-4332-9183-9eaf5aac30ab",
+        "outputParameter": "$request.generative.output"
+      } ],
+      "nextActionOverride": {
+      
+      }
     },
     "targetFlow": "Devices",
     "name": "9a722d1e-2d3c-42c1-9b28-b87b9b5f5094"
   }, {
     "intent": "health-assessment",
     "triggerFulfillment": {
-    
+      "webhook": "history-add",
+      "tag": "unused",
+      "setParameterActions": [ {
+        "parameter": "history_cur_action",
+        "value": "health_assessment"
+      } ],
+      "generators": [ {
+        "generator": "projects/develop-251413/locations/us-central1/agents/cebac205-da5f-48d0-a62d-bb6bedc71479/generators/dca2055e-3282-4332-9183-9eaf5aac30ab",
+        "outputParameter": "$request.generative.output"
+      } ],
+      "nextActionOverride": {
+      
+      }
     },
     "targetFlow": "Health Assessment",
     "name": "c43e91fa-06e6-4d1e-b68a-d75cea11581a"
   }, {
     "intent": "health-content.home",
     "triggerFulfillment": {
-    
+      "generators": [ {
+        "generator": "projects/develop-251413/locations/us-central1/agents/cebac205-da5f-48d0-a62d-bb6bedc71479/generators/dca2055e-3282-4332-9183-9eaf5aac30ab",
+        "outputParameter": "$request.generative.output"
+      } ]
     },
     "targetFlow": "Health Content",
     "name": "8202c9d3-a080-4678-adb7-8c48e900c069"
   }, {
     "intent": "items.in-progress",
     "triggerFulfillment": {
-    
+      "generators": [ {
+        "generator": "projects/develop-251413/locations/us-central1/agents/cebac205-da5f-48d0-a62d-bb6bedc71479/generators/dca2055e-3282-4332-9183-9eaf5aac30ab",
+        "outputParameter": "$request.generative.output"
+      } ]
     },
     "targetFlow": "In Progress Items",
     "name": "ce73bb86-381c-4607-b04e-bcf2aa322384"
   }, {
     "intent": "journey.home",
     "triggerFulfillment": {
-    
+      "generators": [ {
+        "generator": "projects/develop-251413/locations/us-central1/agents/cebac205-da5f-48d0-a62d-bb6bedc71479/generators/dca2055e-3282-4332-9183-9eaf5aac30ab",
+        "outputParameter": "$request.generative.output"
+      } ]
     },
     "targetFlow": "Journey Activities",
     "name": "2b6d0979-b09a-4c02-8453-e683754836ce"
   }, {
     "intent": "rewards.home",
     "triggerFulfillment": {
-    
+      "webhook": "history-add",
+      "tag": "unused",
+      "setParameterActions": [ {
+        "parameter": "history_cur_action",
+        "value": "rewards"
+      } ],
+      "generators": [ {
+        "generator": "projects/develop-251413/locations/us-central1/agents/cebac205-da5f-48d0-a62d-bb6bedc71479/generators/dca2055e-3282-4332-9183-9eaf5aac30ab",
+        "outputParameter": "$request.generative.output"
+      } ],
+      "nextActionOverride": {
+      
+      }
     },
     "targetFlow": "Rewards",
     "name": "a353907a-f51b-471d-bc5b-ca97978148ae"
   }, {
     "intent": "sgp.home",
     "triggerFulfillment": {
-    
+      "webhook": "history-add",
+      "tag": "unused",
+      "setParameterActions": [ {
+        "parameter": "history_cur_action",
+        "value": "self_guided_programs"
+      } ],
+      "generators": [ {
+        "generator": "projects/develop-251413/locations/us-central1/agents/cebac205-da5f-48d0-a62d-bb6bedc71479/generators/dca2055e-3282-4332-9183-9eaf5aac30ab",
+        "outputParameter": "$request.generative.output"
+      } ],
+      "nextActionOverride": {
+      
+      }
     },
     "targetFlow": "Self-Guided Programs",
     "name": "ea0cc47d-02c6-4c46-b383-a49395d38a2b"
   }, {
     "intent": "trackers.home",
     "triggerFulfillment": {
-    
+      "webhook": "history-add",
+      "tag": "unused",
+      "setParameterActions": [ {
+        "parameter": "history_cur_action",
+        "value": "trackers"
+      } ],
+      "generators": [ {
+        "generator": "projects/develop-251413/locations/us-central1/agents/cebac205-da5f-48d0-a62d-bb6bedc71479/generators/dca2055e-3282-4332-9183-9eaf5aac30ab",
+        "outputParameter": "$request.generative.output"
+      } ],
+      "nextActionOverride": {
+      
+      }
     },
     "targetFlow": "Trackers",
     "name": "d78b6f9c-6c6b-402e-a9f3-0ba555b77daf"
@@ -88,6 +226,10 @@
   }, {
     "intent": "troubleshooting",
     "triggerFulfillment": {
+      "generators": [ {
+        "generator": "projects/develop-251413/locations/us-central1/agents/cebac205-da5f-48d0-a62d-bb6bedc71479/generators/dca2055e-3282-4332-9183-9eaf5aac30ab",
+        "outputParameter": "$request.generative.output"
+      } ],
       "nextActionOverride": {
       
       }
@@ -97,7 +239,10 @@
   }, {
     "intent": "general.assistance",
     "triggerFulfillment": {
-    
+      "generators": [ {
+        "generator": "projects/develop-251413/locations/us-central1/agents/cebac205-da5f-48d0-a62d-bb6bedc71479/generators/dca2055e-3282-4332-9183-9eaf5aac30ab",
+        "outputParameter": "$request.generative.output"
+      } ]
     },
     "targetFlow": "How Can You Help?",
     "name": "db5ffed8-e575-4c04-87bb-94b7009f5e90"
@@ -129,12 +274,26 @@
   }, {
     "intent": "default.welcome",
     "triggerFulfillment": {
+      "generators": [ {
+        "generator": "projects/develop-251413/locations/us-central1/agents/cebac205-da5f-48d0-a62d-bb6bedc71479/generators/dca2055e-3282-4332-9183-9eaf5aac30ab",
+        "outputParameter": "$request.generative.output"
+      } ],
       "nextActionOverride": {
       
       }
     },
     "targetFlow": "Re-Welcome",
     "name": "ee402db6-00e2-4045-9f98-4af7def644db"
+  }, {
+    "intent": "thank-you",
+    "triggerFulfillment": {
+      "generators": [ {
+        "generator": "projects/develop-251413/locations/us-central1/agents/cebac205-da5f-48d0-a62d-bb6bedc71479/generators/dca2055e-3282-4332-9183-9eaf5aac30ab",
+        "outputParameter": "$request.generative.output"
+      } ]
+    },
+    "targetFlow": "Thank You",
+    "name": "53efb821-d12a-48f5-97af-b3bf11fbff6a"
   }, {
     "intent": "chat.end",
     "triggerFulfillment": {
@@ -150,8 +309,19 @@
     },
     "targetPage": "End Session",
     "name": "5a26396f-99e6-4e06-b8a9-870f17dbf216"
+  }, {
+    "intent": "plan.information",
+    "triggerFulfillment": {
+      "generators": [ {
+        "generator": "projects/develop-251413/locations/us-central1/agents/cebac205-da5f-48d0-a62d-bb6bedc71479/generators/dca2055e-3282-4332-9183-9eaf5aac30ab",
+        "outputParameter": "$request.generative.output"
+      } ]
+    },
+    "targetFlow": "Plan Information",
+    "name": "8248b780-5126-4292-82ee-9b97de590a3b"
   } ],
   "eventHandlers": [ {
+    "targetPage": "no-match",
     "event": "sys.no-match-default",
     "triggerFulfillment": {
       "messages": [ {
@@ -161,7 +331,7 @@
         "languageCode": "en"
       }, {
         "text": {
-          "text": [ "Here are some topics I can help with" ]
+          "text": [ "Here are some topics I can help with:" ]
         },
         "languageCode": "en"
       }, {
@@ -200,13 +370,12 @@
     },
     "name": "da6550d3-1d61-4258-a5b7-cb7529db7dd1"
   }, {
+    "targetPage": "no-match",
     "event": "sys.no-match-1",
     "triggerFulfillment": {
-      "messages": [ {
-        "text": {
-          "text": [ "I didn't get that. Can you say it again?", "Sorry, could you say that again?", "Sorry, I didn't get that. Can you rephrase?" ]
-        },
-        "languageCode": "en"
+      "generators": [ {
+        "generator": "projects/develop-251413/locations/us-central1/agents/cebac205-da5f-48d0-a62d-bb6bedc71479/generators/dca2055e-3282-4332-9183-9eaf5aac30ab",
+        "outputParameter": "$request.generative.output"
       } ],
       "nextActionOverride": {
       

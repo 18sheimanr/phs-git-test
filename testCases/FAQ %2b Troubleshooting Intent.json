@@ -13,6 +13,9 @@
       }
     },
     "virtualAgentOutput": {
+      "sessionParameters": {
+        "$request.generative.output": "other\n"
+      },
       "triggeredIntent": {
         "name": "default.welcome"
       },
@@ -21,11 +24,11 @@
         "flow": "Intent Flow"
       },
       "textResponses": [ {
-        "text": [ "Hello $session.params.member.firstName, we’re so glad you’re here! I'm Spark, your AI care companion from $session.params.tenant.programName, I’m here to listen and support you along your wellness journey." ]
+        "text": [ "Welcome $session.params.member.firstName! Your experience here is important, and I'm here to make it easier for you. Whether you're looking for specific information or resources, or guidance, I can help point you in the right direction. " ]
       }, {
-        "text": [ "Is there anything specific you'd like to focus on today? If not, feel free to check out some options below" ]
+        "text": [ "How can I assist you today? Feel free to ask about your concerns, services, or site features, and I'll provide you with the support you need." ]
       }, {
-        "text": [ "Hello, how can I assist you today?" ]
+        "text": [ "Hi. How can I be of service today?" ]
       } ],
       "currentFlow": {
         "name": "Intent Flow"
@@ -36,7 +39,7 @@
         }
       }, {
         "agentUtterance": {
-          "text": "Hello $session.params.member.firstName, we’re so glad you’re here! I'm Spark, your AI care companion from $session.params.tenant.programName, I’m here to listen and support you along your wellness journey.\nIs there anything specific you'd like to focus on today? If not, feel free to check out some options below\nHello, how can I assist you today?"
+          "text": "Welcome $session.params.member.firstName! Your experience here is important, and I'm here to make it easier for you. Whether you're looking for specific information or resources, or guidance, I can help point you in the right direction. \nHow can I assist you today? Feel free to ask about your concerns, services, or site features, and I'll provide you with the support you need.\nHi. How can I be of service today?"
         }
       } ]
     }
@@ -51,15 +54,19 @@
       }
     },
     "virtualAgentOutput": {
-      "triggeredIntent": {
-        "name": "care.get-urgent"
+      "sessionParameters": {
+        "$request.generative.output": "care.get-urgent\n"
       },
       "currentPage": {
         "name": "Start Page",
         "flow": "Intent Flow"
       },
       "textResponses": [ {
-        "text": [ "This could be an emergency situation - please call 911 if you need immediate help." ]
+        "text": [ "It sounds like you could be experiencing an emergency. Please call 911 immediately if you think you are experiencing an emergency or go to the nearest hospital for help. " ],
+        "containAttemptedDataStoreInteractions": true
+      }, {
+        "text": [ "For any non-urgent health matters, we can work together to find the care you need." ],
+        "containAttemptedDataStoreInteractions": true
       } ],
       "currentFlow": {
         "name": "Intent Flow"
@@ -70,7 +77,7 @@
         }
       }, {
         "agentUtterance": {
-          "text": "This could be an emergency situation - please call 911 if you need immediate help."
+          "text": "It sounds like you could be experiencing an emergency. Please call 911 immediately if you think you are experiencing an emergency or go to the nearest hospital for help. \nFor any non-urgent health matters, we can work together to find the care you need."
         }
       } ]
     }
@@ -86,7 +93,8 @@
     },
     "virtualAgentOutput": {
       "sessionParameters": {
-        "$flow.troubleshooting-state": "initialized"
+        "$flow.troubleshooting-state": "initialized",
+        "$request.generative.output": "other\n"
       },
       "triggeredIntent": {
         "name": "troubleshooting"
@@ -96,9 +104,11 @@
         "flow": "Troubleshooting"
       },
       "textResponses": [ {
-        "text": [ "I can help with that. Can you describe the issue to me?" ]
+        "text": [ "I can help you with that. Could you please describe the issue(s) you're experiencing?" ]
       }, {
         "text": [ "Here are some common issues:" ]
+      }, {
+        "text": [ "To exit troubleshooting, type CANCEL or EXIT at anytime." ]
       } ],
       "currentFlow": {
         "name": "Troubleshooting"
@@ -109,7 +119,7 @@
         }
       }, {
         "agentUtterance": {
-          "text": "I can help with that. Can you describe the issue to me?\nHere are some common issues:"
+          "text": "I can help you with that. Could you please describe the issue(s) you're experiencing?\nHere are some common issues:\nTo exit troubleshooting, type CANCEL or EXIT at anytime."
         }
       } ]
     }
@@ -159,7 +169,9 @@
     },
     "virtualAgentOutput": {
       "sessionParameters": {
-        "device-type": "Fitbit"
+        "$request.generative.output": "other\n",
+        "device-type": "Fitbit",
+        "history_cur_action": "devices"
       },
       "triggeredIntent": {
         "name": "device.home"
@@ -199,7 +211,9 @@
     "virtualAgentOutput": {
       "sessionParameters": {
         "$flow.troubleshooting-state": "initialized",
-        "device-type": "Fitbit"
+        "$request.generative.output": "other\n",
+        "device-type": "Fitbit",
+        "history_cur_action": "devices"
       },
       "triggeredIntent": {
         "name": "troubleshooting"
@@ -209,9 +223,11 @@
         "flow": "Troubleshooting"
       },
       "textResponses": [ {
-        "text": [ "I can help with that. Can you describe the issue to me?" ]
+        "text": [ "I can help you with that. Could you please describe the issue(s) you're experiencing?" ]
       }, {
         "text": [ "Here are some common issues:" ]
+      }, {
+        "text": [ "To exit troubleshooting, type CANCEL or EXIT at anytime." ]
       } ],
       "currentFlow": {
         "name": "Troubleshooting"
@@ -222,7 +238,7 @@
         }
       }, {
         "agentUtterance": {
-          "text": "I can help with that. Can you describe the issue to me?\nHere are some common issues:"
+          "text": "I can help you with that. Could you please describe the issue(s) you're experiencing?\nHere are some common issues:\nTo exit troubleshooting, type CANCEL or EXIT at anytime."
         }
       } ]
     }
@@ -238,7 +254,8 @@
     },
     "virtualAgentOutput": {
       "sessionParameters": {
-        "device-type": "Fitbit"
+        "device-type": "Fitbit",
+        "history_cur_action": "devices"
       },
       "currentPage": {
         "name": "Start Page",
@@ -274,7 +291,8 @@
     },
     "virtualAgentOutput": {
       "sessionParameters": {
-        "device-type": "Fitbit"
+        "device-type": "Fitbit",
+        "history_cur_action": "devices"
       },
       "currentPage": {
         "name": "Start Page",
@@ -310,7 +328,8 @@
     },
     "virtualAgentOutput": {
       "sessionParameters": {
-        "device-type": "Fitbit"
+        "device-type": "Fitbit",
+        "history_cur_action": "devices"
       },
       "currentPage": {
         "name": "Start Page",
@@ -347,7 +366,9 @@
     "virtualAgentOutput": {
       "sessionParameters": {
         "$flow.troubleshooting-state": "initialized",
-        "device-type": "Fitbit"
+        "$request.generative.output": "other\n",
+        "device-type": "Fitbit",
+        "history_cur_action": "devices"
       },
       "triggeredIntent": {
         "name": "troubleshooting"
@@ -357,9 +378,11 @@
         "flow": "Troubleshooting"
       },
       "textResponses": [ {
-        "text": [ "I can help with that. Can you describe the issue to me?" ]
+        "text": [ "I can help you with that. Could you please describe the issue(s) you're experiencing?" ]
       }, {
         "text": [ "Here are some common issues:" ]
+      }, {
+        "text": [ "To exit troubleshooting, type CANCEL or EXIT at anytime." ]
       } ],
       "currentFlow": {
         "name": "Troubleshooting"
@@ -370,7 +393,7 @@
         }
       }, {
         "agentUtterance": {
-          "text": "I can help with that. Can you describe the issue to me?\nHere are some common issues:"
+          "text": "I can help you with that. Could you please describe the issue(s) you're experiencing?\nHere are some common issues:\nTo exit troubleshooting, type CANCEL or EXIT at anytime."
         }
       } ]
     }
@@ -386,7 +409,8 @@
     },
     "virtualAgentOutput": {
       "sessionParameters": {
-        "device-type": "Fitbit"
+        "device-type": "Fitbit",
+        "history_cur_action": "devices"
       },
       "currentPage": {
         "name": "Start Page",
@@ -422,7 +446,8 @@
     },
     "virtualAgentOutput": {
       "sessionParameters": {
-        "device-type": "Fitbit"
+        "device-type": "Fitbit",
+        "history_cur_action": "devices"
       },
       "currentPage": {
         "name": "Start Page",
@@ -458,7 +483,8 @@
     },
     "virtualAgentOutput": {
       "sessionParameters": {
-        "device-type": "Fitbit"
+        "device-type": "Fitbit",
+        "history_cur_action": "devices"
       },
       "currentPage": {
         "name": "Start Page",
@@ -494,7 +520,8 @@
     },
     "virtualAgentOutput": {
       "sessionParameters": {
-        "device-type": "Fitbit"
+        "device-type": "Fitbit",
+        "history_cur_action": "devices"
       },
       "currentPage": {
         "name": "Start Page",
@@ -530,22 +557,27 @@
     },
     "virtualAgentOutput": {
       "sessionParameters": {
-        "device-type": "Samsung Health"
+        "$flow.troubleshooting-state": "initialized",
+        "$request.generative.output": "other\n",
+        "device-type": "Fitbit",
+        "history_cur_action": "devices"
       },
       "triggeredIntent": {
-        "name": "device.home"
+        "name": "troubleshooting"
       },
       "currentPage": {
         "name": "Start Page",
-        "flow": "Intent Flow"
+        "flow": "Troubleshooting"
       },
       "textResponses": [ {
-        "text": [ "Your wearable devices can be powerful tools for understanding your health. Let's work together to make the most of them. We're here to guide you every step of the way." ]
+        "text": [ "I can help you with that. Could you please describe the issue(s) you're experiencing?" ]
       }, {
-        "text": [ "You can find out how to connect your devices here:" ]
+        "text": [ "Here are some common issues:" ]
+      }, {
+        "text": [ "To exit troubleshooting, type CANCEL or EXIT at anytime." ]
       } ],
       "currentFlow": {
-        "name": "Intent Flow"
+        "name": "Troubleshooting"
       },
       "actions": [ {
         "userUtterance": {
@@ -553,7 +585,7 @@
         }
       }, {
         "agentUtterance": {
-          "text": "Your wearable devices can be powerful tools for understanding your health. Let's work together to make the most of them. We're here to guide you every step of the way.\nYou can find out how to connect your devices here:"
+          "text": "I can help you with that. Could you please describe the issue(s) you're experiencing?\nHere are some common issues:\nTo exit troubleshooting, type CANCEL or EXIT at anytime."
         }
       } ]
     }
@@ -569,7 +601,8 @@
     },
     "virtualAgentOutput": {
       "sessionParameters": {
-        "device-type": "Samsung Health"
+        "device-type": "Fitbit",
+        "history_cur_action": "devices"
       },
       "currentPage": {
         "name": "Start Page",

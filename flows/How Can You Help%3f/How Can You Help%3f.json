@@ -2,6 +2,20 @@
   "name": "9a4ceb1e-865e-4004-9ada-a0ca12fff81c",
   "displayName": "How Can You Help?",
   "transitionRoutes": [ {
+    "condition": "$request.generative.output = \"care\\.get-urgent-bh\\n\" OR $request.generative.output = \"care\\.get-bh\\n\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "Get Care Urgent BH",
+    "name": "c5bbf7a7-11a3-400d-952d-9ea40f45025b"
+  }, {
+    "condition": "$request.generative.output = \"care\\.get-urgent\\n\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "Get Care Urgent",
+    "name": "75715c19-4dad-4bca-985d-143786b82625"
+  }, {
     "condition": "$sys.func.RAND() \u003c 0.3333333",
     "triggerFulfillment": {
       "messages": [ {
@@ -111,6 +125,13 @@
       } ]
     },
     "name": "52cf3d23-c430-4a14-b824-4aaa39c003ec"
+  }, {
+    "targetPage": "End Flow",
+    "event": "flow.cancelled",
+    "triggerFulfillment": {
+    
+    },
+    "name": "5a325cca-8fdf-41ce-85d7-bcacc563eb10"
   } ],
   "nluSettings": {
     "modelType": "MODEL_TYPE_ADVANCED",
