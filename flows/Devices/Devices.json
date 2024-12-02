@@ -75,6 +75,13 @@
       } ]
     },
     "name": "b3b9df7b-e7ce-455f-bb45-06f4b6e2b588"
+  }, {
+    "targetPage": "End Flow",
+    "event": "flow.cancelled",
+    "triggerFulfillment": {
+
+    },
+    "name": "5a325cca-8fdf-41ce-85d7-bcacc563eb10"
   } ],
   "nluSettings": {
     "modelType": "MODEL_TYPE_ADVANCED",
