@@ -44,7 +44,7 @@
       
       }
     },
-    "targetPage": "End Flow",
+    "targetPage": "END_FLOW_WITH_CANCELLATION",
     "name": "d1a4816b-1516-4549-8715-799370bbf438"
   } ],
   "eventHandlers": [ {
@@ -86,7 +86,6 @@
     "modelType": "MODEL_TYPE_ADVANCED",
     "classificationThreshold": 0.30000001,
     "modelTrainingMode": "MODEL_TRAINING_MODE_MANUAL",
-    "customConfigKey": "9300a1aa-74d5-47f4-8b79-e627cb91e248",
     "languageCode": "en"
   } ]
 }

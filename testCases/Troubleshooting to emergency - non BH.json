@@ -12,6 +12,9 @@
       }
     },
     "virtualAgentOutput": {
+      "sessionParameters": {
+        "$request.generative.output": "other\n"
+      },
       "triggeredIntent": {
         "name": "default.welcome"
       },
@@ -20,13 +23,24 @@
         "flow": "Intent Flow"
       },
       "textResponses": [ {
-        "text": [ "Hello $session.params.member.firstName, we’re so glad you’re here! I'm Spark, your AI care companion from $session.params.tenant.programName, I’m here to listen and support you along your wellness journey." ]
+        "text": [ "Welcome $session.params.member.firstName! Your experience here is important, and I'm here to make it easier for you. Whether you're looking for specific information or resources, or guidance, I can help point you in the right direction. " ]
       }, {
-        "text": [ "Is there anything specific you'd like to focus on today? If not, feel free to check out some options below" ]
+        "text": [ "How can I assist you today? Feel free to ask about your concerns, services, or site features, and I'll provide you with the support you need." ]
+      }, {
+        "text": [ "Hi. How can I be of service today?" ]
       } ],
       "currentFlow": {
         "name": "Intent Flow"
-      }
+      },
+      "actions": [ {
+        "userUtterance": {
+          "text": "hi"
+        }
+      }, {
+        "agentUtterance": {
+          "text": "Welcome $session.params.member.firstName! Your experience here is important, and I'm here to make it easier for you. Whether you're looking for specific information or resources, or guidance, I can help point you in the right direction. \nHow can I assist you today? Feel free to ask about your concerns, services, or site features, and I'll provide you with the support you need.\nHi. How can I be of service today?"
+        }
+      } ]
     }
   }, {
     "userInput": {
@@ -39,6 +53,10 @@
       }
     },
     "virtualAgentOutput": {
+      "sessionParameters": {
+        "$flow.troubleshooting-state": "initialized",
+        "$request.generative.output": "other\n"
+      },
       "triggeredIntent": {
         "name": "troubleshooting"
       },
@@ -47,11 +65,24 @@
         "flow": "Troubleshooting"
       },
       "textResponses": [ {
-        "text": [ "I can help with that!\nCan you describe the issue?" ]
+        "text": [ "I can help you with that. Could you please describe the issue(s) you're experiencing?" ]
+      }, {
+        "text": [ "Here are some common issues:" ]
+      }, {
+        "text": [ "To exit troubleshooting, type CANCEL or EXIT at anytime." ]
       } ],
       "currentFlow": {
         "name": "Troubleshooting"
-      }
+      },
+      "actions": [ {
+        "userUtterance": {
+          "text": "troubleshooting"
+        }
+      }, {
+        "agentUtterance": {
+          "text": "I can help you with that. Could you please describe the issue(s) you're experiencing?\nHere are some common issues:\nTo exit troubleshooting, type CANCEL or EXIT at anytime."
+        }
+      } ]
     }
   }, {
     "userInput": {
@@ -64,19 +95,32 @@
       }
     },
     "virtualAgentOutput": {
-      "triggeredIntent": {
-        "name": "care.get-urgent"
+      "sessionParameters": {
+        "$request.generative.output": "care.get-urgent\n"
       },
       "currentPage": {
         "name": "Start Page",
-        "flow": "Troubleshooting"
+        "flow": "Intent Flow"
       },
       "textResponses": [ {
-        "text": [ "This could be an emergency situation - please call 911 if you need immediate help." ]
+        "text": [ "It sounds like you could be experiencing an emergency. Please call 911 immediately if you think you are experiencing an emergency or go to the nearest hospital for help. " ],
+        "containAttemptedDataStoreInteractions": true
+      }, {
+        "text": [ "For any non-urgent health matters, we can work together to find the care you need." ],
+        "containAttemptedDataStoreInteractions": true
       } ],
       "currentFlow": {
-        "name": "Troubleshooting"
-      }
+        "name": "Intent Flow"
+      },
+      "actions": [ {
+        "userUtterance": {
+          "text": "I just threw and and I think there is some blood in it :("
+        }
+      }, {
+        "agentUtterance": {
+          "text": "It sounds like you could be experiencing an emergency. Please call 911 immediately if you think you are experiencing an emergency or go to the nearest hospital for help. \nFor any non-urgent health matters, we can work together to find the care you need."
+        }
+      } ]
     }
   } ],
   "creationTime": {

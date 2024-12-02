@@ -19,6 +19,13 @@
     "targetFlow": "Get Care Urgent",
     "name": "0e45d8aa-5c97-421c-a3ae-69a1226c6c3a"
   }, {
+    "condition": "$request.generative.output = \"care\\.get\\n\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "Get Care",
+    "name": "40052b82-a107-43fb-952a-414c7aeda6b6"
+  }, {
     "condition": "true",
     "triggerFulfillment": {
       "messages": [ {
@@ -31,7 +38,6 @@
       
       }
     },
-    "targetFlow": "Troubleshooting",
     "name": "f40cd682-02d0-4845-b3b1-415f4804cdf2"
   } ],
   "eventHandlers": [ {
