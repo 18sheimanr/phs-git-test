@@ -16,6 +16,13 @@
     "targetFlow": "Get Care Urgent",
     "name": "75715c19-4dad-4bca-985d-143786b82625"
   }, {
+    "condition": "$request.generative.output = \"care\\.get-care\\n\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "Get Care",
+    "name": "fd49bea6-e010-4434-b8f9-381652fc30d7"
+  }, {
     "condition": "true",
     "triggerFulfillment": {
       "messages": [ {
@@ -84,7 +91,6 @@
     "modelType": "MODEL_TYPE_ADVANCED",
     "classificationThreshold": 0.30000001,
     "modelTrainingMode": "MODEL_TRAINING_MODE_MANUAL",
-    "customConfigKey": "dd9b6374-47cc-4635-bb66-9dbccd8b743f",
     "languageCode": "en"
   } ]
 }
