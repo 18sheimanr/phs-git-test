@@ -19,11 +19,18 @@
     "targetFlow": "Get Care Urgent",
     "name": "96b552c1-80d8-4767-bd97-ca0aa4651c0a"
   }, {
+    "condition": "$request.generative.output = \"care\\.get\\n\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "Get Care",
+    "name": "ee167921-30b4-477d-b78b-ee49607dd2cd"
+  }, {
     "condition": "true",
     "triggerFulfillment": {
       "messages": [ {
         "text": {
-          "text": [ "Sorry, I didn't catch that" ]
+          "text": [ "Sorry, I'm unable to respond to your request." ]
         },
         "languageCode": "en"
       }, {
@@ -47,6 +54,11 @@
             } ],
             "type": "chips"
           } ] ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "For all emergencies, please call 911 immediately or go to the nearest hospital for help." ]
         },
         "languageCode": "en"
       } ],

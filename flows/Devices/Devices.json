@@ -18,7 +18,7 @@
   }, {
     "condition": "$request.generative.output = \"care\\.get-care\\n\"",
     "triggerFulfillment": {
-
+    
     },
     "targetFlow": "Get Care",
     "name": "fd49bea6-e010-4434-b8f9-381652fc30d7"
