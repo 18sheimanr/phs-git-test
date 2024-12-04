@@ -122,17 +122,16 @@
         "tenant.programName": "Well onTarget",
         "tenant.wellnessContactNumber": "800-555-WELL"
       },
-      "triggeredIntent": {
-        "name": "care.get"
-      },
       "currentPage": {
         "name": "Start Page",
         "flow": "Intent Flow"
       },
       "textResponses": [ {
-        "text": [ "It's important to address what you're experiencing, even if it may not require emergency care. I can help you find the appropriate care provider through the health plan resources available here:" ]
+        "text": [ "It's important to address what you're experiencing, even if it may not require emergency care. I can help you find the appropriate care provider through the health plan resources available here:" ],
+        "containAttemptedDataStoreInteractions": true
       }, {
-        "text": [ "If you think this could be an emergency situation, please dial 911 immediately. " ]
+        "text": [ "If you think this could be an emergency situation, please dial 911 immediately. " ],
+        "containAttemptedDataStoreInteractions": true
       } ],
       "currentFlow": {
         "name": "Intent Flow"
@@ -159,7 +158,7 @@
     },
     "virtualAgentOutput": {
       "sessionParameters": {
-        "$request.generative.output": "other\n",
+        "$request.generative.output": "care.get\n",
         "member.firstName": "Susan",
         "planContactNumber": "1-800-555-PLAN",
         "state.session.timeSinceLastSession": 10000,

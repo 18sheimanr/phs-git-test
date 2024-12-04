@@ -94,17 +94,16 @@
       "sessionParameters": {
         "$request.generative.output": "care.get-urgent-bh\n"
       },
-      "triggeredIntent": {
-        "name": "default.welcome"
-      },
       "currentPage": {
         "name": "Start Page",
         "flow": "Intent Flow"
       },
       "textResponses": [ {
-        "text": [ "Based on what you've shared, there might be concern for your wellbeing. If you think you are experiencing an emergency, please call 911 immediately or go to the nearest hospital for help." ]
+        "text": [ "Based on what you've shared, there might be concern for your wellbeing. If you think you are experiencing an emergency, please call 911 immediately or go to the nearest hospital for help." ],
+        "containAttemptedDataStoreInteractions": true
       }, {
-        "text": [ "You can also contact the Suicide and Crisis hotline at 988 or 800-273-8255. They are available 24/7 to listen and provide support." ]
+        "text": [ "You can also contact the Suicide and Crisis hotline at 988 or 800-273-8255. They are available 24/7 to listen and provide support." ],
+        "containAttemptedDataStoreInteractions": true
       } ],
       "currentFlow": {
         "name": "Intent Flow"
@@ -170,18 +169,20 @@
     },
     "virtualAgentOutput": {
       "sessionParameters": {
-        "$request.generative.output": "care.get-urgent-bh\n"
+        "$request.generative.output": "care.get-urgent-bh\n",
+        "history_cur_action": "coaching"
+      },
+      "triggeredIntent": {
+        "name": "coaching.home"
       },
       "currentPage": {
         "name": "Start Page",
         "flow": "Intent Flow"
       },
       "textResponses": [ {
-        "text": [ "Based on what you've shared, there might be concern for your wellbeing. If you think you are experiencing an emergency, please call 911 immediately or go to the nearest hospital for help." ],
-        "containAttemptedDataStoreInteractions": true
+        "text": [ "Based on what you've shared, there might be concern for your wellbeing. If you think you are experiencing an emergency, please call 911 immediately or go to the nearest hospital for help." ]
       }, {
-        "text": [ "You can also contact the Suicide and Crisis hotline at 988 or 800-273-8255. They are available 24/7 to listen and provide support." ],
-        "containAttemptedDataStoreInteractions": true
+        "text": [ "You can also contact the Suicide and Crisis hotline at 988 or 800-273-8255. They are available 24/7 to listen and provide support." ]
       } ],
       "currentFlow": {
         "name": "Intent Flow"
@@ -208,7 +209,8 @@
     },
     "virtualAgentOutput": {
       "sessionParameters": {
-        "$request.generative.output": "care.get-urgent\n"
+        "$request.generative.output": "care.get-urgent\n",
+        "history_cur_action": "coaching"
       },
       "currentPage": {
         "name": "Start Page",
@@ -246,10 +248,11 @@
     },
     "virtualAgentOutput": {
       "sessionParameters": {
-        "$request.generative.output": "care.get-urgent\n"
+        "$request.generative.output": "care.get-urgent\n",
+        "history_cur_action": "coaching"
       },
       "triggeredIntent": {
-        "name": "care.get"
+        "name": "issue-request.general"
       },
       "currentPage": {
         "name": "Start Page",
@@ -285,10 +288,11 @@
     },
     "virtualAgentOutput": {
       "sessionParameters": {
-        "$request.generative.output": "care.get-urgent\n"
+        "$request.generative.output": "care.get-urgent\n",
+        "history_cur_action": "coaching"
       },
       "triggeredIntent": {
-        "name": "care.get"
+        "name": "issue-request.general"
       },
       "currentPage": {
         "name": "Start Page",
