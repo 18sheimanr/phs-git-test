@@ -448,6 +448,5 @@
     "modelTrainingMode": "MODEL_TRAINING_MODE_MANUAL",
     "customConfigKey": "2b423472-af68-41d7-8023-77f15d41d0e8",
     "languageCode": "en"
-  } ],
-  "agentTransitionRouteGroups": [ "Get Care All" ]
+  } ]
 }
