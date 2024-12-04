@@ -223,24 +223,6 @@
     "targetFlow": "How Can You Help?",
     "name": "db5ffed8-e575-4c04-87bb-94b7009f5e90"
   }, {
-    "intent": "issue-request.general",
-    "condition": "$session.params.programComponents.coaching.eligible = true",
-    "triggerFulfillment": {
-      "nextActionOverride": {
-      
-      }
-    },
-    "targetFlow": "Coaching",
-    "name": "957075cf-c271-4ce3-af4b-f8be5295b36d"
-  }, {
-    "intent": "issue-request.general",
-    "condition": "$session.params.programComponents.coaching.eligible = false OR $session.params.programComponents.coaching.eligible = null",
-    "triggerFulfillment": {
-    
-    },
-    "targetFlow": "Self-Guided Programs",
-    "name": "d049e8b4-b1eb-4927-9b30-02de2057a6b9"
-  }, {
     "intent": "default.welcome",
     "triggerFulfillment": {
       "generators": [ {
