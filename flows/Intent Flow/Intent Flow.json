@@ -2,16 +2,6 @@
   "name": "1ea23777-bce2-471e-bb79-f0fda7d434fb",
   "displayName": "Intent Flow",
   "transitionRoutes": [ {
-    "intent": "care.get",
-    "triggerFulfillment": {
-      "generators": [ {
-        "generator": "projects/develop-251413/locations/us-central1/agents/c527bdd2-6892-4b0b-b6e7-63f05d582de5/generators/dca2055e-3282-4332-9183-9eaf5aac30ab",
-        "outputParameter": "$request.generative.output"
-      } ]
-    },
-    "targetFlow": "Get Care",
-    "name": "9a74bdb9-f65b-48c2-924c-fe57e5f20ea4"
-  }, {
     "intent": "care.find",
     "triggerFulfillment": {
       "generators": [ {
@@ -84,13 +74,6 @@
     },
     "targetFlow": "Challenges",
     "name": "f446c3ab-fe87-4353-bfcd-e7391523d765"
-  }, {
-    "intent": "coaching.home",
-    "triggerFulfillment": {
-    
-    },
-    "targetFlow": "Coaching",
-    "name": "edfb9762-c205-44fb-bf8b-82700a1c34cd"
   }, {
     "intent": "device.home",
     "triggerFulfillment": {
@@ -217,13 +200,6 @@
     "targetFlow": "Trackers",
     "name": "d78b6f9c-6c6b-402e-a9f3-0ba555b77daf"
   }, {
-    "intent": "thank-you",
-    "triggerFulfillment": {
-    
-    },
-    "targetFlow": "Thank You",
-    "name": "53efb821-d12a-48f5-97af-b3bf11fbff6a"
-  }, {
     "intent": "troubleshooting",
     "triggerFulfillment": {
       "generators": [ {
@@ -264,13 +240,6 @@
     },
     "targetFlow": "Self-Guided Programs",
     "name": "d049e8b4-b1eb-4927-9b30-02de2057a6b9"
-  }, {
-    "intent": "plan.information",
-    "triggerFulfillment": {
-    
-    },
-    "targetFlow": "Plan Information",
-    "name": "8248b780-5126-4292-82ee-9b97de590a3b"
   }, {
     "intent": "default.welcome",
     "triggerFulfillment": {
