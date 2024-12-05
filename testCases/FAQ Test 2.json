@@ -14,7 +14,7 @@
     },
     "virtualAgentOutput": {
       "sessionParameters": {
-        "$request.generative.output": "other\n"
+        "$request.generative.intent": "other\n"
       },
       "triggeredIntent": {
         "name": "default.welcome"
@@ -122,7 +122,7 @@
     "virtualAgentOutput": {
       "sessionParameters": {
         "$flow.troubleshooting-state": "initialized",
-        "$request.generative.output": "other\n"
+        "$request.generative.intent": "other\n"
       },
       "triggeredIntent": {
         "name": "troubleshooting"
