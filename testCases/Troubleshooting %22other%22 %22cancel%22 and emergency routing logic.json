@@ -14,7 +14,7 @@
     },
     "virtualAgentOutput": {
       "sessionParameters": {
-        "$request.generative.urgency": "other\n"
+        "$request.generative.intent": "other\n"
       },
       "triggeredIntent": {
         "name": "default.welcome"
@@ -56,7 +56,7 @@
     "virtualAgentOutput": {
       "sessionParameters": {
         "$flow.troubleshooting-state": "initialized",
-        "$request.generative.urgency": "other\n"
+        "$request.generative.intent": "other\n"
       },
       "triggeredIntent": {
         "name": "troubleshooting"
@@ -104,7 +104,7 @@
     "virtualAgentOutput": {
       "sessionParameters": {
         "$flow.troubleshooting-state": "initialized",
-        "$request.generative.urgency": "other\n"
+        "$request.generative.intent": "other\n"
       },
       "triggeredIntent": {
         "name": "troubleshooting.other"
@@ -147,7 +147,7 @@
     },
     "virtualAgentOutput": {
       "sessionParameters": {
-        "$request.generative.urgency": "care.get-urgent-bh\n"
+        "$request.generative.intent": "care.get-urgent-bh\n"
       },
       "currentPage": {
         "name": "Start Page",
@@ -186,7 +186,7 @@
     "virtualAgentOutput": {
       "sessionParameters": {
         "$flow.troubleshooting-state": "initialized",
-        "$request.generative.urgency": "other\n"
+        "$request.generative.intent": "other\n"
       },
       "triggeredIntent": {
         "name": "troubleshooting"

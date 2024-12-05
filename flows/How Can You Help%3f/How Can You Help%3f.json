@@ -2,21 +2,21 @@
   "name": "9a4ceb1e-865e-4004-9ada-a0ca12fff81c",
   "displayName": "How Can You Help?",
   "transitionRoutes": [ {
-    "condition": "$request.generative.urgency = \"care\\.get-urgent-bh\\n\" OR $request.generative.urgency = \"care\\.get-bh\\n\"",
+    "condition": "$request.generative.intent = \"care\\.get-urgent-bh\\n\" OR $request.generative.intent = \"care\\.get-bh\\n\"",
     "triggerFulfillment": {
     
     },
     "targetFlow": "Get Care Urgent BH",
     "name": "c5bbf7a7-11a3-400d-952d-9ea40f45025b"
   }, {
-    "condition": "$request.generative.urgency = \"care\\.get-urgent\\n\"",
+    "condition": "$request.generative.intent = \"care\\.get-urgent\\n\"",
     "triggerFulfillment": {
     
     },
     "targetFlow": "Get Care Urgent",
     "name": "75715c19-4dad-4bca-985d-143786b82625"
   }, {
-    "condition": "$request.generative.urgency = \"care\\.get-care\\n\"",
+    "condition": "$request.generative.intent = \"care\\.get-care\\n\"",
     "triggerFulfillment": {
     
     },

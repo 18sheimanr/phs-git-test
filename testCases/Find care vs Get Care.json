@@ -22,7 +22,7 @@
     },
     "virtualAgentOutput": {
       "sessionParameters": {
-        "$request.generative.urgency": "other\n",
+        "$request.generative.intent": "other\n",
         "member.firstName": "Susan",
         "planContactNumber": "1-800-555-PLAN",
         "state.session.timeSinceLastSession": 10000,
@@ -69,7 +69,7 @@
     },
     "virtualAgentOutput": {
       "sessionParameters": {
-        "$request.generative.urgency": "other\n",
+        "$request.generative.intent": "other\n",
         "member.firstName": "Susan",
         "planContactNumber": "1-800-555-PLAN",
         "state.session.timeSinceLastSession": 10000,
@@ -114,7 +114,7 @@
     },
     "virtualAgentOutput": {
       "sessionParameters": {
-        "$request.generative.urgency": "care.get\n",
+        "$request.generative.intent": "care.get\n",
         "member.firstName": "Susan",
         "planContactNumber": "1-800-555-PLAN",
         "state.session.timeSinceLastSession": 10000,
@@ -158,7 +158,7 @@
     },
     "virtualAgentOutput": {
       "sessionParameters": {
-        "$request.generative.urgency": "care.get\n",
+        "$request.generative.intent": "care.get\n",
         "member.firstName": "Susan",
         "planContactNumber": "1-800-555-PLAN",
         "state.session.timeSinceLastSession": 10000,
@@ -203,7 +203,7 @@
     },
     "virtualAgentOutput": {
       "sessionParameters": {
-        "$request.generative.urgency": "care.get-urgent-bh\n",
+        "$request.generative.intent": "care.get-urgent-bh\n",
         "member.firstName": "Susan",
         "planContactNumber": "1-800-555-PLAN",
         "state.session.timeSinceLastSession": 10000,
