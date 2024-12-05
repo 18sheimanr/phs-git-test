@@ -36,7 +36,7 @@
     "triggerFulfillment": {
       "generators": [ {
         "generator": "projects/develop-251413/locations/us-central1/agents/c527bdd2-6892-4b0b-b6e7-63f05d582de5/generators/dca2055e-3282-4332-9183-9eaf5aac30ab",
-        "outputParameter": "$request.generative.intent"
+        "outputParameter": "$request.generative.output"
       } ],
       "nextActionOverride": {
       
@@ -44,21 +44,21 @@
     },
     "name": "f424dd56-a911-401d-a8db-69813fe24cdd"
   }, {
-    "condition": "$request.generative.intent = \"care\\.get-urgent-bh\\n\" OR $request.generative.intent = \"care\\.get-bh\\n\"",
+    "condition": "$request.generative.output = \"care\\.get-urgent-bh\\n\" OR $request.generative.output = \"care\\.get-bh\\n\"",
     "triggerFulfillment": {
     
     },
     "targetFlow": "Get Care Urgent BH",
     "name": "c5bbf7a7-11a3-400d-952d-9ea40f45025b"
   }, {
-    "condition": "$request.generative.intent = \"care\\.get-urgent\\n\"",
+    "condition": "$request.generative.output = \"care\\.get-urgent\\n\"",
     "triggerFulfillment": {
     
     },
     "targetFlow": "Get Care Urgent",
     "name": "75715c19-4dad-4bca-985d-143786b82625"
   }, {
-    "condition": "$request.generative.intent = \"care\\.get-care\\n\"",
+    "condition": "$request.generative.output = \"care\\.get-care\\n\"",
     "triggerFulfillment": {
     
     },
@@ -112,7 +112,7 @@
     "triggerFulfillment": {
       "generators": [ {
         "generator": "projects/develop-251413/locations/us-central1/agents/c527bdd2-6892-4b0b-b6e7-63f05d582de5/generators/dca2055e-3282-4332-9183-9eaf5aac30ab",
-        "outputParameter": "$request.generative.intent"
+        "outputParameter": "$request.generative.output"
       } ],
       "nextActionOverride": {
       

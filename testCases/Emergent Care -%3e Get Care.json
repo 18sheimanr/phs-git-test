@@ -13,7 +13,7 @@
     },
     "virtualAgentOutput": {
       "sessionParameters": {
-        "$request.generative.intent": "other\n"
+        "$request.generative.output": "other\n"
       },
       "triggeredIntent": {
         "name": "default.welcome"
@@ -54,7 +54,7 @@
     },
     "virtualAgentOutput": {
       "sessionParameters": {
-        "$request.generative.intent": "care.get-urgent-bh\n"
+        "$request.generative.output": "care.get-urgent-bh\n"
       },
       "currentPage": {
         "name": "Start Page",
@@ -92,7 +92,7 @@
     },
     "virtualAgentOutput": {
       "sessionParameters": {
-        "$request.generative.intent": "care.get-urgent-bh\n"
+        "$request.generative.output": "care.get-urgent-bh\n"
       },
       "currentPage": {
         "name": "Start Page",
@@ -130,7 +130,7 @@
     },
     "virtualAgentOutput": {
       "sessionParameters": {
-        "$request.generative.intent": "care.get-urgent-bh\n"
+        "$request.generative.output": "care.get-urgent-bh\n"
       },
       "triggeredIntent": {
         "name": "plan.information"
@@ -169,7 +169,7 @@
     },
     "virtualAgentOutput": {
       "sessionParameters": {
-        "$request.generative.intent": "care.get-urgent-bh\n",
+        "$request.generative.output": "care.get-urgent-bh\n",
         "history_cur_action": "coaching"
       },
       "triggeredIntent": {
@@ -209,7 +209,7 @@
     },
     "virtualAgentOutput": {
       "sessionParameters": {
-        "$request.generative.intent": "care.get-urgent\n",
+        "$request.generative.output": "care.get-urgent\n",
         "history_cur_action": "coaching"
       },
       "currentPage": {
@@ -248,7 +248,7 @@
     },
     "virtualAgentOutput": {
       "sessionParameters": {
-        "$request.generative.intent": "care.get-urgent\n",
+        "$request.generative.output": "care.get-urgent\n",
         "history_cur_action": "coaching"
       },
       "triggeredIntent": {
@@ -288,7 +288,7 @@
     },
     "virtualAgentOutput": {
       "sessionParameters": {
-        "$request.generative.intent": "care.get-urgent\n",
+        "$request.generative.output": "care.get-urgent\n",
         "history_cur_action": "coaching"
       },
       "triggeredIntent": {
