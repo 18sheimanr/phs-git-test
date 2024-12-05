@@ -1,6 +1,84 @@
 {
   "trainingPhrases": [ {
     "parts": [ {
+      "text": "Where do I find my HA certificate of completion?",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I am having trouble accessing the HA",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "The HA won't let me continue",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "How do I connect my ",
+      "auto": true
+    }, {
+      "text": "apple watch"
+    }, {
+      "text": "?",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "How do I connect to an ",
+      "auto": true
+    }, {
+      "text": "Apple watch"
+    }, {
+      "text": "?",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "How do I connect to my ",
+      "auto": true
+    }, {
+      "text": "Samsung Health"
+    }, {
+      "text": " app?",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "where is my progress check in",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "cancel fitness subscription",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I want to cancel my fitness program",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
       "text": "What movie should I see right now?",
       "auto": true
     } ],
@@ -23,18 +101,6 @@
   }, {
     "parts": [ {
       "text": "What's the latest news?",
-      "auto": true
-    } ],
-    "repeatCount": 1,
-    "languageCode": "en"
-  }, {
-    "parts": [ {
-      "text": "How do I connect my ",
-      "auto": true
-    }, {
-      "text": "apple watch"
-    }, {
-      "text": "?",
       "auto": true
     } ],
     "repeatCount": 1,
@@ -78,52 +144,11 @@
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "Where do I find my HA certificate of completion?",
-      "auto": true
-    } ],
-    "repeatCount": 1,
-    "languageCode": "en"
-  }, {
-    "parts": [ {
-      "text": "I am having trouble accessing the HA",
-      "auto": true
-    } ],
-    "repeatCount": 1,
-    "languageCode": "en"
-  }, {
-    "parts": [ {
-      "text": "The HA won't let me continue",
-      "auto": true
-    } ],
-    "repeatCount": 1,
-    "languageCode": "en"
-  }, {
-    "parts": [ {
       "text": "My "
     }, {
       "text": "fitbit"
     }, {
       "text": " is connected but I can't see any data"
-    } ],
-    "repeatCount": 1,
-    "languageCode": "en"
-  }, {
-    "parts": [ {
-      "text": "How do I connect to my "
-    }, {
-      "text": "Samsung Health"
-    }, {
-      "text": " app?"
-    } ],
-    "repeatCount": 1,
-    "languageCode": "en"
-  }, {
-    "parts": [ {
-      "text": "How do I connect to an "
-    }, {
-      "text": "Apple watch"
-    }, {
-      "text": "?"
     } ],
     "repeatCount": 1,
     "languageCode": "en"

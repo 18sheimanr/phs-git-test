@@ -1,6 +1,34 @@
 {
   "trainingPhrases": [ {
     "parts": [ {
+      "text": "How do I see my reports?",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I just got an email that I need to complete my health assessment to get my reward dollars",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "how to get my HA results",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "where can I see my HA reports",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
       "text": "answer health questionaire",
       "auto": true
     } ],
@@ -8,12 +36,9 @@
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "my ",
-      "auto": true
+      "text": "my "
     }, {
-      "text": "HRA",
-      "parameterId": "currency-name",
-      "auto": true
+      "text": "HRA"
     } ],
     "repeatCount": 1,
     "languageCode": "en"
