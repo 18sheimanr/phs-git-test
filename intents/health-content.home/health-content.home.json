@@ -1,6 +1,10 @@
 {
   "name": "efc65f24-284f-43a8-9a9d-8114d695d133",
   "displayName": "health-content.home",
+  "parameters": [ {
+    "id": "wellness-issue",
+    "entityType": "@wellness-issue"
+  } ],
   "priority": 500000,
-  "numTrainingPhrases": 14
+  "numTrainingPhrases": 16
 }

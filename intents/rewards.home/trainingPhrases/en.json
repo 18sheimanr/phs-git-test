@@ -1,6 +1,48 @@
 {
   "trainingPhrases": [ {
     "parts": [ {
+      "text": "Can you explain why I ",
+      "auto": true
+    }, {
+      "text": "lost close",
+      "parameterId": "wellness-issue",
+      "auto": true
+    }, {
+      "text": " to ",
+      "auto": true
+    }, {
+      "text": "11000",
+      "parameterId": "phone-number",
+      "auto": true
+    }, {
+      "text": " points in ",
+      "auto": true
+    }, {
+      "text": "the last week",
+      "parameterId": "date-period",
+      "auto": true
+    }, {
+      "text": ".",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Incorrect points balance. There are missing points on the account, I had a lot of points and it says that I have earned ",
+      "auto": true
+    }, {
+      "text": "12000",
+      "parameterId": "number",
+      "auto": true
+    }, {
+      "text": "+ points since start of 2024 - all of which are missing. As per my calculations, my points total should be over 20,000+ points. Can you please fix it? Thank you",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
       "text": "how do I use this program to earn points?",
       "auto": true
     } ],

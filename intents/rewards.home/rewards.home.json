@@ -4,8 +4,20 @@
   "parameters": [ {
     "id": "currency-name",
     "entityType": "@sys.currency-name"
+  }, {
+    "id": "number",
+    "entityType": "@sys.number"
+  }, {
+    "id": "wellness-issue",
+    "entityType": "@wellness-issue"
+  }, {
+    "id": "phone-number",
+    "entityType": "@sys.phone-number"
+  }, {
+    "id": "date-period",
+    "entityType": "@sys.date-period"
   } ],
   "priority": 500000,
   "description": "This is triggered when the user asks anything regarding earning, redeeming, or completed rewards points or activities. This will later be split into multiple intents.",
-  "numTrainingPhrases": 45
+  "numTrainingPhrases": 47
 }

@@ -3,5 +3,5 @@
   "displayName": "chat.end",
   "priority": 500000,
   "skipAutoAnnotation": true,
-  "numTrainingPhrases": 15
+  "numTrainingPhrases": 26
 }
