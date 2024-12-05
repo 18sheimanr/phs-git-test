@@ -32,9 +32,7 @@
       "text": "How do I connect my ",
       "auto": true
     }, {
-      "text": "apple watch",
-      "parameterId": "device-type",
-      "auto": true
+      "text": "apple watch"
     }, {
       "text": "?",
       "auto": true
@@ -43,9 +41,7 @@
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "Apple watch",
-      "parameterId": "device-type",
-      "auto": true
+      "text": "Apple watch"
     }, {
       "text": " won't sync",
       "auto": true
@@ -62,13 +58,6 @@
   }, {
     "parts": [ {
       "text": "The health assessment won't let me continue",
-      "auto": true
-    } ],
-    "repeatCount": 1,
-    "languageCode": "en"
-  }, {
-    "parts": [ {
-      "text": "I am having trouble with the health assessment",
       "auto": true
     } ],
     "repeatCount": 1,
@@ -112,8 +101,7 @@
     "parts": [ {
       "text": "My "
     }, {
-      "text": "fitbit",
-      "parameterId": "device-type"
+      "text": "fitbit"
     }, {
       "text": " is connected but I can't see any data"
     } ],
@@ -123,8 +111,7 @@
     "parts": [ {
       "text": "How do I connect to my "
     }, {
-      "text": "Samsung Health",
-      "parameterId": "device-type"
+      "text": "Samsung Health"
     }, {
       "text": " app?"
     } ],
@@ -134,8 +121,7 @@
     "parts": [ {
       "text": "How do I connect to an "
     }, {
-      "text": "Apple watch",
-      "parameterId": "device-type"
+      "text": "Apple watch"
     }, {
       "text": "?"
     } ],
@@ -151,13 +137,6 @@
   }, {
     "parts": [ {
       "text": "my device is connected but it isn't showing any data",
-      "auto": true
-    } ],
-    "repeatCount": 1,
-    "languageCode": "en"
-  }, {
-    "parts": [ {
-      "text": "I'm having trouble connecting with my sister",
       "auto": true
     } ],
     "repeatCount": 1,

@@ -1,7 +1,11 @@
 {
   "name": "4a427da1-3c0a-448b-990f-9b075b07490b",
   "displayName": "health-assessment",
+  "parameters": [ {
+    "id": "currency-name",
+    "entityType": "@sys.currency-name"
+  } ],
   "priority": 500000,
   "description": "This intent is triggered when the user wants to start or return to their health assessment.",
-  "numTrainingPhrases": 27
+  "numTrainingPhrases": 29
 }

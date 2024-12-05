@@ -1,6 +1,22 @@
 {
   "trainingPhrases": [ {
     "parts": [ {
+      "text": "listen to a ",
+      "auto": true
+    }, {
+      "text": "meditation"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "anything I can read about",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
       "text": "read about maintaining weight",
       "auto": true
     } ],

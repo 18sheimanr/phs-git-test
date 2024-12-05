@@ -1,6 +1,20 @@
 {
   "trainingPhrases": [ {
     "parts": [ {
+      "text": "Can you connect me with someone who can help me ",
+      "auto": true
+    }, {
+      "text": "lose weight",
+      "parameterId": "wellness-issue",
+      "auto": true
+    }, {
+      "text": "?",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
       "text": "I got a notification that my coach was trying to reach me, is the the right place to respond?"
     } ],
     "repeatCount": 1,

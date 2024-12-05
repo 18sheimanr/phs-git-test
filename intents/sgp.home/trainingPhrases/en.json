@@ -1,6 +1,48 @@
 {
   "trainingPhrases": [ {
     "parts": [ {
+      "text": "I can't find my sgp",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Teach me how to ",
+      "auto": true
+    }, {
+      "text": "eat better",
+      "parameterId": "wellness-issue",
+      "auto": true
+    }, {
+      "text": " please",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Can you teach me about ",
+      "auto": true
+    }, {
+      "text": "stress",
+      "parameterId": "wellness-issue",
+      "auto": true
+    }, {
+      "text": " ",
+      "auto": true
+    }, {
+      "text": "management",
+      "parameterId": "wellness-issue",
+      "auto": true
+    }, {
+      "text": "?",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
       "text": "I am trying to pick up the ",
       "auto": true
     }, {

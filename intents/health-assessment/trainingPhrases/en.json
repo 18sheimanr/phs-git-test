@@ -1,6 +1,24 @@
 {
   "trainingPhrases": [ {
     "parts": [ {
+      "text": "answer health questionaire",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "my ",
+      "auto": true
+    }, {
+      "text": "HRA",
+      "parameterId": "currency-name",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
       "text": "health quiz"
     } ],
     "repeatCount": 1,

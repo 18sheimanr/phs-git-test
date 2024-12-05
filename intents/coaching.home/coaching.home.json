@@ -7,8 +7,11 @@
   }, {
     "id": "person",
     "entityType": "@sys.person"
+  }, {
+    "id": "wellness-issue",
+    "entityType": "@wellness-issue"
   } ],
   "priority": 500000,
   "description": "Intent for when a member specifically asks to work with a (human) health coach.",
-  "numTrainingPhrases": 52
+  "numTrainingPhrases": 53
 }
