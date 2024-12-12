@@ -1,343 +1,343 @@
 {
   "trainingPhrases": [ {
     "parts": [ {
-      "text": "Talk to a nurse now"
+      "text": "\"Talk to a nurse now\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "Hey AI I'm out of medicine but need a refill"
+      "text": "\"Hey AI I'm out of medicine but need a refill\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "Who can I call to refill rx"
+      "text": "\"Who can I call to refill rx\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "Is my medication safe to use?"
+      "text": "\"Is my medication safe to use?\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "I have had a really bad stomach ache and am wondering what is the cause?"
+      "text": "\"I have had a really bad stomach ache and am wondering what is the cause?\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "Refill medication"
+      "text": "\"Refill medication\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "Chat with doctor"
+      "text": "\"Chat with doctor\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "What should I take for a cold?"
+      "text": "\"What should I take for a cold?\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "I want to speak with a nurse"
+      "text": "\"I want to speak with a nurse\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "my stomach is really hurting"
+      "text": "\"my stomach is really hurting\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "I have been having migraines for 10 days"
+      "text": "\"I have been having migraines for 10 days\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "My child has ___ pain."
+      "text": "\"My child has ___ pain.\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "I've been feeling sick."
+      "text": "\"I've been feeling sick.\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "Can I get a prescription for ___."
+      "text": "\"Can I get a prescription for ___.\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "I need a refill."
+      "text": "\"I need a refill.\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "I think I have UTI."
+      "text": "\"I think I have UTI.\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "Do you have telemdicine?"
+      "text": "\"Do you have telemdicine?\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "I have a sore throat."
+      "text": "\"I have a sore throat.\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "I have chronic pain / condition"
+      "text": "\"I have chronic pain / condition\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "Do I need stitches?"
+      "text": "\"Do I need stitches?\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "I have a rash."
+      "text": "\"I have a rash.\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "I need a doctor"
+      "text": "\"I need a doctor\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "I need medicine for nausea"
+      "text": "\"I need medicine for nausea\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "I have a cold"
+      "text": "\"I have a cold\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "Im having back pain"
+      "text": "\"Im having back pain\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "Ive have been vomited"
+      "text": "\"Ive have been vomited\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "Im having diarrhea"
+      "text": "\"Im having diarrhea\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "I injured my knee"
+      "text": "\"I injured my knee\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "Do I need to see a doctor for this wound?"
+      "text": "\"Do I need to see a doctor for this wound?\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "My cold symptoms are not improving"
+      "text": "\"My cold symptoms are not improving\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "My rash is getting worse"
+      "text": "\"My rash is getting worse\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "It burns when I pee"
+      "text": "\"It burns when I pee\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "I think I broke my foot"
+      "text": "\"I think I broke my foot\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "My child fell off the bed. Do I need to take them to be seen?"
+      "text": "\"My child fell off the bed. Do I need to take them to be seen?\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "I have covid"
+      "text": "\"I have covid\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "My period is late"
+      "text": "\"My period is late\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "I am having another period"
+      "text": "\"I am having another period\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "My eye is red and there is discharge"
+      "text": "\"My eye is red and there is discharge\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "I think I got bit by a tick"
+      "text": "\"I think I got bit by a tick\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "I have a vaginal discharge"
+      "text": "\"I have a vaginal discharge\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "Im havent pooped (in a few days)[@sys.date-time, date-time]"
+      "text": "\"Im havent pooped (in a few days)[@sys.date-time, date-time]\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "My ears are hurting"
+      "text": "\"My ears are hurting\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "My scrotum feels tender"
+      "text": "\"My scrotum feels tender\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "I accidentally took the wrong medication"
+      "text": "\"I accidentally took the wrong medication\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "Im having alot of sinus pressure"
+      "text": "\"Im having alot of sinus pressure\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "Is it safe to take these medications together?"
+      "text": "\"Is it safe to take these medications together?\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "My nose wont stop bleeding"
+      "text": "\"My nose wont stop bleeding\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "Im having trouble breast feeding"
+      "text": "\"Im having trouble breast feeding\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "I have a painful red bump on my skin"
+      "text": "\"I have a painful red bump on my skin\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "I got bit by my neighbors dog"
+      "text": "\"I got bit by my neighbors dog\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "My hearing has been muffled lately"
+      "text": "\"My hearing has been muffled lately\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "I'm worried about my symptoms"
+      "text": "\"I'm worried about my symptoms\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "Can I get some medication for my medical condition?"
+      "text": "\"Can I get some medication for my medical condition?\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "I need care now"
+      "text": "\"I need care now\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "How can I get care now?"
+      "text": "\"How can I get care now?\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "get care now"
+      "text": "\"get care now\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "I am not experiencing an emergency, I just want to get some advice"
+      "text": "\"I am not experiencing an emergency, I just want to get some advice\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"

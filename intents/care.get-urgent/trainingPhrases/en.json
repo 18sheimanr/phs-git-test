@@ -1,1405 +1,1405 @@
 {
   "trainingPhrases": [ {
     "parts": [ {
-      "text": "need closest ER"
+      "text": "\"need closest ER\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "Where is the nearest emergency department"
+      "text": "\"Where is the nearest emergency department\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "Ive had a cough and now Im having trouble breathing"
+      "text": "\"Ive had a cough and now Im having trouble breathing\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "Im having severe abdominal pain"
+      "text": "\"Im having severe abdominal pain\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "I was stung by a bee and now I have hives everywhere"
+      "text": "\"I was stung by a bee and now I have hives everywhere\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "I got an IUD recently and Im having alot of abdominal pain"
+      "text": "\"I got an IUD recently and Im having alot of abdominal pain\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "Im feeling lightheaded"
+      "text": "\"Im feeling lightheaded\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "Im pregnant and having abdominal pain"
+      "text": "\"Im pregnant and having abdominal pain\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "I woke up with blurry vision"
+      "text": "\"I woke up with blurry vision\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "I have an uncomfortable squeezing feeling in my chest"
+      "text": "\"I have an uncomfortable squeezing feeling in my chest\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "Im having slurred speech"
+      "text": "\"Im having slurred speech\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "I am having a medical crisis right now"
+      "text": "\"I am having a medical crisis right now\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "I need help now!!"
+      "text": "\"I need help now!!\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "how can i tell if I am having a heart attack?"
+      "text": "\"how can i tell if I am having a heart attack?\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "She's telling me that she's the queen of England."
+      "text": "\"She's telling me that she's the queen of England.\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "She's unable to tell me her name."
+      "text": "\"She's unable to tell me her name.\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "He can't remember what day it is."
+      "text": "\"He can't remember what day it is.\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "I'm just afraid of my neighbor, I think they might shoot someone"
+      "text": "\"I'm just afraid of my neighbor, I think they might shoot someone\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "I have been thinking to go to emergency sometimes"
+      "text": "\"I have been thinking to go to emergency sometimes\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "please I’m not sure how to go to the urgent care"
+      "text": "\"please I’m not sure how to go to the urgent care\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "I changed my mind and I would like help to go to a hospital and speak therapist "
+      "text": "\"I changed my mind and I would like help to go to a hospital and speak therapist \""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "I don't know what happened. My friend is unresponsive."
+      "text": "\"I don't know what happened. My friend is unresponsive.\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "She is laying here lifeless."
+      "text": "\"She is laying here lifeless.\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "I am shaking him but no response"
+      "text": "\"I am shaking him but no response\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "I feel like I am going to pass out"
+      "text": "\"I feel like I am going to pass out\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "He is breathing but his eyes will not open"
+      "text": "\"He is breathing but his eyes will not open\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "Hit the floor"
+      "text": "\"Hit the floor\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "Head injury or headache"
+      "text": "\"Head injury or headache\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "seizures"
+      "text": "\"seizures\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "Seizure history"
+      "text": "\"Seizure history\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "I cannot get a full breath"
+      "text": "\"I cannot get a full breath\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "I feel like I am falling through a tunnel"
+      "text": "\"I feel like I am falling through a tunnel\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "Feel like my chest is close"
+      "text": "\"Feel like my chest is close\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "I was unable to breath for sometime and after that it is normal"
+      "text": "\"I was unable to breath for sometime and after that it is normal\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "From past 3 days I am having difficulty in breathing after I go to bed"
+      "text": "\"From past 3 days I am having difficulty in breathing after I go to bed\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "Right now, I have woken up in the middle of the night with extreme cramping, tight chest and breathing, and a complete knot in my stomach. Recently, last Sunday I was away in europe and had thrown up all day and did not eat for 36 hours from food poisoning. And now each day since and upon returning to the US, I am having severe digestion and heartburn issues"
+      "text": "\"Right now, I have woken up in the middle of the night with extreme cramping, tight chest and breathing, and a complete knot in my stomach. Recently, last Sunday I was away in europe and had thrown up all day and did not eat for 36 hours from food poisoning. And now each day since and upon returning to the US, I am having severe digestion and heartburn issues\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "I have a humidifier but as I said she’s only getting worst. I’m trying everything to help her breathe "
+      "text": "\"I have a humidifier but as I said she’s only getting worst. I’m trying everything to help her breathe \""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "Her nose is very congested and she can’t breathe. I’m doing everything I can’t and is not working g "
+      "text": "\"Her nose is very congested and she can’t breathe. I’m doing everything I can’t and is not working g \""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "I can’t breathe well "
+      "text": "\"I can’t breathe well \""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "Ive been having  pain in my chest where it feels tight and shortness of breath and im aware that i might be catching either an panic or anxiety attack of asthma attack but not too sure but ive taken my inhaler and now I’m started to feel my heart beat rapidly "
+      "text": "\"Ive been having  pain in my chest where it feels tight and shortness of breath and im aware that i might be catching either an panic or anxiety attack of asthma attack but not too sure but ive taken my inhaler and now I’m started to feel my heart beat rapidly \""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "sob when just sitting and talking"
+      "text": "\"sob when just sitting and talking\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "I was having a very difficult time breathing and my chest was hurting"
+      "text": "\"I was having a very difficult time breathing and my chest was hurting\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "I feel like I can’t breath that well"
+      "text": "\"I feel like I can’t breath that well\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "I couldn't catch my breath at all last night"
+      "text": "\"I couldn't catch my breath at all last night\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "And haven’t been able to breathe at all"
+      "text": "\"And haven’t been able to breathe at all\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "He appears to be struggling while breathing."
+      "text": "\"He appears to be struggling while breathing.\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "His chest kind of caves in in the middle when breathing"
+      "text": "\"His chest kind of caves in in the middle when breathing\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "some difficulty breathing but I'm asthmatic so that is normal for me. However, the frequency is not normal."
+      "text": "\"some difficulty breathing but I'm asthmatic so that is normal for me. However, the frequency is not normal.\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "I feel like I ran a mile sometimes like I feel out of breath even though I haven't done much"
+      "text": "\"I feel like I ran a mile sometimes like I feel out of breath even though I haven't done much\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "just hard to take a deep breath"
+      "text": "\"just hard to take a deep breath\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "If im doing something i have to pause and try to breathe"
+      "text": "\"If im doing something i have to pause and try to breathe\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "After we did the albuterol, his face got a bit pale and his lips almost looked purple, but now that’s better"
+      "text": "\"After we did the albuterol, his face got a bit pale and his lips almost looked purple, but now that’s better\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "I am having severe pain in my left arm. My left hand feels numb. This all started two weeks ago with neck \u0026 shoulder pain. I’ve gone to my dr last Friday to put me on an accupunture tens machine which didn’t relief the pain. I also had a massage \u0026 still no relief. This past Friday, my doctor called me in a muscle relaxer which hasn’t done anything \u0026 I’ve also tried aleve. Friday night I also lost feeling in my right arm but that has since returned. My left arm, elbow \u0026 hand are beyond painful. I don’t exactly think the ER could do anything \u0026 I have no more tears to cry. Every position is unbearable, I don’t know what else to do. "
+      "text": "\"I am having severe pain in my left arm. My left hand feels numb. This all started two weeks ago with neck \u0026 shoulder pain. I’ve gone to my dr last Friday to put me on an accupunture tens machine which didn’t relief the pain. I also had a massage \u0026 still no relief. This past Friday, my doctor called me in a muscle relaxer which hasn’t done anything \u0026 I’ve also tried aleve. Friday night I also lost feeling in my right arm but that has since returned. My left arm, elbow \u0026 hand are beyond painful. I don’t exactly think the ER could do anything \u0026 I have no more tears to cry. Every position is unbearable, I don’t know what else to do. \""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "I have something stick in my right eye. It's hurts when I blink or close it. I've tried flushing the eye with water and it has not helped "
+      "text": "\"I have something stick in my right eye. It's hurts when I blink or close it. I've tried flushing the eye with water and it has not helped \""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "I’ve always hd migraines as a kid but recently I’ve been feeling fatigued nauseas and dizzy at times just recently this sharp pain in the right front of my brain starting happening I never felt that type of pain it happened 2 days back before even now I have a dull headache from waking up."
+      "text": "\"I’ve always hd migraines as a kid but recently I’ve been feeling fatigued nauseas and dizzy at times just recently this sharp pain in the right front of my brain starting happening I never felt that type of pain it happened 2 days back before even now I have a dull headache from waking up.\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "It’s been for two days the pain and no relief at all."
+      "text": "\"It’s been for two days the pain and no relief at all.\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "I think I have a fracture in my foot and it’s difficult for me to walk"
+      "text": "\"I think I have a fracture in my foot and it’s difficult for me to walk\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "for the past 4 days been having headache , stomach ache and diarrhea.  So I have been watching what I eat. but not getting any better."
+      "text": "\"for the past 4 days been having headache , stomach ache and diarrhea.  So I have been watching what I eat. but not getting any better.\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "I have a lot of pain in my left eye. Is there an emergency room?"
+      "text": "\"I have a lot of pain in my left eye. Is there an emergency room?\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "my head feels like an explosion"
+      "text": "\"my head feels like an explosion\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "hello. I am having pain in my lower left side. the pain continues to my left knee. it hurts to put weight on it and hurts to walk"
+      "text": "\"hello. I am having pain in my lower left side. the pain continues to my left knee. it hurts to put weight on it and hurts to walk\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "I started feeling some mild dull pain in my lower right abdomen last night, off and on, and have some sharper mild pains intermittently there now. I don’t know if/how concerned I should be."
+      "text": "\"I started feeling some mild dull pain in my lower right abdomen last night, off and on, and have some sharper mild pains intermittently there now. I don’t know if/how concerned I should be.\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "I think I have an ear infection. I’m in a lot of pain all on the right side of my face and into my jaw"
+      "text": "\"I think I have an ear infection. I’m in a lot of pain all on the right side of my face and into my jaw\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "I severely pulled a muscle in my left butt cheek. I can barely move. I was hoping a muscle relaxer could be called into my pharmacy. My pcp is on vacation"
+      "text": "\"I severely pulled a muscle in my left butt cheek. I can barely move. I was hoping a muscle relaxer could be called into my pharmacy. My pcp is on vacation\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "My headache is really strong"
+      "text": "\"My headache is really strong\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "My headache is killing me and Tylenol is not working"
+      "text": "\"My headache is killing me and Tylenol is not working\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "Pain is severe"
+      "text": "\"Pain is severe\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "My pain started around 7 and has gotten worse since."
+      "text": "\"My pain started around 7 and has gotten worse since.\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "During the day I have mild pain but at night it's close to an 8/10 pain."
+      "text": "\"During the day I have mild pain but at night it's close to an 8/10 pain.\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "I have a concern, I went to the doctor for my pelvis pain"
+      "text": "\"I have a concern, I went to the doctor for my pelvis pain\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "I can barely walk or sit down"
+      "text": "\"I can barely walk or sit down\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "I have been in pain over the past few weeks and now it's to the point where I am in extreme pain"
+      "text": "\"I have been in pain over the past few weeks and now it's to the point where I am in extreme pain\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "This morning, I went to ER for heart palpitations. They ruled it out as anxiety. I'm now home.  I'm still experiencing symptoms. Can I get medication prescribed?"
+      "text": "\"This morning, I went to ER for heart palpitations. They ruled it out as anxiety. I'm now home.  I'm still experiencing symptoms. Can I get medication prescribed?\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "I wonder shall i bring her to the urgent care now?"
+      "text": "\"I wonder shall i bring her to the urgent care now?\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "I need something now"
+      "text": "\"I need something now\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "This is kind of an emergency to do all that. She is bleeding from her rectum. Has not strained but the water is full of blood."
+      "text": "\"This is kind of an emergency to do all that. She is bleeding from her rectum. Has not strained but the water is full of blood.\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "I need help and I need it now."
+      "text": "\"I need help and I need it now.\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "My head is killing me"
+      "text": "\"My head is killing me\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "Idk if I need to go to urgent care or the er."
+      "text": "\"Idk if I need to go to urgent care or the er.\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "I need to see a doctor now please! Please"
+      "text": "\"I need to see a doctor now please! Please\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "Hey! They told me to go to an ER because they couldnt do anything there and I’m not sure it would be a real emergency, I’m looking for a doctor to go to a regular appointment"
+      "text": "\"Hey! They told me to go to an ER because they couldnt do anything there and I’m not sure it would be a real emergency, I’m looking for a doctor to go to a regular appointment\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "I passed out today or had an seizure about 1 hour ago, but those time, i was at the doctor appointment, all I remembered passed out and felt dizzy "
+      "text": "\"I passed out today or had an seizure about 1 hour ago, but those time, i was at the doctor appointment, all I remembered passed out and felt dizzy \""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "I know I need help."
+      "text": "\"I know I need help.\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "If I can’t drive and symptoms are persistent- that is an emergency"
+      "text": "\"If I can’t drive and symptoms are persistent- that is an emergency\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "i need to schedule my physical but I do have a concern that may be more urgent. the past month I've had a hard mass under my left nipple. at times it can be sensitive if i bump my chest into something.  almost feels like it could be a cyst but i want to make sure its not something more serious.  I've done hot compression and doesnt seem to help too much. been going on maybe a little over a month."
+      "text": "\"i need to schedule my physical but I do have a concern that may be more urgent. the past month I've had a hard mass under my left nipple. at times it can be sensitive if i bump my chest into something.  almost feels like it could be a cyst but i want to make sure its not something more serious.  I've done hot compression and doesnt seem to help too much. been going on maybe a little over a month.\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "I just used ambulance and came to the hospital"
+      "text": "\"I just used ambulance and came to the hospital\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "Can you help me get someplace safe?"
+      "text": "\"Can you help me get someplace safe?\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "Help me get back home"
+      "text": "\"Help me get back home\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "I've been kidnapped"
+      "text": "\"I've been kidnapped\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "I was taken and I don't know what to do"
+      "text": "\"I was taken and I don't know what to do\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "I just don't feel safe and I don't know how to escape"
+      "text": "\"I just don't feel safe and I don't know how to escape\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "They told me not to tell anyone"
+      "text": "\"They told me not to tell anyone\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "I just want to go back to my family"
+      "text": "\"I just want to go back to my family\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "She takes me to places to meet different people. Then she gets paid while I have to do horrible things for the people she wants me to see."
+      "text": "\"She takes me to places to meet different people. Then she gets paid while I have to do horrible things for the people she wants me to see.\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "Being held"
+      "text": "\"Being held\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "Unsafe"
+      "text": "\"Unsafe\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "I don't feel safe"
+      "text": "\"I don't feel safe\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "what should I do I'm so scared?"
+      "text": "\"what should I do I'm so scared?\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "I'm afraid this is really serious and I don't know what to do"
+      "text": "\"I'm afraid this is really serious and I don't know what to do\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "Should I go to urgent care or ER"
+      "text": "\"Should I go to urgent care or ER\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "I think I might need to go to the ER"
+      "text": "\"I think I might need to go to the ER\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "I have been in a great deal of pain"
+      "text": "\"I have been in a great deal of pain\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "I need the police deparment"
+      "text": "\"I need the police deparment\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "I need help"
+      "text": "\"I need help\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "Need 911"
+      "text": "\"Need 911\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "Quick, help!"
+      "text": "\"Quick, help!\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "Need EMS"
+      "text": "\"Need EMS\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "Serious"
+      "text": "\"Serious\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "911"
+      "text": "\"911\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "Tonight as I was getting ready for bed I had sudden and severe pain in my abdomen"
+      "text": "\"Tonight as I was getting ready for bed I had sudden and severe pain in my abdomen\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "I am having such sever pain I'm not sure what do, it just hurts so bad please help"
+      "text": "\"I am having such sever pain I'm not sure what do, it just hurts so bad please help\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "I've been have terrible waves of pain all day"
+      "text": "\"I've been have terrible waves of pain all day\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "I have a really bad injury"
+      "text": "\"I have a really bad injury\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "very bad pain this morning"
+      "text": "\"very bad pain this morning\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "7-8 out of 10 pain"
+      "text": "\"7-8 out of 10 pain\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "severe pain in my abdomen"
+      "text": "\"severe pain in my abdomen\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "Ive never had pain like this"
+      "text": "\"Ive never had pain like this\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "worst pain of my life"
+      "text": "\"worst pain of my life\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "I can take this pain anymore"
+      "text": "\"I can take this pain anymore\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "The pain is unbearable"
+      "text": "\"The pain is unbearable\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "Pulsing"
+      "text": "\"Pulsing\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "Excruciating"
+      "text": "\"Excruciating\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "Unbearable"
+      "text": "\"Unbearable\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "pain Attack"
+      "text": "\"pain Attack\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "Severe"
+      "text": "\"Severe\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "barfing up blood"
+      "text": "\"barfing up blood\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "I'm really worried I'm coughing up phlegm and it has blood in it"
+      "text": "\"I'm really worried I'm coughing up phlegm and it has blood in it\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "It looks like my spit has blood in it"
+      "text": "\"It looks like my spit has blood in it\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "looks like coffee "
+      "text": "\"looks like coffee \""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "My vomit looks like coffee grounds"
+      "text": "\"My vomit looks like coffee grounds\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "I am throwing up red stuff"
+      "text": "\"I am throwing up red stuff\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "I am coughing up red gunk"
+      "text": "\"I am coughing up red gunk\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "Bloody mucous/ or bloody mucus"
+      "text": "\"Bloody mucous/ or bloody mucus\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "Blood in phlegm/ spit/ mucous/ saliva/ mucus"
+      "text": "\"Blood in phlegm/ spit/ mucous/ saliva/ mucus\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "Blood in toilet"
+      "text": "\"Blood in toilet\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "Barfing blood"
+      "text": "\"Barfing blood\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "Flecks of blood in vomit"
+      "text": "\"Flecks of blood in vomit\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "Bright red blood"
+      "text": "\"Bright red blood\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "For the last couple of days I have had weakness on one side and I just feel off balance when I try to do anything"
+      "text": "\"For the last couple of days I have had weakness on one side and I just feel off balance when I try to do anything\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "Dizzyness"
+      "text": "\"Dizzyness\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "I'm having bad vertigo today"
+      "text": "\"I'm having bad vertigo today\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "I just don't feel balanced"
+      "text": "\"I just don't feel balanced\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "I feel woozy"
+      "text": "\"I feel woozy\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "Head feels swimmy"
+      "text": "\"Head feels swimmy\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "I feel lightheaded"
+      "text": "\"I feel lightheaded\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "The room is tilting"
+      "text": "\"The room is tilting\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "Feeling motion sickness"
+      "text": "\"Feeling motion sickness\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "Dizziness with headache"
+      "text": "\"Dizziness with headache\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "Feel off balance"
+      "text": "\"Feel off balance\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "I just feel a little confused right now"
+      "text": "\"I just feel a little confused right now\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "I don't know what is going on"
+      "text": "\"I don't know what is going on\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "I feel like I have been in a fog lately"
+      "text": "\"I feel like I have been in a fog lately\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "Having trouble remembering"
+      "text": "\"Having trouble remembering\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "I am experiencing disorientation"
+      "text": "\"I am experiencing disorientation\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "Not feeling like myself"
+      "text": "\"Not feeling like myself\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "Memory loss or issues"
+      "text": "\"Memory loss or issues\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "Altered consciousness"
+      "text": "\"Altered consciousness\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "I have blurred vision all of a sudden"
+      "text": "\"I have blurred vision all of a sudden\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "It looks hazy "
+      "text": "\"It looks hazy \""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "my vision changed suddenly"
+      "text": "\"my vision changed suddenly\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "I feel like I need glasses all of a sudden"
+      "text": "\"I feel like I need glasses all of a sudden\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "Everything is a blur"
+      "text": "\"Everything is a blur\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "I have on my glasses but I still can't see"
+      "text": "\"I have on my glasses but I still can't see\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "I am seeing two of everything"
+      "text": "\"I am seeing two of everything\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "I woke up and my vision wasn't the same"
+      "text": "\"I woke up and my vision wasn't the same\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "Fuzzy vision"
+      "text": "\"Fuzzy vision\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "I feel out of breath constantly"
+      "text": "\"I feel out of breath constantly\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "I have been feeling some pressure in my chest with constant headaches"
+      "text": "\"I have been feeling some pressure in my chest with constant headaches\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "I cannot see clearly"
+      "text": "\"I cannot see clearly\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "I just cant get out of bed"
+      "text": "\"I just cant get out of bed\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "I am too weak"
+      "text": "\"I am too weak\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "I am unsteady when walking"
+      "text": "\"I am unsteady when walking\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "My body is glued to the bed"
+      "text": "\"My body is glued to the bed\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "I am super fatigued"
+      "text": "\"I am super fatigued\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "My muscles feel weak"
+      "text": "\"My muscles feel weak\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "I can't feel my legs"
+      "text": "\"I can't feel my legs\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "I can barely stand"
+      "text": "\"I can barely stand\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "I cannot get out of bed"
+      "text": "\"I cannot get out of bed\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "My legs give out"
+      "text": "\"My legs give out\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "I cannot move"
+      "text": "\"I cannot move\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "Chest burning"
+      "text": "\"Chest burning\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "It feels like someone is putting me in my back"
+      "text": "\"It feels like someone is putting me in my back\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "Nitroglycerin/ Nitro"
+      "text": "\"Nitroglycerin/ Nitro\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "Sweating with chest pain or discomfort "
+      "text": "\"Sweating with chest pain or discomfort \""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "Chest feels funny"
+      "text": "\"Chest feels funny\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "Elephant sitting on chest"
+      "text": "\"Elephant sitting on chest\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "Angina"
+      "text": "\"Angina\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "chest pain"
+      "text": "\"chest pain\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "My left shoulder and neck have been bothering me"
+      "text": "\"My left shoulder and neck have been bothering me\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "My arm has been tingling/ or sharp pain"
+      "text": "\"My arm has been tingling/ or sharp pain\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "SOB"
+      "text": "\"SOB\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "Fluttering in chest/ racing heart"
+      "text": "\"Fluttering in chest/ racing heart\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "No oxygen/ no air/ need oxygen"
+      "text": "\"No oxygen/ no air/ need oxygen\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "Low pulse ox"
+      "text": "\"Low pulse ox\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "Constricted/ Restricted airway or breathing"
+      "text": "\"Constricted/ Restricted airway or breathing\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "hyperventilating"
+      "text": "\"hyperventilating\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "Gasping for air"
+      "text": "\"Gasping for air\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "I get tired easily"
+      "text": "\"I get tired easily\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "I might need to sit down"
+      "text": "\"I might need to sit down\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "I can't catch a full breath and am getting dizzy"
+      "text": "\"I can't catch a full breath and am getting dizzy\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "I feel winded "
+      "text": "\"I feel winded \""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "I'm having trouble breathing"
+      "text": "\"I'm having trouble breathing\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "I can't get enough air"
+      "text": "\"I can't get enough air\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "I'm afraid"
+      "text": "\"I'm afraid\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "She's forcing me to do things."
+      "text": "\"She's forcing me to do things.\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "She told me I have to do things for her even though I don't want to."
+      "text": "\"She told me I have to do things for her even though I don't want to.\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "She won't let me eat"
+      "text": "\"She won't let me eat\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "They are preventing me from eating."
+      "text": "\"They are preventing me from eating.\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "I'm not allowed to have any friends"
+      "text": "\"I'm not allowed to have any friends\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "Please help me"
+      "text": "\"Please help me\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "How can they get away with this"
+      "text": "\"How can they get away with this\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "They make me keep secrets"
+      "text": "\"They make me keep secrets\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "They won't take me to the doctor"
+      "text": "\"They won't take me to the doctor\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "They're always yelling"
+      "text": "\"They're always yelling\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "I'm not allowed to talk about what happens at home"
+      "text": "\"I'm not allowed to talk about what happens at home\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "When nobody's looking, my mom abuses me."
+      "text": "\"When nobody's looking, my mom abuses me.\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "She is not going to get away with this"
+      "text": "\"She is not going to get away with this\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "I won't let him walk away just like that!"
+      "text": "\"I won't let him walk away just like that!\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "I just want to grab my gun and shoot somebody"
+      "text": "\"I just want to grab my gun and shoot somebody\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "I'm being attacked"
+      "text": "\"I'm being attacked\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "I have a gun and I'm going to use it"
+      "text": "\"I have a gun and I'm going to use it\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "I have a gun and I’m going to hurt people with it"
+      "text": "\"I have a gun and I’m going to hurt people with it\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "They won't be here tomorrow"
+      "text": "\"They won't be here tomorrow\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "He'd be better off gone."
+      "text": "\"He'd be better off gone.\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "I will make sure that he will never be able to speak about it ever again."
+      "text": "\"I will make sure that he will never be able to speak about it ever again.\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "This is last time they will do this to me"
+      "text": "\"This is last time they will do this to me\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "I will kill him"
+      "text": "\"I will kill him\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "He won't get away with this"
+      "text": "\"He won't get away with this\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "He better watch his back"
+      "text": "\"He better watch his back\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "I'll show her."
+      "text": "\"I'll show her.\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "I can't believe someone will treat me like this"
+      "text": "\"I can't believe someone will treat me like this\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "She'll pay for what she's done."
+      "text": "\"She'll pay for what she's done.\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "I think I just had a seizure. I'm not sure what to do."
+      "text": "\"I think I just had a seizure. I'm not sure what to do.\""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "I had an anxiety attack about an hour ago and was hyperventilating a lot. I started to feel some slight pain in my left arm that would come and go, and I also had some pain in my stomach. I was bloated from taking in excess air. These symptoms only caused my anxiety to worsen because I worried that I could be having a heart attack. The pain in my arm has since subsided and my stomach is feeling better but I’m still a bit worried so I wanted to make sure nothing bad is happening. "
+      "text": "\"I had an anxiety attack about an hour ago and was hyperventilating a lot. I started to feel some slight pain in my left arm that would come and go, and I also had some pain in my stomach. I was bloated from taking in excess air. These symptoms only caused my anxiety to worsen because I worried that I could be having a heart attack. The pain in my arm has since subsided and my stomach is feeling better but I’m still a bit worried so I wanted to make sure nothing bad is happening. \""
     } ],
     "repeatCount": 1,
     "languageCode": "en"
