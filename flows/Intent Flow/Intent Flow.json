@@ -415,6 +415,16 @@
     
     },
     "name": "e624b75b-9278-4ed5-ab9e-5174c26ee828"
+  }, {
+    "targetFlow": "Troubleshooting",
+    "event": "Troubleshooting-succint",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "$request.troubleshooting-succint",
+        "value": true
+      } ]
+    },
+    "name": "fa9d104b-40eb-4487-b379-4a63e01f7b21"
   } ],
   "nluSettings": {
     "modelType": "MODEL_TYPE_ADVANCED",

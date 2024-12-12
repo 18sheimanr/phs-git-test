@@ -151,6 +151,19 @@
           "text": [ "$request.knowledge.answers[0]" ]
         },
         "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "If you don't have any other questions, you can return to the conversation." ]
+        },
+        "languageCode": "en"
+      }, {
+        "payload": {
+          "richContent": [ [ {
+            "text": "Exit troubleshooting",
+            "type": "button"
+          } ] ]
+        },
+        "languageCode": "en"
       } ],
       "nextActionOverride": {
       
