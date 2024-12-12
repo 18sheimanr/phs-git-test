@@ -343,7 +343,7 @@
       "parameterId": "date-period",
       "auto": true
     }, {
-      "text": "",
+      "text": " ",
       "auto": true
     } ],
     "repeatCount": 1,
@@ -357,9 +357,6 @@
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "",
-      "auto": true
-    }, {
       "text": "Last week",
       "parameterId": "date-period",
       "auto": true
