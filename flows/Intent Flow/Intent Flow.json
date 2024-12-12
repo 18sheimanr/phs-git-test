@@ -258,7 +258,6 @@
       
       }
     },
-    "targetPage": "End Session",
     "name": "5a26396f-99e6-4e06-b8a9-870f17dbf216"
   }, {
     "intent": "plan.information",
@@ -446,7 +445,6 @@
     "modelType": "MODEL_TYPE_ADVANCED",
     "classificationThreshold": 0.30000001,
     "modelTrainingMode": "MODEL_TRAINING_MODE_MANUAL",
-    "customConfigKey": "2b423472-af68-41d7-8023-77f15d41d0e8",
     "languageCode": "en"
   } ]
 }
