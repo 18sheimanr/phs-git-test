@@ -65,6 +65,21 @@
     "targetFlow": "Get Care",
     "name": "fd49bea6-e010-4434-b8f9-381652fc30d7"
   }, {
+    "condition": "$request.troubleshooting-succint = true",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I can help with that. Can you describe the issue to me?" ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "$flow.troubleshooting-state",
+        "value": "initialized"
+      } ]
+    },
+    "name": "ec7c5405-2758-4f29-a9f0-404bd69729f5"
+  }, {
     "condition": "$flow.troubleshooting-state = null",
     "triggerFulfillment": {
       "messages": [ {
@@ -87,12 +102,17 @@
             }, {
               "text": "My Fitbit is connected, but it is not showing any data?"
             }, {
-              "text": "Other"
+              "text": "Why isn't my Health Assessment loading?"
             }, {
-              "text": "Cancel"
+              "text": "Other"
             } ],
             "type": "chips"
           } ] ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "To exit troubleshooting, type CANCEL or EXIT at any time." ]
         },
         "languageCode": "en"
       } ],
