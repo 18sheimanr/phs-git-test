@@ -26,6 +26,15 @@
     "targetFlow": "Get Care",
     "name": "40052b82-a107-43fb-952a-414c7aeda6b6"
   }, {
+    "condition": "$flow.troubleshooting-state = \"answered\"",
+    "triggerFulfillment": {
+      "setParameterActions": [{
+        "parameter": "$flow.troubleshooting-state",
+        "value": "initialized"
+      }]
+    },
+    "name": "2bf12230-ab28-4fa9-8f87-2f3fafd56338"
+  }, {
     "condition": "true",
     "triggerFulfillment": {
       "messages": [ {
@@ -34,10 +43,15 @@
         },
         "languageCode": "en"
       } ],
+      "setParameterActions": [{
+        "parameter": "$flow.troubleshooting-state",
+        "value": "initialized"
+      }],
       "nextActionOverride": {
       
       }
     },
+    "targetPage": "Start Page",
     "name": "f40cd682-02d0-4845-b3b1-415f4804cdf2"
   } ],
   "eventHandlers": [ {
