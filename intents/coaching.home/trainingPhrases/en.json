@@ -49,343 +49,343 @@
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "\"Nicotine gum\"",
+      "text": "Nicotine gum",
       "auto": true
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "\"Talk to someone about getting a patch to quit smoking\"",
+      "text": "Talk to someone about getting a patch to quit smoking",
       "auto": true
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "\"I want to get nicotine ",
+      "text": "I want to get nicotine ",
       "auto": true
     }, {
       "text": "gum",
       "parameterId": "person",
       "auto": true
     }, {
-      "text": " from this program\"",
+      "text": " from this program",
       "auto": true
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "\"can I get nicotine patches through this program?\"",
+      "text": "can I get nicotine patches through this program?",
       "auto": true
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "\"Question about fasting\"",
+      "text": "Question about fasting",
       "auto": true
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "\"Create a strength training plan\"",
+      "text": "Create a strength training plan",
       "auto": true
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "\"work with a coach on improving strength\"",
+      "text": "work with a coach on improving strength",
       "auto": true
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "\"Create a ",
+      "text": "Create a ",
       "auto": true
     }, {
       "text": "5",
       "parameterId": "number",
       "auto": true
     }, {
-      "text": "k plan\"",
+      "text": "k plan",
       "auto": true
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "\"Create a walking program for me\"",
+      "text": "Create a walking program for me",
       "auto": true
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "\"I'm hoping someone can work with me to stop using my vape pen\"",
+      "text": "I'm hoping someone can work with me to stop using my vape pen",
       "auto": true
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "\"I'm considering coaching on to quit e-cigs\"",
+      "text": "I'm considering coaching on to quit e-cigs",
       "auto": true
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "\"Coaching to quit vape (e-cigarette)\"",
+      "text": "Coaching to quit vape (e-cigarette)",
       "auto": true
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "\"Work with someone on lonliness\"",
+      "text": "Work with someone on lonliness",
       "auto": true
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "\"Coaching to quit smokeless tobacco\"",
+      "text": "Coaching to quit smokeless tobacco",
       "auto": true
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "\"Improve my health with a coach\"",
+      "text": "Improve my health with a coach",
       "auto": true
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "\"work with a coach to maintain my weight\"",
+      "text": "work with a coach to maintain my weight",
       "auto": true
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "\"preventive health coaching\"",
+      "text": "preventive health coaching",
       "auto": true
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "\"Work with someone on prediabetes\"",
+      "text": "Work with someone on prediabetes",
       "auto": true
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "\"Work with someone to manage my diabetes\"",
+      "text": "Work with someone to manage my diabetes",
       "auto": true
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "\"coaching to each more vegetables\"",
+      "text": "coaching to each more vegetables",
       "auto": true
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "\"dietician to help me eat more fruite and veggies\"",
+      "text": "dietician to help me eat more fruite and veggies",
       "auto": true
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "\"health coaching to become less sedentary\"",
+      "text": "health coaching to become less sedentary",
       "auto": true
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "\"work with someone on physical activity\"",
+      "text": "work with someone on physical activity",
       "auto": true
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "\"Improve LDL HDL cholesterol with a coach\"",
+      "text": "Improve LDL HDL cholesterol with a coach",
       "auto": true
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "\"Coaching on blood pressure\"",
+      "text": "Coaching on blood pressure",
       "auto": true
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "\"How do I set a goal for heart health\"",
+      "text": "How do I set a goal for heart health",
       "auto": true
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "\"Work with a coach to lower my cholesterol\"",
+      "text": "Work with a coach to lower my cholesterol",
       "auto": true
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "\"Start coaching for nutrition\"",
+      "text": "Start coaching for nutrition",
       "auto": true
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "\"Coaching to help me with a diet plan\"",
+      "text": "Coaching to help me with a diet plan",
       "auto": true
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "\"I want someone to help me set up an exercise program\"",
+      "text": "I want someone to help me set up an exercise program",
       "auto": true
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "\"work with a dietician\"",
+      "text": "work with a dietician",
       "auto": true
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "\"talk to a nutritionist\"",
+      "text": "talk to a nutritionist",
       "auto": true
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "\"health coaching on exercising more\"",
+      "text": "health coaching on exercising more",
       "auto": true
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "\"I want to set a goal\"",
+      "text": "I want to set a goal",
       "auto": true
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "\"talk to someone about eating better\"",
+      "text": "talk to someone about eating better",
       "auto": true
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "\"can someone help me with stress management\"",
+      "text": "can someone help me with stress management",
       "auto": true
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "\"Speak to coach\"",
+      "text": "Speak to coach",
       "auto": true
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "\"Speak with someone on health\"",
+      "text": "Speak with someone on health",
       "auto": true
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "\"How do I contact my health coach?\"",
+      "text": "How do I contact my health coach?",
       "auto": true
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "\"Where is my health coach?\"",
+      "text": "Where is my health coach?",
       "auto": true
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "\"How do I set a goal?\"",
+      "text": "How do I set a goal?",
       "auto": true
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "\"Start coaching\"",
+      "text": "Start coaching",
       "auto": true
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "\"How do I start coaching?\"",
+      "text": "How do I start coaching?",
       "auto": true
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "\"can someone help me with resistance training?\"",
+      "text": "can someone help me with resistance training?",
       "auto": true
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "\"can someone help me quit smoking?\"",
+      "text": "can someone help me quit smoking?",
       "auto": true
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "\"I want health coaching\"",
+      "text": "I want health coaching",
       "auto": true
     } ],
     "repeatCount": 1,
     "languageCode": "en"
   }, {
     "parts": [ {
-      "text": "\"work with a coach\"",
+      "text": "work with a coach",
       "auto": true
     } ],
     "repeatCount": 1,
