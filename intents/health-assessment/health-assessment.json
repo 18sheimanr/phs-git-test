@@ -7,5 +7,5 @@
   } ],
   "priority": 500000,
   "description": "This intent is triggered when the user wants to start or return to their health assessment.",
-  "numTrainingPhrases": 33
+  "numTrainingPhrases": 36
 }
