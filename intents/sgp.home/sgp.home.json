@@ -7,5 +7,5 @@
   } ],
   "priority": 500000,
   "description": "This intent is triggered when a member makes a statement that indicates they would like help with a wellness issue that does not involve a human coach.",
-  "numTrainingPhrases": 34
+  "numTrainingPhrases": 37
 }

@@ -13,6 +13,9 @@
       }
     },
     "virtualAgentOutput": {
+      "sessionParameters": {
+        "$request.generative.output": "other\n"
+      },
       "triggeredIntent": {
         "name": "default.welcome"
       },
@@ -21,11 +24,11 @@
         "flow": "Intent Flow"
       },
       "textResponses": [ {
-        "text": [ "Hello $session.params.member.firstName, we’re so glad you’re here! I'm Spark, your AI care companion from $session.params.tenant.programName, I’m here to listen and support you along your wellness journey." ]
+        "text": [ "Welcome $session.params.member.firstName! Your experience here is important, and I'm here to make it easier for you. Whether you're looking for specific information or resources, or guidance, I can help point you in the right direction. " ]
       }, {
-        "text": [ "Is there anything specific you'd like to focus on today? If not, feel free to check out some options below" ]
+        "text": [ "How can I assist you today? Feel free to ask about your concerns, services, or site features, and I'll provide you with the support you need." ]
       }, {
-        "text": [ "Hello, how can I assist you today?" ]
+        "text": [ "Hi. How can I be of service today?" ]
       } ],
       "currentFlow": {
         "name": "Intent Flow"
@@ -36,7 +39,7 @@
         }
       }, {
         "agentUtterance": {
-          "text": "Hello $session.params.member.firstName, we’re so glad you’re here! I'm Spark, your AI care companion from $session.params.tenant.programName, I’m here to listen and support you along your wellness journey.\nIs there anything specific you'd like to focus on today? If not, feel free to check out some options below\nHello, how can I assist you today?"
+          "text": "Welcome $session.params.member.firstName! Your experience here is important, and I'm here to make it easier for you. Whether you're looking for specific information or resources, or guidance, I can help point you in the right direction. \nHow can I assist you today? Feel free to ask about your concerns, services, or site features, and I'll provide you with the support you need.\nHi. How can I be of service today?"
         }
       } ]
     }
@@ -51,15 +54,19 @@
       }
     },
     "virtualAgentOutput": {
-      "triggeredIntent": {
-        "name": "care.get-urgent"
+      "sessionParameters": {
+        "$request.generative.output": "care.get\n"
       },
       "currentPage": {
         "name": "Start Page",
         "flow": "Intent Flow"
       },
       "textResponses": [ {
-        "text": [ "This could be an emergency situation - please call 911 if you need immediate help." ]
+        "text": [ "It's important to address what you're experiencing, even if it may not require emergency care. I can help you find the appropriate care provider through the health plan resources available here:" ],
+        "containAttemptedDataStoreInteractions": true
+      }, {
+        "text": [ "If you think this could be an emergency situation, please dial 911 immediately. " ],
+        "containAttemptedDataStoreInteractions": true
       } ],
       "currentFlow": {
         "name": "Intent Flow"
@@ -70,7 +77,7 @@
         }
       }, {
         "agentUtterance": {
-          "text": "This could be an emergency situation - please call 911 if you need immediate help."
+          "text": "It's important to address what you're experiencing, even if it may not require emergency care. I can help you find the appropriate care provider through the health plan resources available here:\nIf you think this could be an emergency situation, please dial 911 immediately. "
         }
       } ]
     }
@@ -86,7 +93,8 @@
     },
     "virtualAgentOutput": {
       "sessionParameters": {
-        "$flow.troubleshooting-state": "initialized"
+        "$flow.troubleshooting-state": "initialized",
+        "$request.generative.output": "other\n"
       },
       "triggeredIntent": {
         "name": "troubleshooting"
@@ -159,7 +167,9 @@
     },
     "virtualAgentOutput": {
       "sessionParameters": {
-        "device-type": "Fitbit"
+        "$request.generative.output": "other\n",
+        "device-type": "Fitbit",
+        "history_cur_action": "devices"
       },
       "triggeredIntent": {
         "name": "device.home"
@@ -199,7 +209,9 @@
     "virtualAgentOutput": {
       "sessionParameters": {
         "$flow.troubleshooting-state": "initialized",
-        "device-type": "Fitbit"
+        "$request.generative.output": "other\n",
+        "device-type": "Fitbit",
+        "history_cur_action": "devices"
       },
       "triggeredIntent": {
         "name": "troubleshooting"
@@ -238,7 +250,8 @@
     },
     "virtualAgentOutput": {
       "sessionParameters": {
-        "device-type": "Fitbit"
+        "device-type": "Fitbit",
+        "history_cur_action": "devices"
       },
       "currentPage": {
         "name": "Start Page",
@@ -274,7 +287,8 @@
     },
     "virtualAgentOutput": {
       "sessionParameters": {
-        "device-type": "Fitbit"
+        "device-type": "Fitbit",
+        "history_cur_action": "devices"
       },
       "currentPage": {
         "name": "Start Page",
@@ -310,7 +324,8 @@
     },
     "virtualAgentOutput": {
       "sessionParameters": {
-        "device-type": "Fitbit"
+        "device-type": "Fitbit",
+        "history_cur_action": "devices"
       },
       "currentPage": {
         "name": "Start Page",
@@ -347,7 +362,9 @@
     "virtualAgentOutput": {
       "sessionParameters": {
         "$flow.troubleshooting-state": "initialized",
-        "device-type": "Fitbit"
+        "$request.generative.output": "other\n",
+        "device-type": "Fitbit",
+        "history_cur_action": "devices"
       },
       "triggeredIntent": {
         "name": "troubleshooting"
@@ -386,7 +403,8 @@
     },
     "virtualAgentOutput": {
       "sessionParameters": {
-        "device-type": "Fitbit"
+        "device-type": "Fitbit",
+        "history_cur_action": "devices"
       },
       "currentPage": {
         "name": "Start Page",
@@ -422,7 +440,8 @@
     },
     "virtualAgentOutput": {
       "sessionParameters": {
-        "device-type": "Fitbit"
+        "device-type": "Fitbit",
+        "history_cur_action": "devices"
       },
       "currentPage": {
         "name": "Start Page",
@@ -458,7 +477,8 @@
     },
     "virtualAgentOutput": {
       "sessionParameters": {
-        "device-type": "Fitbit"
+        "device-type": "Fitbit",
+        "history_cur_action": "devices"
       },
       "currentPage": {
         "name": "Start Page",
@@ -494,7 +514,8 @@
     },
     "virtualAgentOutput": {
       "sessionParameters": {
-        "device-type": "Fitbit"
+        "device-type": "Fitbit",
+        "history_cur_action": "devices"
       },
       "currentPage": {
         "name": "Start Page",
@@ -530,19 +551,17 @@
     },
     "virtualAgentOutput": {
       "sessionParameters": {
-        "device-type": "Samsung Health"
-      },
-      "triggeredIntent": {
-        "name": "device.home"
+        "device-type": "Fitbit",
+        "history_cur_action": "devices"
       },
       "currentPage": {
         "name": "Start Page",
         "flow": "Intent Flow"
       },
       "textResponses": [ {
-        "text": [ "Your wearable devices can be powerful tools for understanding your health. Let's work together to make the most of them. We're here to guide you every step of the way." ]
-      }, {
-        "text": [ "You can find out how to connect your devices here:" ]
+        "text": [ "Thank you for reaching out. You need to add our mobile app to your phone to add your Samsung Health. Please follow these steps:   \nStep 1: Download our mobile app through the app store.                                                           \nStep 2: Click \"New User Registration\"                                                                                              \nStep 3: Enter your first name, last name, date of birth, and zip code. Click the \"Verify' button.                                                                                                                                            \nStep 4: Enter the Subscriber ID (without alpha prefix) and Group Number. Click the \"Verify\" button. If the Group number is less than 6 characters long, enter zeros proceeding the Group Number. (Example: Group Number is 4321, enter it as: 004321) You will receive a prompt to call if you cannot be identified with your Subscriber ID and Group Number. \nStep 5: Create a Username and password. Enter your mobile number and email address. Check \"Yes, I accept the terms and conditions.\" Click \"Register.\" \nStep 6: Create and confirm the PIN number. \nAfter you have signed in, it will ask if you would like to add your Samsung Health. When prompted, allow all permissions; otherwise, the device will not connect properly. To show activity with the app, be sure to log in at least once a week." ],
+        "containDataStoreFaqContent": true,
+        "containAttemptedDataStoreInteractions": true
       } ],
       "currentFlow": {
         "name": "Intent Flow"
@@ -553,7 +572,7 @@
         }
       }, {
         "agentUtterance": {
-          "text": "Your wearable devices can be powerful tools for understanding your health. Let's work together to make the most of them. We're here to guide you every step of the way.\nYou can find out how to connect your devices here:"
+          "text": "Thank you for reaching out. You need to add our mobile app to your phone to add your Samsung Health. Please follow these steps:   \nStep 1: Download our mobile app through the app store.                                                           \nStep 2: Click \"New User Registration\"                                                                                              \nStep 3: Enter your first name, last name, date of birth, and zip code. Click the \"Verify' button.                                                                                                                                            \nStep 4: Enter the Subscriber ID (without alpha prefix) and Group Number. Click the \"Verify\" button. If the Group number is less than 6 characters long, enter zeros proceeding the Group Number. (Example: Group Number is 4321, enter it as: 004321) You will receive a prompt to call if you cannot be identified with your Subscriber ID and Group Number. \nStep 5: Create a Username and password. Enter your mobile number and email address. Check \"Yes, I accept the terms and conditions.\" Click \"Register.\" \nStep 6: Create and confirm the PIN number. \nAfter you have signed in, it will ask if you would like to add your Samsung Health. When prompted, allow all permissions; otherwise, the device will not connect properly. To show activity with the app, be sure to log in at least once a week."
         }
       } ]
     }
@@ -569,7 +588,8 @@
     },
     "virtualAgentOutput": {
       "sessionParameters": {
-        "device-type": "Samsung Health"
+        "device-type": "Fitbit",
+        "history_cur_action": "devices"
       },
       "currentPage": {
         "name": "Start Page",

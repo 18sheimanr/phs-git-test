@@ -22,6 +22,7 @@
     },
     "virtualAgentOutput": {
       "sessionParameters": {
+        "$request.generative.output": "other\n",
         "member.firstName": "Susan",
         "planContactNumber": "1-800-555-PLAN",
         "state.session.timeSinceLastSession": 10000,
@@ -29,26 +30,6 @@
         "tenant.programName": "Well onTarget",
         "tenant.wellnessContactNumber": "800-555-WELL"
       },
-      "differences": [ {
-        "type": "PAGE",
-        "description": "Page mismatch:\nExpected: \nActual:   Start Page",
-        "assertionType": "EQUAL",
-        "expectedValue": "",
-        "actualValue": "Start Page"
-      }, {
-        "type": "INTENT",
-        "description": "Intent mismatch:\nExpected: \nActual:   default.welcome",
-        "assertionType": "EQUAL",
-        "expectedValue": "",
-        "actualValue": "default.welcome"
-      }, {
-        "type": "UTTERANCE",
-        "description": "Agent response mismatch",
-        "warning": true,
-        "assertionType": "EQUAL",
-        "expectedValue": "",
-        "actualValue": "Hello Susan, we’re so glad you’re here! I'm Spark, your AI care companion from Well onTarget, I’m here to listen and support you along your wellness journey.Is there anything specific you'd like to focus on today? If not, feel free to check out some options below"
-      } ],
       "triggeredIntent": {
         "name": "default.welcome"
       },
@@ -57,9 +38,11 @@
         "flow": "Intent Flow"
       },
       "textResponses": [ {
-        "text": [ "Hello Susan, we’re so glad you’re here! I'm Spark, your AI care companion from Well onTarget, I’m here to listen and support you along your wellness journey." ]
+        "text": [ "Welcome Susan! Your experience here is important, and I'm here to make it easier for you. Whether you're looking for specific information or resources, or guidance, I can help point you in the right direction. " ]
       }, {
-        "text": [ "Is there anything specific you'd like to focus on today? If not, feel free to check out some options below" ]
+        "text": [ "How can I assist you today? Feel free to ask about your concerns, services, or site features, and I'll provide you with the support you need." ]
+      }, {
+        "text": [ "Hi. How can I be of service today?" ]
       } ],
       "currentFlow": {
         "name": "Intent Flow"
@@ -70,7 +53,7 @@
         }
       }, {
         "agentUtterance": {
-          "text": "Hello Susan, we’re so glad you’re here! I'm Spark, your AI care companion from Well onTarget, I’m here to listen and support you along your wellness journey.\nIs there anything specific you'd like to focus on today? If not, feel free to check out some options below"
+          "text": "Welcome Susan! Your experience here is important, and I'm here to make it easier for you. Whether you're looking for specific information or resources, or guidance, I can help point you in the right direction. \nHow can I assist you today? Feel free to ask about your concerns, services, or site features, and I'll provide you with the support you need.\nHi. How can I be of service today?"
         }
       } ]
     }
@@ -86,6 +69,7 @@
     },
     "virtualAgentOutput": {
       "sessionParameters": {
+        "$request.generative.output": "other\n",
         "member.firstName": "Susan",
         "planContactNumber": "1-800-555-PLAN",
         "state.session.timeSinceLastSession": 10000,
@@ -93,26 +77,6 @@
         "tenant.programName": "Well onTarget",
         "tenant.wellnessContactNumber": "800-555-WELL"
       },
-      "differences": [ {
-        "type": "PAGE",
-        "description": "Page mismatch:\nExpected: \nActual:   Start Page",
-        "assertionType": "EQUAL",
-        "expectedValue": "",
-        "actualValue": "Start Page"
-      }, {
-        "type": "INTENT",
-        "description": "Intent mismatch:\nExpected: \nActual:   care.find",
-        "assertionType": "EQUAL",
-        "expectedValue": "",
-        "actualValue": "care.find"
-      }, {
-        "type": "UTTERANCE",
-        "description": "Agent response mismatch",
-        "warning": true,
-        "assertionType": "EQUAL",
-        "expectedValue": "",
-        "actualValue": "If this is an emergency call 911. If you are you trying to find a doctor, you can start at your plan website:"
-      } ],
       "triggeredIntent": {
         "name": "care.find"
       },
@@ -121,7 +85,9 @@
         "flow": "Intent Flow"
       },
       "textResponses": [ {
-        "text": [ "If this is an emergency call 911. If you are you trying to find a doctor, you can start at your plan website:" ]
+        "text": [ "To find care that suits your needs, you can explore health plan resources within this application." ]
+      }, {
+        "text": [ "If you're in an emergency situation, please call 911 immediately." ]
       } ],
       "currentFlow": {
         "name": "Intent Flow"
@@ -132,7 +98,7 @@
         }
       }, {
         "agentUtterance": {
-          "text": "If this is an emergency call 911. If you are you trying to find a doctor, you can start at your plan website:"
+          "text": "To find care that suits your needs, you can explore health plan resources within this application.\nIf you're in an emergency situation, please call 911 immediately."
         }
       } ]
     }
@@ -148,6 +114,7 @@
     },
     "virtualAgentOutput": {
       "sessionParameters": {
+        "$request.generative.output": "care.get\n",
         "member.firstName": "Susan",
         "planContactNumber": "1-800-555-PLAN",
         "state.session.timeSinceLastSession": 10000,
@@ -155,35 +122,16 @@
         "tenant.programName": "Well onTarget",
         "tenant.wellnessContactNumber": "800-555-WELL"
       },
-      "differences": [ {
-        "type": "PAGE",
-        "description": "Page mismatch:\nExpected: \nActual:   Start Page",
-        "assertionType": "EQUAL",
-        "expectedValue": "",
-        "actualValue": "Start Page"
-      }, {
-        "type": "INTENT",
-        "description": "Intent mismatch:\nExpected: \nActual:   care.get",
-        "assertionType": "EQUAL",
-        "expectedValue": "",
-        "actualValue": "care.get"
-      }, {
-        "type": "UTTERANCE",
-        "description": "Agent response mismatch",
-        "warning": true,
-        "assertionType": "EQUAL",
-        "expectedValue": "",
-        "actualValue": "If you're experiencing a medical emergency, please call 911 immediately. For non-urgent health matters, we're here to help. Let's work together to find the care you need. You can find a provider here: "
-      } ],
-      "triggeredIntent": {
-        "name": "care.get"
-      },
       "currentPage": {
         "name": "Start Page",
         "flow": "Intent Flow"
       },
       "textResponses": [ {
-        "text": [ "If you're experiencing a medical emergency, please call 911 immediately. For non-urgent health matters, we're here to help. Let's work together to find the care you need. You can find a provider here: " ]
+        "text": [ "It's important to address what you're experiencing, even if it may not require emergency care. I can help you find the appropriate care provider through the health plan resources available here:" ],
+        "containAttemptedDataStoreInteractions": true
+      }, {
+        "text": [ "If you think this could be an emergency situation, please dial 911 immediately. " ],
+        "containAttemptedDataStoreInteractions": true
       } ],
       "currentFlow": {
         "name": "Intent Flow"
@@ -194,7 +142,7 @@
         }
       }, {
         "agentUtterance": {
-          "text": "If you're experiencing a medical emergency, please call 911 immediately. For non-urgent health matters, we're here to help. Let's work together to find the care you need. You can find a provider here: "
+          "text": "It's important to address what you're experiencing, even if it may not require emergency care. I can help you find the appropriate care provider through the health plan resources available here:\nIf you think this could be an emergency situation, please dial 911 immediately. "
         }
       } ]
     }
@@ -210,6 +158,7 @@
     },
     "virtualAgentOutput": {
       "sessionParameters": {
+        "$request.generative.output": "care.get\n",
         "member.firstName": "Susan",
         "planContactNumber": "1-800-555-PLAN",
         "state.session.timeSinceLastSession": 10000,
@@ -217,26 +166,6 @@
         "tenant.programName": "Well onTarget",
         "tenant.wellnessContactNumber": "800-555-WELL"
       },
-      "differences": [ {
-        "type": "PAGE",
-        "description": "Page mismatch:\nExpected: \nActual:   Start Page",
-        "assertionType": "EQUAL",
-        "expectedValue": "",
-        "actualValue": "Start Page"
-      }, {
-        "type": "INTENT",
-        "description": "Intent mismatch:\nExpected: \nActual:   care.find",
-        "assertionType": "EQUAL",
-        "expectedValue": "",
-        "actualValue": "care.find"
-      }, {
-        "type": "UTTERANCE",
-        "description": "Agent response mismatch",
-        "warning": true,
-        "assertionType": "EQUAL",
-        "expectedValue": "",
-        "actualValue": "If this is an emergency call 911. If you are you trying to find a doctor, you can start at your plan website:"
-      } ],
       "triggeredIntent": {
         "name": "care.find"
       },
@@ -245,7 +174,9 @@
         "flow": "Intent Flow"
       },
       "textResponses": [ {
-        "text": [ "If this is an emergency call 911. If you are you trying to find a doctor, you can start at your plan website:" ]
+        "text": [ "To find care that suits your needs, you can explore health plan resources within this application." ]
+      }, {
+        "text": [ "If you're in an emergency situation, please call 911 immediately." ]
       } ],
       "currentFlow": {
         "name": "Intent Flow"
@@ -256,7 +187,7 @@
         }
       }, {
         "agentUtterance": {
-          "text": "If this is an emergency call 911. If you are you trying to find a doctor, you can start at your plan website:"
+          "text": "To find care that suits your needs, you can explore health plan resources within this application.\nIf you're in an emergency situation, please call 911 immediately."
         }
       } ]
     }
@@ -272,6 +203,7 @@
     },
     "virtualAgentOutput": {
       "sessionParameters": {
+        "$request.generative.output": "care.get-urgent-bh\n",
         "member.firstName": "Susan",
         "planContactNumber": "1-800-555-PLAN",
         "state.session.timeSinceLastSession": 10000,
@@ -279,35 +211,16 @@
         "tenant.programName": "Well onTarget",
         "tenant.wellnessContactNumber": "800-555-WELL"
       },
-      "differences": [ {
-        "type": "PAGE",
-        "description": "Page mismatch:\nExpected: \nActual:   Start Page",
-        "assertionType": "EQUAL",
-        "expectedValue": "",
-        "actualValue": "Start Page"
-      }, {
-        "type": "INTENT",
-        "description": "Intent mismatch:\nExpected: \nActual:   care.get-urgent-bh",
-        "assertionType": "EQUAL",
-        "expectedValue": "",
-        "actualValue": "care.get-urgent-bh"
-      }, {
-        "type": "UTTERANCE",
-        "description": "Agent response mismatch",
-        "warning": true,
-        "assertionType": "EQUAL",
-        "expectedValue": "",
-        "actualValue": "This could be an emergency. If you are having thoughts of suicide please call 988. If this is another type of emergency please dial 911."
-      } ],
-      "triggeredIntent": {
-        "name": "care.get-urgent-bh"
-      },
       "currentPage": {
         "name": "Start Page",
         "flow": "Intent Flow"
       },
       "textResponses": [ {
-        "text": [ "This could be an emergency. If you are having thoughts of suicide please call 988. If this is another type of emergency please dial 911." ]
+        "text": [ "Based on what you've shared, there might be concern for your wellbeing. If you think you are experiencing an emergency, please call 911 immediately or go to the nearest hospital for help." ],
+        "containAttemptedDataStoreInteractions": true
+      }, {
+        "text": [ "You can also contact the Suicide and Crisis hotline at 988 or 800-273-8255. They are available 24/7 to listen and provide support." ],
+        "containAttemptedDataStoreInteractions": true
       } ],
       "currentFlow": {
         "name": "Intent Flow"
@@ -318,7 +231,7 @@
         }
       }, {
         "agentUtterance": {
-          "text": "This could be an emergency. If you are having thoughts of suicide please call 988. If this is another type of emergency please dial 911."
+          "text": "Based on what you've shared, there might be concern for your wellbeing. If you think you are experiencing an emergency, please call 911 immediately or go to the nearest hospital for help.\nYou can also contact the Suicide and Crisis hotline at 988 or 800-273-8255. They are available 24/7 to listen and provide support."
         }
       } ]
     }

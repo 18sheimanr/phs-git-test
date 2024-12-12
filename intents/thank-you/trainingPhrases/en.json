@@ -1,6 +1,24 @@
 {
   "trainingPhrases": [ {
     "parts": [ {
+      "text": "Thank you. Wishing you a wonderful ",
+      "auto": true
+    }, {
+      "text": "2024",
+      "parameterId": "number",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Will do, thank you",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
       "text": "great I'll check it out",
       "auto": true
     } ],

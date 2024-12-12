@@ -23,6 +23,7 @@
     },
     "virtualAgentOutput": {
       "sessionParameters": {
+        "$request.generative.output": "other\n",
         "member.firstName": "Susan",
         "planContactNumber": "1-800-555-PLAN",
         "programComponents.coaching.eligible": true,
@@ -31,26 +32,6 @@
         "tenant.programName": "Well onTarget",
         "tenant.wellnessContactNumber": "800-555-WELL"
       },
-      "differences": [ {
-        "type": "PAGE",
-        "description": "Page mismatch:\nExpected: \nActual:   Start Page",
-        "assertionType": "EQUAL",
-        "expectedValue": "",
-        "actualValue": "Start Page"
-      }, {
-        "type": "INTENT",
-        "description": "Intent mismatch:\nExpected: \nActual:   default.welcome",
-        "assertionType": "EQUAL",
-        "expectedValue": "",
-        "actualValue": "default.welcome"
-      }, {
-        "type": "UTTERANCE",
-        "description": "Agent response mismatch",
-        "warning": true,
-        "assertionType": "EQUAL",
-        "expectedValue": "",
-        "actualValue": "Hello Susan, we’re so glad you’re here! I'm Spark, your AI care companion from Well onTarget, I’m here to listen and support you along your wellness journey.Is there anything specific you'd like to focus on today? If not, feel free to check out some options below"
-      } ],
       "triggeredIntent": {
         "name": "default.welcome"
       },
@@ -59,9 +40,11 @@
         "flow": "Intent Flow"
       },
       "textResponses": [ {
-        "text": [ "Hello Susan, we’re so glad you’re here! I'm Spark, your AI care companion from Well onTarget, I’m here to listen and support you along your wellness journey." ]
+        "text": [ "Welcome Susan! Your experience here is important, and I'm here to make it easier for you. Whether you're looking for specific information or resources, or guidance, I can help point you in the right direction. " ]
       }, {
-        "text": [ "Is there anything specific you'd like to focus on today? If not, feel free to check out some options below" ]
+        "text": [ "How can I assist you today? Feel free to ask about your concerns, services, or site features, and I'll provide you with the support you need." ]
+      }, {
+        "text": [ "Hi. How can I be of service today?" ]
       } ],
       "currentFlow": {
         "name": "Intent Flow"
@@ -72,7 +55,7 @@
         }
       }, {
         "agentUtterance": {
-          "text": "Hello Susan, we’re so glad you’re here! I'm Spark, your AI care companion from Well onTarget, I’m here to listen and support you along your wellness journey.\nIs there anything specific you'd like to focus on today? If not, feel free to check out some options below"
+          "text": "Welcome Susan! Your experience here is important, and I'm here to make it easier for you. Whether you're looking for specific information or resources, or guidance, I can help point you in the right direction. \nHow can I assist you today? Feel free to ask about your concerns, services, or site features, and I'll provide you with the support you need.\nHi. How can I be of service today?"
         }
       } ]
     }
@@ -88,6 +71,7 @@
     },
     "virtualAgentOutput": {
       "sessionParameters": {
+        "$request.generative.output": "care.get\n",
         "member.firstName": "Susan",
         "planContactNumber": "1-800-555-PLAN",
         "programComponents.coaching.eligible": true,
@@ -96,37 +80,16 @@
         "tenant.programName": "Well onTarget",
         "tenant.wellnessContactNumber": "800-555-WELL"
       },
-      "differences": [ {
-        "type": "PAGE",
-        "description": "Page mismatch:\nExpected: \nActual:   Start Page",
-        "assertionType": "EQUAL",
-        "expectedValue": "",
-        "actualValue": "Start Page"
-      }, {
-        "type": "INTENT",
-        "description": "Intent mismatch:\nExpected: \nActual:   care.get",
-        "assertionType": "EQUAL",
-        "expectedValue": "",
-        "actualValue": "care.get"
-      }, {
-        "type": "UTTERANCE",
-        "description": "Agent response mismatch",
-        "warning": true,
-        "assertionType": "EQUAL",
-        "expectedValue": "",
-        "actualValue": "Thanks for reaching out. If you need immediate care, please call 911. For non-emergencies, we can help you find a doctor who's a good fit for you.For help locating a doctor, let’s start here: www.myhealthplan.com"
-      } ],
-      "triggeredIntent": {
-        "name": "care.get"
-      },
       "currentPage": {
         "name": "Start Page",
         "flow": "Intent Flow"
       },
       "textResponses": [ {
-        "text": [ "Thanks for reaching out. If you need immediate care, please call 911. For non-emergencies, we can help you find a doctor who's a good fit for you." ]
+        "text": [ "It's important to address what you're experiencing, even if it may not require emergency care. I can help you find the appropriate care provider through the health plan resources available here:" ],
+        "containAttemptedDataStoreInteractions": true
       }, {
-        "text": [ "For help locating a doctor, let’s start here: www.myhealthplan.com" ]
+        "text": [ "If you think this could be an emergency situation, please dial 911 immediately. " ],
+        "containAttemptedDataStoreInteractions": true
       } ],
       "currentFlow": {
         "name": "Intent Flow"
@@ -137,7 +100,7 @@
         }
       }, {
         "agentUtterance": {
-          "text": "Thanks for reaching out. If you need immediate care, please call 911. For non-emergencies, we can help you find a doctor who's a good fit for you.\nFor help locating a doctor, let’s start here: www.myhealthplan.com"
+          "text": "It's important to address what you're experiencing, even if it may not require emergency care. I can help you find the appropriate care provider through the health plan resources available here:\nIf you think this could be an emergency situation, please dial 911 immediately. "
         }
       } ]
     }
@@ -153,6 +116,8 @@
     },
     "virtualAgentOutput": {
       "sessionParameters": {
+        "$request.generative.output": "other\n",
+        "history_cur_action": "health_assessment",
         "member.firstName": "Susan",
         "planContactNumber": "1-800-555-PLAN",
         "programComponents.coaching.eligible": true,
@@ -161,26 +126,6 @@
         "tenant.programName": "Well onTarget",
         "tenant.wellnessContactNumber": "800-555-WELL"
       },
-      "differences": [ {
-        "type": "PAGE",
-        "description": "Page mismatch:\nExpected: \nActual:   Start Page",
-        "assertionType": "EQUAL",
-        "expectedValue": "",
-        "actualValue": "Start Page"
-      }, {
-        "type": "INTENT",
-        "description": "Intent mismatch:\nExpected: \nActual:   health-assessment",
-        "assertionType": "EQUAL",
-        "expectedValue": "",
-        "actualValue": "health-assessment"
-      }, {
-        "type": "UTTERANCE",
-        "description": "Agent response mismatch",
-        "warning": true,
-        "assertionType": "EQUAL",
-        "expectedValue": "",
-        "actualValue": "Feeling like taking charge? Our quick 7-minute health assessment offers insights \u0026 personalized plans. For your convenience, we also offer it on our app! Ready to start?https://member.onlifehealth.com/HealthAssessment"
-      } ],
       "triggeredIntent": {
         "name": "health-assessment"
       },
@@ -189,9 +134,7 @@
         "flow": "Intent Flow"
       },
       "textResponses": [ {
-        "text": [ "Feeling like taking charge? Our quick 7-minute health assessment offers insights \u0026 personalized plans. For your convenience, we also offer it on our app! Ready to start?" ]
-      }, {
-        "text": [ "https://member.onlifehealth.com/HealthAssessment" ]
+        "text": [ "Your 7-minute health assessment can help offer you more personalized insights into your health. Click below to start whenever you're ready. You can also use our app to complete it at your own pace." ]
       } ],
       "currentFlow": {
         "name": "Intent Flow"
@@ -202,7 +145,7 @@
         }
       }, {
         "agentUtterance": {
-          "text": "Feeling like taking charge? Our quick 7-minute health assessment offers insights \u0026 personalized plans. For your convenience, we also offer it on our app! Ready to start?\nhttps://member.onlifehealth.com/HealthAssessment"
+          "text": "Your 7-minute health assessment can help offer you more personalized insights into your health. Click below to start whenever you're ready. You can also use our app to complete it at your own pace."
         }
       } ]
     }
@@ -218,6 +161,8 @@
     },
     "virtualAgentOutput": {
       "sessionParameters": {
+        "$request.generative.output": "other\n",
+        "history_cur_action": "health_assessment",
         "member.firstName": "Susan",
         "planContactNumber": "1-800-555-PLAN",
         "programComponents.coaching.eligible": true,
@@ -226,26 +171,6 @@
         "tenant.programName": "Well onTarget",
         "tenant.wellnessContactNumber": "800-555-WELL"
       },
-      "differences": [ {
-        "type": "PAGE",
-        "description": "Page mismatch:\nExpected: \nActual:   Start Page",
-        "assertionType": "EQUAL",
-        "expectedValue": "",
-        "actualValue": "Start Page"
-      }, {
-        "type": "INTENT",
-        "description": "Intent mismatch:\nExpected: \nActual:   health-content.home",
-        "assertionType": "EQUAL",
-        "expectedValue": "",
-        "actualValue": "health-content.home"
-      }, {
-        "type": "UTTERANCE",
-        "description": "Agent response mismatch",
-        "warning": true,
-        "assertionType": "EQUAL",
-        "expectedValue": "",
-        "actualValue": "Sometimes a little knowledge can go a long way.  We cover topics like asthma, diabetes, and mental health, all right here:https://member.onlifehealth.com/HealthArticlesFeel free to explore at your own pace and learn something new that might be helpful on your wellness journey."
-      } ],
       "triggeredIntent": {
         "name": "health-content.home"
       },
@@ -255,8 +180,6 @@
       },
       "textResponses": [ {
         "text": [ "Sometimes a little knowledge can go a long way.  We cover topics like asthma, diabetes, and mental health, all right here:" ]
-      }, {
-        "text": [ "https://member.onlifehealth.com/HealthArticles" ]
       }, {
         "text": [ "Feel free to explore at your own pace and learn something new that might be helpful on your wellness journey." ]
       } ],
@@ -269,7 +192,7 @@
         }
       }, {
         "agentUtterance": {
-          "text": "Sometimes a little knowledge can go a long way.  We cover topics like asthma, diabetes, and mental health, all right here:\nhttps://member.onlifehealth.com/HealthArticles\nFeel free to explore at your own pace and learn something new that might be helpful on your wellness journey."
+          "text": "Sometimes a little knowledge can go a long way.  We cover topics like asthma, diabetes, and mental health, all right here:\nFeel free to explore at your own pace and learn something new that might be helpful on your wellness journey."
         }
       } ]
     }
@@ -285,7 +208,9 @@
     },
     "virtualAgentOutput": {
       "sessionParameters": {
+        "$request.generative.output": "other\n",
         "device-type": "Apple Watch",
+        "history_cur_action": "devices",
         "member.firstName": "Susan",
         "planContactNumber": "1-800-555-PLAN",
         "programComponents.coaching.eligible": true,
@@ -294,26 +219,6 @@
         "tenant.programName": "Well onTarget",
         "tenant.wellnessContactNumber": "800-555-WELL"
       },
-      "differences": [ {
-        "type": "PAGE",
-        "description": "Page mismatch:\nExpected: \nActual:   Start Page",
-        "assertionType": "EQUAL",
-        "expectedValue": "",
-        "actualValue": "Start Page"
-      }, {
-        "type": "INTENT",
-        "description": "Intent mismatch:\nExpected: \nActual:   device.home",
-        "assertionType": "EQUAL",
-        "expectedValue": "",
-        "actualValue": "device.home"
-      }, {
-        "type": "UTTERANCE",
-        "description": "Agent response mismatch",
-        "warning": true,
-        "assertionType": "EQUAL",
-        "expectedValue": "",
-        "actualValue": "Keeping track of the data from your wearable devices can be a great way to stay informed about your health. Just follow this link:https://member.onlifehealth.com/BioDevices/IntroductionManaging your health can be empowering, and we're here to make it as easy as we can."
-      } ],
       "triggeredIntent": {
         "name": "device.home"
       },
@@ -322,11 +227,9 @@
         "flow": "Intent Flow"
       },
       "textResponses": [ {
-        "text": [ "Keeping track of the data from your wearable devices can be a great way to stay informed about your health. Just follow this link:" ]
+        "text": [ "Your wearable devices can be powerful tools for understanding your health. Let's work together to make the most of them. We're here to guide you every step of the way." ]
       }, {
-        "text": [ "https://member.onlifehealth.com/BioDevices/Introduction" ]
-      }, {
-        "text": [ "Managing your health can be empowering, and we're here to make it as easy as we can." ]
+        "text": [ "You can find out how to connect your devices here:" ]
       } ],
       "currentFlow": {
         "name": "Intent Flow"
@@ -337,7 +240,7 @@
         }
       }, {
         "agentUtterance": {
-          "text": "Keeping track of the data from your wearable devices can be a great way to stay informed about your health. Just follow this link:\nhttps://member.onlifehealth.com/BioDevices/Introduction\nManaging your health can be empowering, and we're here to make it as easy as we can."
+          "text": "Your wearable devices can be powerful tools for understanding your health. Let's work together to make the most of them. We're here to guide you every step of the way.\nYou can find out how to connect your devices here:"
         }
       } ]
     }
@@ -353,7 +256,9 @@
     },
     "virtualAgentOutput": {
       "sessionParameters": {
+        "$request.generative.output": "other\n",
         "device-type": "Apple Watch",
+        "history_cur_action": "rewards",
         "member.firstName": "Susan",
         "planContactNumber": "1-800-555-PLAN",
         "programComponents.coaching.eligible": true,
@@ -362,26 +267,6 @@
         "tenant.programName": "Well onTarget",
         "tenant.wellnessContactNumber": "800-555-WELL"
       },
-      "differences": [ {
-        "type": "PAGE",
-        "description": "Page mismatch:\nExpected: \nActual:   Start Page",
-        "assertionType": "EQUAL",
-        "expectedValue": "",
-        "actualValue": "Start Page"
-      }, {
-        "type": "INTENT",
-        "description": "Intent mismatch:\nExpected: \nActual:   rewards.home",
-        "assertionType": "EQUAL",
-        "expectedValue": "",
-        "actualValue": "rewards.home"
-      }, {
-        "type": "UTTERANCE",
-        "description": "Agent response mismatch",
-        "warning": true,
-        "assertionType": "EQUAL",
-        "expectedValue": "",
-        "actualValue": "It sounds like you want to go to your rewards. Here is a link - once you are there click the tabs for eligible activities or completed rewards.\n\nhttps://member.onlifehealth.com/Incentive/EligibleActivities"
-      } ],
       "triggeredIntent": {
         "name": "rewards.home"
       },
@@ -390,7 +275,9 @@
         "flow": "Intent Flow"
       },
       "textResponses": [ {
-        "text": [ "It sounds like you want to go to your rewards. Here is a link - once you are there click the tabs for eligible activities or completed rewards.\n\nhttps://member.onlifehealth.com/Incentive/EligibleActivities" ]
+        "text": [ "You can view the rewards your plan offers here:" ]
+      }, {
+        "text": [ "Also, feel free to review our troubleshooting guidelines if you are having difficulty with your points or rewards." ]
       } ],
       "currentFlow": {
         "name": "Intent Flow"
@@ -401,7 +288,7 @@
         }
       }, {
         "agentUtterance": {
-          "text": "It sounds like you want to go to your rewards. Here is a link - once you are there click the tabs for eligible activities or completed rewards.\n\nhttps://member.onlifehealth.com/Incentive/EligibleActivities"
+          "text": "You can view the rewards your plan offers here:\nAlso, feel free to review our troubleshooting guidelines if you are having difficulty with your points or rewards."
         }
       } ]
     }
@@ -417,7 +304,9 @@
     },
     "virtualAgentOutput": {
       "sessionParameters": {
+        "$request.generative.output": "other\n",
         "device-type": "Apple Watch",
+        "history_cur_action": "rewards",
         "member.firstName": "Susan",
         "planContactNumber": "1-800-555-PLAN",
         "programComponents.coaching.eligible": true,
@@ -426,26 +315,6 @@
         "tenant.programName": "Well onTarget",
         "tenant.wellnessContactNumber": "800-555-WELL"
       },
-      "differences": [ {
-        "type": "PAGE",
-        "description": "Page mismatch:\nExpected: \nActual:   Start Page",
-        "assertionType": "EQUAL",
-        "expectedValue": "",
-        "actualValue": "Start Page"
-      }, {
-        "type": "INTENT",
-        "description": "Intent mismatch:\nExpected: \nActual:   journey.home",
-        "assertionType": "EQUAL",
-        "expectedValue": "",
-        "actualValue": "journey.home"
-      }, {
-        "type": "UTTERANCE",
-        "description": "Agent response mismatch",
-        "warning": true,
-        "assertionType": "EQUAL",
-        "expectedValue": "",
-        "actualValue": "Click below to go to see your recommended wellness journey.\n\nhttps://member.onlifehealth.com/Journey#health-journey "
-      } ],
       "triggeredIntent": {
         "name": "journey.home"
       },
@@ -454,7 +323,7 @@
         "flow": "Intent Flow"
       },
       "textResponses": [ {
-        "text": [ "Click below to go to see your recommended wellness journey.\n\nhttps://member.onlifehealth.com/Journey#health-journey " ]
+        "text": [ "This link will take you to the part of your dashboard that displays your journey." ]
       } ],
       "currentFlow": {
         "name": "Intent Flow"
@@ -465,7 +334,7 @@
         }
       }, {
         "agentUtterance": {
-          "text": "Click below to go to see your recommended wellness journey.\n\nhttps://member.onlifehealth.com/Journey#health-journey "
+          "text": "This link will take you to the part of your dashboard that displays your journey."
         }
       } ]
     }
@@ -481,7 +350,9 @@
     },
     "virtualAgentOutput": {
       "sessionParameters": {
+        "$request.generative.output": "other\n",
         "device-type": "Apple Watch",
+        "history_cur_action": "challenges",
         "member.firstName": "Susan",
         "planContactNumber": "1-800-555-PLAN",
         "programComponents.coaching.eligible": true,
@@ -490,26 +361,6 @@
         "tenant.programName": "Well onTarget",
         "tenant.wellnessContactNumber": "800-555-WELL"
       },
-      "differences": [ {
-        "type": "PAGE",
-        "description": "Page mismatch:\nExpected: \nActual:   Start Page",
-        "assertionType": "EQUAL",
-        "expectedValue": "",
-        "actualValue": "Start Page"
-      }, {
-        "type": "INTENT",
-        "description": "Intent mismatch:\nExpected: \nActual:   challenges.home",
-        "assertionType": "EQUAL",
-        "expectedValue": "",
-        "actualValue": "challenges.home"
-      }, {
-        "type": "UTTERANCE",
-        "description": "Agent response mismatch",
-        "warning": true,
-        "assertionType": "EQUAL",
-        "expectedValue": "",
-        "actualValue": "If you would like to complete a health or wellness challenge, click the link below.\n\nhttps://member.onlifehealth.com/challenge"
-      } ],
       "triggeredIntent": {
         "name": "challenges.home"
       },
@@ -518,7 +369,7 @@
         "flow": "Intent Flow"
       },
       "textResponses": [ {
-        "text": [ "If you would like to complete a health or wellness challenge, click the link below.\n\nhttps://member.onlifehealth.com/challenge" ]
+        "text": [ "You can find challenges to complete here:" ]
       } ],
       "currentFlow": {
         "name": "Intent Flow"
@@ -529,7 +380,7 @@
         }
       }, {
         "agentUtterance": {
-          "text": "If you would like to complete a health or wellness challenge, click the link below.\n\nhttps://member.onlifehealth.com/challenge"
+          "text": "You can find challenges to complete here:"
         }
       } ]
     }
@@ -545,7 +396,9 @@
     },
     "virtualAgentOutput": {
       "sessionParameters": {
+        "$request.generative.output": "other\n",
         "device-type": "Apple Watch",
+        "history_cur_action": "challenges",
         "member.firstName": "Susan",
         "planContactNumber": "1-800-555-PLAN",
         "programComponents.coaching.eligible": true,
@@ -554,26 +407,6 @@
         "tenant.programName": "Well onTarget",
         "tenant.wellnessContactNumber": "800-555-WELL"
       },
-      "differences": [ {
-        "type": "PAGE",
-        "description": "Page mismatch:\nExpected: \nActual:   Start Page",
-        "assertionType": "EQUAL",
-        "expectedValue": "",
-        "actualValue": "Start Page"
-      }, {
-        "type": "INTENT",
-        "description": "Intent mismatch:\nExpected: \nActual:   items.in-progress",
-        "assertionType": "EQUAL",
-        "expectedValue": "",
-        "actualValue": "items.in-progress"
-      }, {
-        "type": "UTTERANCE",
-        "description": "Agent response mismatch",
-        "warning": true,
-        "assertionType": "EQUAL",
-        "expectedValue": "",
-        "actualValue": "Click the link below to go to your in progress items.\n\nhttps://member.onlifehealth.com/Journey#inprogress-activities "
-      } ],
       "triggeredIntent": {
         "name": "items.in-progress"
       },
@@ -582,7 +415,7 @@
         "flow": "Intent Flow"
       },
       "textResponses": [ {
-        "text": [ "Click the link below to go to your in progress items.\n\nhttps://member.onlifehealth.com/Journey#inprogress-activities " ]
+        "text": [ "Click the link below to go to your in progress items." ]
       } ],
       "currentFlow": {
         "name": "Intent Flow"
@@ -593,7 +426,7 @@
         }
       }, {
         "agentUtterance": {
-          "text": "Click the link below to go to your in progress items.\n\nhttps://member.onlifehealth.com/Journey#inprogress-activities "
+          "text": "Click the link below to go to your in progress items."
         }
       } ]
     }
@@ -609,7 +442,9 @@
     },
     "virtualAgentOutput": {
       "sessionParameters": {
+        "$request.generative.output": "other\n",
         "device-type": "Apple Watch",
+        "history_cur_action": "trackers",
         "member.firstName": "Susan",
         "planContactNumber": "1-800-555-PLAN",
         "programComponents.coaching.eligible": true,
@@ -618,26 +453,6 @@
         "tenant.programName": "Well onTarget",
         "tenant.wellnessContactNumber": "800-555-WELL"
       },
-      "differences": [ {
-        "type": "PAGE",
-        "description": "Page mismatch:\nExpected: \nActual:   Start Page",
-        "assertionType": "EQUAL",
-        "expectedValue": "",
-        "actualValue": "Start Page"
-      }, {
-        "type": "INTENT",
-        "description": "Intent mismatch:\nExpected: \nActual:   trackers.home",
-        "assertionType": "EQUAL",
-        "expectedValue": "",
-        "actualValue": "trackers.home"
-      }, {
-        "type": "UTTERANCE",
-        "description": "Agent response mismatch",
-        "warning": true,
-        "assertionType": "EQUAL",
-        "expectedValue": "",
-        "actualValue": "If you'd like to track your activities, the link is here.\n\nhttps://member.onlifehealth.com/Tracker "
-      } ],
       "triggeredIntent": {
         "name": "trackers.home"
       },
@@ -646,7 +461,7 @@
         "flow": "Intent Flow"
       },
       "textResponses": [ {
-        "text": [ "If you'd like to track your activities, the link is here.\n\nhttps://member.onlifehealth.com/Tracker " ]
+        "text": [ "Find out about how to track your healthy habits here:" ]
       } ],
       "currentFlow": {
         "name": "Intent Flow"
@@ -657,7 +472,7 @@
         }
       }, {
         "agentUtterance": {
-          "text": "If you'd like to track your activities, the link is here.\n\nhttps://member.onlifehealth.com/Tracker "
+          "text": "Find out about how to track your healthy habits here:"
         }
       } ]
     }
@@ -673,7 +488,9 @@
     },
     "virtualAgentOutput": {
       "sessionParameters": {
+        "$request.generative.output": "other\n",
         "device-type": "Apple Watch",
+        "history_cur_action": "trackers",
         "member.firstName": "Susan",
         "planContactNumber": "1-800-555-PLAN",
         "programComponents.coaching.eligible": true,
@@ -682,26 +499,6 @@
         "tenant.programName": "Well onTarget",
         "tenant.wellnessContactNumber": "800-555-WELL"
       },
-      "differences": [ {
-        "type": "PAGE",
-        "description": "Page mismatch:\nExpected: \nActual:   Start Page",
-        "assertionType": "EQUAL",
-        "expectedValue": "",
-        "actualValue": "Start Page"
-      }, {
-        "type": "INTENT",
-        "description": "Intent mismatch:\nExpected: \nActual:   plan.information",
-        "assertionType": "EQUAL",
-        "expectedValue": "",
-        "actualValue": "plan.information"
-      }, {
-        "type": "UTTERANCE",
-        "description": "Agent response mismatch",
-        "warning": true,
-        "assertionType": "EQUAL",
-        "expectedValue": "",
-        "actualValue": "It sounds like you might have a question about your plan. You can visit www.myhealthplan.com or contact $session.params.tenant.planContactNumber for questions."
-      } ],
       "triggeredIntent": {
         "name": "plan.information"
       },
@@ -737,7 +534,9 @@
     },
     "virtualAgentOutput": {
       "sessionParameters": {
+        "$request.generative.output": "other\n",
         "device-type": "Apple Watch",
+        "history_cur_action": "self_guided_programs",
         "member.firstName": "Susan",
         "planContactNumber": "1-800-555-PLAN",
         "programComponents.coaching.eligible": true,
@@ -746,26 +545,6 @@
         "tenant.programName": "Well onTarget",
         "tenant.wellnessContactNumber": "800-555-WELL"
       },
-      "differences": [ {
-        "type": "PAGE",
-        "description": "Page mismatch:\nExpected: \nActual:   Start Page",
-        "assertionType": "EQUAL",
-        "expectedValue": "",
-        "actualValue": "Start Page"
-      }, {
-        "type": "INTENT",
-        "description": "Intent mismatch:\nExpected: \nActual:   sgp.home",
-        "assertionType": "EQUAL",
-        "expectedValue": "",
-        "actualValue": "sgp.home"
-      }, {
-        "type": "UTTERANCE",
-        "description": "Agent response mismatch",
-        "warning": true,
-        "assertionType": "EQUAL",
-        "expectedValue": "",
-        "actualValue": "You have access to a wide variety of self-guided programs. You can start or continue a program at the link below.\n\nhttps://member.onlifehealth.com/GuidedProgram"
-      } ],
       "triggeredIntent": {
         "name": "sgp.home"
       },
@@ -774,7 +553,7 @@
         "flow": "Intent Flow"
       },
       "textResponses": [ {
-        "text": [ "You have access to a wide variety of self-guided programs. You can start or continue a program at the link below.\n\nhttps://member.onlifehealth.com/GuidedProgram" ]
+        "text": [ "That’s a great idea! Managing your own health and wellness can be challenging. Check out your plan’s self-guided programs to help get started." ]
       } ],
       "currentFlow": {
         "name": "Intent Flow"
@@ -785,7 +564,7 @@
         }
       }, {
         "agentUtterance": {
-          "text": "You have access to a wide variety of self-guided programs. You can start or continue a program at the link below.\n\nhttps://member.onlifehealth.com/GuidedProgram"
+          "text": "That’s a great idea! Managing your own health and wellness can be challenging. Check out your plan’s self-guided programs to help get started."
         }
       } ]
     }
@@ -801,7 +580,9 @@
     },
     "virtualAgentOutput": {
       "sessionParameters": {
+        "$request.generative.output": "other\n",
         "device-type": "Apple Watch",
+        "history_cur_action": "coaching",
         "member.firstName": "Susan",
         "planContactNumber": "1-800-555-PLAN",
         "programComponents.coaching.eligible": true,
@@ -810,26 +591,6 @@
         "tenant.programName": "Well onTarget",
         "tenant.wellnessContactNumber": "800-555-WELL"
       },
-      "differences": [ {
-        "type": "PAGE",
-        "description": "Page mismatch:\nExpected: \nActual:   Start Page",
-        "assertionType": "EQUAL",
-        "expectedValue": "",
-        "actualValue": "Start Page"
-      }, {
-        "type": "INTENT",
-        "description": "Intent mismatch:\nExpected: \nActual:   coaching.home",
-        "assertionType": "EQUAL",
-        "expectedValue": "",
-        "actualValue": "coaching.home"
-      }, {
-        "type": "UTTERANCE",
-        "description": "Agent response mismatch",
-        "warning": true,
-        "assertionType": "EQUAL",
-        "expectedValue": "",
-        "actualValue": "If you'd like to work with a coach to improve your wellness you can click the link below to get started, or continue working towards a goal you've already set.\n\nhttps://member.onlifehealth.com/Goal/LearnMore"
-      } ],
       "triggeredIntent": {
         "name": "coaching.home"
       },
@@ -838,7 +599,9 @@
         "flow": "Intent Flow"
       },
       "textResponses": [ {
-        "text": [ "If you'd like to work with a coach to improve your wellness you can click the link below to get started, or continue working towards a goal you've already set.\n\nhttps://member.onlifehealth.com/Goal/LearnMore" ]
+        "text": [ "I can help with that." ]
+      }, {
+        "text": [ "It looks like your plan offers 1-on-1 live coaching. Check out your options below:" ]
       } ],
       "currentFlow": {
         "name": "Intent Flow"
@@ -849,7 +612,7 @@
         }
       }, {
         "agentUtterance": {
-          "text": "If you'd like to work with a coach to improve your wellness you can click the link below to get started, or continue working towards a goal you've already set.\n\nhttps://member.onlifehealth.com/Goal/LearnMore"
+          "text": "I can help with that.\nIt looks like your plan offers 1-on-1 live coaching. Check out your options below:"
         }
       } ]
     }

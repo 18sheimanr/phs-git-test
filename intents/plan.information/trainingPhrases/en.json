@@ -1,6 +1,27 @@
 {
   "trainingPhrases": [ {
     "parts": [ {
+      "text": "Who's in my network?",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I need a new insurance card",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Need to understand why I am being billed the way I am",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
       "text": "online I am seeing the wrong plan for ",
       "auto": true
     }, {
@@ -18,9 +39,7 @@
       "text": "Hello, I am wondering how I can switch my plan ",
       "auto": true
     }, {
-      "text": "moving",
-      "parameterId": "wellness-issue",
-      "auto": true
+      "text": "moving"
     }, {
       "text": " forward?",
       "auto": true
@@ -32,9 +51,7 @@
       "text": "I was trying to get help with my ",
       "auto": true
     }, {
-      "text": "prescription drug",
-      "parameterId": "wellness-issue",
-      "auto": true
+      "text": "prescription drug"
     }, {
       "text": " benefits",
       "auto": true

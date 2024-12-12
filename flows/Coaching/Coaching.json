@@ -2,6 +2,27 @@
   "name": "88a6501e-d891-45ac-866f-0194c63b2622",
   "displayName": "Coaching",
   "transitionRoutes": [ {
+    "condition": "$request.generative.output = \"care\\.get-urgent-bh\\n\" OR $request.generative.output = \"care\\.get-bh\\n\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "Get Care Urgent BH",
+    "name": "c5bbf7a7-11a3-400d-952d-9ea40f45025b"
+  }, {
+    "condition": "$request.generative.output = \"care\\.get-urgent\\n\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "Get Care Urgent",
+    "name": "75715c19-4dad-4bca-985d-143786b82625"
+  }, {
+    "condition": "$request.generative.output = \"care\\.get\\n\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "Get Care",
+    "name": "fd49bea6-e010-4434-b8f9-381652fc30d7"
+  }, {
     "condition": "$session.params.programComponents.coaching.eligible = false OR $session.params.programComponents.coaching.eligible = null",
     "triggerFulfillment": {
       "messages": [ {
@@ -90,6 +111,13 @@
       } ]
     },
     "name": "da6a7f5f-44d4-4f55-a309-13a98abde157"
+  }, {
+    "targetPage": "End Flow",
+    "event": "flow.cancelled",
+    "triggerFulfillment": {
+    
+    },
+    "name": "5a325cca-8fdf-41ce-85d7-bcacc563eb10"
   } ],
   "nluSettings": {
     "modelType": "MODEL_TYPE_ADVANCED",

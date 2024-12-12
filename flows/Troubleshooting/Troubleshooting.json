@@ -32,11 +32,59 @@
     "name": "da4c8703-7bdb-47e5-b02e-df2f3b8b10d7",
     "description": "When a user clicks other, "
   }, {
+    "condition": "$flow.troubleshooting-state = \"initialized\"",
+    "triggerFulfillment": {
+      "generators": [ {
+        "generator": "projects/develop-251413/locations/us-central1/agents/c527bdd2-6892-4b0b-b6e7-63f05d582de5/generators/dca2055e-3282-4332-9183-9eaf5aac30ab",
+        "outputParameter": "$request.generative.output"
+      } ],
+      "nextActionOverride": {
+      
+      }
+    },
+    "name": "f424dd56-a911-401d-a8db-69813fe24cdd"
+  }, {
+    "condition": "$request.generative.output = \"care\\.get-urgent-bh\\n\" OR $request.generative.output = \"care\\.get-bh\\n\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "Get Care Urgent BH",
+    "name": "c5bbf7a7-11a3-400d-952d-9ea40f45025b"
+  }, {
+    "condition": "$request.generative.output = \"care\\.get-urgent\\n\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "Get Care Urgent",
+    "name": "75715c19-4dad-4bca-985d-143786b82625"
+  }, {
+    "condition": "$request.generative.output = \"care\\.get\\n\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "Get Care",
+    "name": "fd49bea6-e010-4434-b8f9-381652fc30d7"
+  }, {
+    "condition": "$request.troubleshooting-succint = true",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I can help with that. Can you describe the issue to me?" ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "$flow.troubleshooting-state",
+        "value": "initialized"
+      } ]
+    },
+    "name": "ec7c5405-2758-4f29-a9f0-404bd69729f5"
+  }, {
     "condition": "$flow.troubleshooting-state = null",
     "triggerFulfillment": {
       "messages": [ {
         "text": {
-          "text": [ "I can help you with that. Could you please describe the issue(s) you're experiencing?" ]
+          "text": [ "I can help with that. Can you describe the issue to me?" ]
         },
         "languageCode": "en"
       }, {
@@ -48,13 +96,13 @@
         "payload": {
           "richContent": [ [ {
             "options": [ {
-              "text": "Health Assessment Help"
+              "text": "My Apple Watch has stopped linking my steps to the app?"
             }, {
-              "text": "Find Certificate of Completion"
+              "text": "How do I update my email preferences?"
             }, {
-              "text": "Apple Watch Won't Connect"
+              "text": "My Fitbit is connected, but it is not showing any data?"
             }, {
-              "text": "Quit Self-Guided Program"
+              "text": "Why isn't my Health Assessment loading?"
             }, {
               "text": "Other"
             } ],
@@ -64,7 +112,7 @@
         "languageCode": "en"
       }, {
         "text": {
-          "text": [ "To exit troubleshooting, type CANCEL or EXIT at anytime." ]
+          "text": [ "To exit troubleshooting, type CANCEL or EXIT at any time." ]
         },
         "languageCode": "en"
       } ],
@@ -77,22 +125,14 @@
       }
     },
     "name": "b388bd44-d030-44e9-8aec-33d32f9cfac4"
-  }, {
-    "condition": "$flow.troubleshooting-state = \"emergency-triggered\"",
-    "triggerFulfillment": {
-    
-    },
-    "targetPage": "End Flow",
-    "name": "fb271761-bb8f-481d-bbd9-74a315353564"
   } ],
   "eventHandlers": [ {
+    "targetPage": "no-match",
     "event": "sys.no-match-default",
     "triggerFulfillment": {
-      "messages": [ {
-        "text": {
-          "text": [ "Sorry you're having trouble, unfortunately I don't have the answer to that in my database yet. You can contact $session.params.tenant.programName member services at $session.params.tenant.wellnessContactNumber.\n\nIf you need help with your health plan you can try $session.params.tenant.planUrl or contact member services at $session.params.planContactNumber.\n\nYou can also try to reword your question, or type \"cancel\" to exit troubleshooting." ]
-        },
-        "languageCode": "en"
+      "generators": [ {
+        "generator": "projects/develop-251413/locations/us-central1/agents/c527bdd2-6892-4b0b-b6e7-63f05d582de5/generators/dca2055e-3282-4332-9183-9eaf5aac30ab",
+        "outputParameter": "$request.generative.output"
       } ],
       "nextActionOverride": {
       
@@ -110,6 +150,13 @@
       } ]
     },
     "name": "9e7f72bd-4ddf-4c41-bb62-3af5b09d669b"
+  }, {
+    "targetPage": "End Flow",
+    "event": "flow.cancelled",
+    "triggerFulfillment": {
+    
+    },
+    "name": "b879ae23-cb57-4248-9f0f-1fa7c49d8158"
   } ],
   "nluSettings": {
     "modelType": "MODEL_TYPE_ADVANCED",
@@ -122,6 +169,19 @@
       "messages": [ {
         "text": {
           "text": [ "$request.knowledge.answers[0]" ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "If you don't have any other questions, you can return to the conversation." ]
+        },
+        "languageCode": "en"
+      }, {
+        "payload": {
+          "richContent": [ [ {
+            "text": "Exit troubleshooting",
+            "type": "button"
+          } ] ]
         },
         "languageCode": "en"
       } ],
@@ -144,8 +204,6 @@
     "modelType": "MODEL_TYPE_ADVANCED",
     "classificationThreshold": 0.30000001,
     "modelTrainingMode": "MODEL_TRAINING_MODE_MANUAL",
-    "customConfigKey": "308cb7d4-2089-4c5e-8475-795696b237ef",
     "languageCode": "en"
-  } ],
-  "agentTransitionRouteGroups": [ "Get Care All" ]
+  } ]
 }

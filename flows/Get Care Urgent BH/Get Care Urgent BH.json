@@ -28,7 +28,7 @@
       
       }
     },
-    "targetPage": "End Flow",
+    "targetPage": "END_FLOW_WITH_CANCELLATION",
     "name": "7a9ccd6c-04f2-4e4a-9cfc-965d2052c918"
   } ],
   "eventHandlers": [ {

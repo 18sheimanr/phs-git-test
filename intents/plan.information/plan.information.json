@@ -10,5 +10,5 @@
   } ],
   "priority": 500000,
   "description": "This intent is triggered when a member asks a question that seems to be related to their insurance plan or coverage.",
-  "numTrainingPhrases": 61
+  "numTrainingPhrases": 64
 }

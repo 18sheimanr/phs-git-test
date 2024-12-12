@@ -2,6 +2,27 @@
   "name": "30009edd-a420-42cd-9efd-dee2e23fbce8",
   "displayName": "Health Content",
   "transitionRoutes": [ {
+    "condition": "$request.generative.output = \"care\\.get-urgent-bh\\n\" OR $request.generative.output = \"care\\.get-bh\\n\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "Get Care Urgent BH",
+    "name": "c5bbf7a7-11a3-400d-952d-9ea40f45025b"
+  }, {
+    "condition": "$request.generative.output = \"care\\.get-urgent\\n\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "Get Care Urgent",
+    "name": "75715c19-4dad-4bca-985d-143786b82625"
+  }, {
+    "condition": "$request.generative.output = \"care\\.get\\n\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "Get Care",
+    "name": "fd49bea6-e010-4434-b8f9-381652fc30d7"
+  }, {
     "condition": "true",
     "triggerFulfillment": {
       "messages": [ {
@@ -56,6 +77,13 @@
       } ]
     },
     "name": "3c83b80d-bf97-451d-8825-4b6e59c76b13"
+  }, {
+    "targetPage": "End Flow",
+    "event": "flow.cancelled",
+    "triggerFulfillment": {
+    
+    },
+    "name": "5a325cca-8fdf-41ce-85d7-bcacc563eb10"
   } ],
   "nluSettings": {
     "modelType": "MODEL_TYPE_ADVANCED",

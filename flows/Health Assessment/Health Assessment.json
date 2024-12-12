@@ -2,6 +2,27 @@
   "name": "c6ccbeed-5a7e-4950-9d12-cd189951a3fd",
   "displayName": "Health Assessment",
   "transitionRoutes": [ {
+    "condition": "$request.generative.output = \"care\\.get-urgent-bh\\n\" OR $request.generative.output = \"care\\.get-bh\\n\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "Get Care Urgent BH",
+    "name": "c5bbf7a7-11a3-400d-952d-9ea40f45025b"
+  }, {
+    "condition": "$request.generative.output = \"care\\.get-urgent\\n\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "Get Care Urgent",
+    "name": "75715c19-4dad-4bca-985d-143786b82625"
+  }, {
+    "condition": "$request.generative.output = \"care\\.get\\n\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "Get Care",
+    "name": "fd49bea6-e010-4434-b8f9-381652fc30d7"
+  }, {
     "condition": "true",
     "triggerFulfillment": {
       "messages": [ {
@@ -19,9 +40,9 @@
             "type": "button"
           }, {
             "event": {
-              "event": "Troubleshooting"
+              "event": "Troubleshooting-succint"
             },
-            "text": "Device Troubleshooting",
+            "text": "Troubleshooting",
             "type": "button"
           } ] ]
         },
@@ -57,6 +78,13 @@
       } ]
     },
     "name": "6246d2d2-7860-40ec-8955-9ce662c1a9f1"
+  }, {
+    "targetPage": "End Flow",
+    "event": "flow.cancelled",
+    "triggerFulfillment": {
+    
+    },
+    "name": "5a325cca-8fdf-41ce-85d7-bcacc563eb10"
   } ],
   "nluSettings": {
     "modelType": "MODEL_TYPE_ADVANCED",
@@ -67,7 +95,6 @@
     "modelType": "MODEL_TYPE_ADVANCED",
     "classificationThreshold": 0.30000001,
     "modelTrainingMode": "MODEL_TRAINING_MODE_MANUAL",
-    "customConfigKey": "9dbeb43e-cb86-42ed-a438-8c0bdcf5d12d",
     "languageCode": "en"
   } ]
 }
