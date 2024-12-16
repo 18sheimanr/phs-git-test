@@ -3,5 +3,5 @@
   "displayName": "troubleshooting.cancel",
   "priority": 500000,
   "description": "This intent is matched if a member is trying to exit the FAQ problem description flow.",
-  "numTrainingPhrases": 7
+  "numTrainingPhrases": 9
 }

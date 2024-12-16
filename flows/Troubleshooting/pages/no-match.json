@@ -26,18 +26,40 @@
     "targetFlow": "Get Care",
     "name": "40052b82-a107-43fb-952a-414c7aeda6b6"
   }, {
+    "condition": "$flow.troubleshooting-state = \"answered\"",
+    "triggerFulfillment": {
+      "setParameterActions": [{
+        "parameter": "$flow.troubleshooting-state",
+        "value": "initialized"
+      }]
+    },
+    "name": "2bf12230-ab28-4fa9-8f87-2f3fafd56338"
+  }, {
     "condition": "true",
     "triggerFulfillment": {
       "messages": [ {
         "text": {
-          "text": [ "Sorry you're having trouble, unfortunately I don't have the answer to that in my database yet. You can contact $session.params.tenant.programName member services at $session.params.tenant.wellnessContactNumber.\n\nIf you need help with your health plan you can try $session.params.tenant.planUrl or contact member services at $session.params.planContactNumber.\n\nYou can also try to reword your question, or type \"cancel\" to exit troubleshooting." ]
+          "text": [ "Sorry you're having trouble, unfortunately I don't have the answer to that in my database yet. You can contact $session.params.tenant.programName member services at $session.params.tenant.wellnessContactNumber.\n\nIf you need help with your health plan you can try $session.params.tenant.planUrl or contact member services at $session.params.planContactNumber.\n\nYou can also try to reword your question." ]
+        },
+        "languageCode": "en"
+      }, {
+        "payload": {
+          "richContent": [ [ {
+            "text": "Exit troubleshooting",
+            "type": "button"
+          } ] ]
         },
         "languageCode": "en"
       } ],
+      "setParameterActions": [{
+        "parameter": "$flow.troubleshooting-state",
+        "value": "initialized"
+      }],
       "nextActionOverride": {
       
       }
     },
+    "targetPage": "Start Page",
     "name": "f40cd682-02d0-4845-b3b1-415f4804cdf2"
   } ],
   "eventHandlers": [ {

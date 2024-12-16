@@ -7,5 +7,5 @@
   } ],
   "priority": 500000,
   "isFallback": true,
-  "numTrainingPhrases": 23
+  "numTrainingPhrases": 20
 }

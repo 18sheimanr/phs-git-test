@@ -32,7 +32,7 @@
     "name": "da4c8703-7bdb-47e5-b02e-df2f3b8b10d7",
     "description": "When a user clicks other, "
   }, {
-    "condition": "$flow.troubleshooting-state = \"initialized\"",
+    "condition": "$flow.troubleshooting-state = \"initialized\" OR $flow.troubleshooting-state = \"answered\"",
     "triggerFulfillment": {
       "generators": [ {
         "generator": "projects/develop-251413/locations/us-central1/agents/c527bdd2-6892-4b0b-b6e7-63f05d582de5/generators/dca2055e-3282-4332-9183-9eaf5aac30ab",
@@ -65,6 +65,21 @@
     "targetFlow": "Get Care",
     "name": "fd49bea6-e010-4434-b8f9-381652fc30d7"
   }, {
+    "condition": "$request.troubleshooting-succint = true",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I can help with that. Can you describe the issue to me?" ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "$flow.troubleshooting-state",
+        "value": "initialized"
+      } ]
+    },
+    "name": "ec7c5405-2758-4f29-a9f0-404bd69729f5"
+  }, {
     "condition": "$flow.troubleshooting-state = null",
     "triggerFulfillment": {
       "messages": [ {
@@ -87,12 +102,17 @@
             }, {
               "text": "My Fitbit is connected, but it is not showing any data?"
             }, {
-              "text": "Other"
+              "text": "Why isn't my Health Assessment loading?"
             }, {
-              "text": "Cancel"
+              "text": "Other"
             } ],
             "type": "chips"
           } ] ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "To exit troubleshooting, type CANCEL or EXIT at any time." ]
         },
         "languageCode": "en"
       } ],
@@ -151,12 +171,28 @@
           "text": [ "$request.knowledge.answers[0]" ]
         },
         "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "If you don't have any other questions, you can return to the conversation." ]
+        },
+        "languageCode": "en"
+      }, {
+        "payload": {
+          "richContent": [ [ {
+            "text": "Exit troubleshooting",
+            "type": "button"
+          } ] ]
+        },
+        "languageCode": "en"
       } ],
+      "setParameterActions": [{
+        "parameter": "$flow.troubleshooting-state",
+        "value": "answered"
+      }],
       "nextActionOverride": {
       
       }
     },
-    "targetPage": "End Flow",
     "dataStoreConnections": [ {
       "dataStoreType": "STRUCTURED",
       "dataStore": "projects/170713538326/locations/us/collections/default_collection/dataStores/phs-faq-all-client_1724960611133",

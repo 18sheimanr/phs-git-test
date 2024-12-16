@@ -40,7 +40,7 @@
             "type": "button"
           }, {
             "event": {
-              "event": "Troubleshooting"
+              "event": "Troubleshooting-succint"
             },
             "text": "Troubleshooting",
             "type": "button"
