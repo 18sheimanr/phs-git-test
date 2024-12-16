@@ -95,6 +95,7 @@
     "modelType": "MODEL_TYPE_ADVANCED",
     "classificationThreshold": 0.30000001,
     "modelTrainingMode": "MODEL_TRAINING_MODE_MANUAL",
+    "customConfigKey": "9dbeb43e-cb86-42ed-a438-8c0bdcf5d12d",
     "languageCode": "en"
   } ]
 }
